@@ -2,7 +2,7 @@ import React from 'react'
 
 const AboutMe = () => {
   return (
-    <section className='grid grid-cols-2 justify-around my-7 p-7 bg-white rounded-3xl shadow-xl'>
+    <section className='grid grid-cols-1 md:grid-cols-2 justify-around gap-6 my-7 p-7 bg-white rounded-3xl shadow-xl'>
         <div>
             <h2 className='text-3xl font-bold mb-4'>About me</h2>
             <p className=''>
