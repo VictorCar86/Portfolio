@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaRegEnvelope, FaMapMarkerAlt, FaTwitter, FaGithub } from 'react-icons/fa'
+import { FaRegEnvelope, FaMapMarkerAlt, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 const Home = () => {
   return (
@@ -15,12 +15,15 @@ const Home = () => {
                     <FaMapMarkerAlt className='inline-block w-6 h-6 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1' />
                     Bogotá D.C, Colombia
                 </p>
-                <div>
-                    <a className='inline-block ml-12 mt-4' href="https://twitter.com/victorcar86_">
+                <div className='w-52 mt-3 flex justify-around'>
+                    <a href="https://twitter.com/victorcar86_">
                         <FaTwitter className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
                     </a>
-                    <a className='inline-block ml-12 mt-4' href="https://github.com/VictorCar86">
+                    <a href="https://github.com/VictorCar86">
                         <FaGithub className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
+                    </a>
+                    <a href="https://www.linkedin.com/in/victorcar86/">
+                        <FaLinkedin className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
                     </a>
                 </div>
                 <div className='ml-9 my-4'>

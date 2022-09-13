@@ -7,7 +7,7 @@ const MainPage = () => {
   return (
     <>
         <header></header>
-        <main className='px-[7%] lg:px-[14%] bg-orange-100'>
+        <main className='px-[7%] bg-orange-100'>
             <Home />
             <AboutMe />
             <Skills />
