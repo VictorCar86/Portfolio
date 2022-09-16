@@ -1,13 +1,13 @@
 import React from 'react'
 import { SiCss3, SiHtml5, SiJavascript, SiReact, SiTailwindcss } from 'react-icons/si'
 import WebpackIcon from '../assets/webpack.png'
-import UKFlagIcon from './Icons/UKFlagIcon'
+import UKFlagIcon from '../components/Icons/UKFlagIcon'
 import SpainIcon from '../assets/spain.png'
+import InfoSection from '../components/InfoSection'
 
 const Skills = () => {
   return (
-    <section className='relative max-w-5xl mx-auto my-7 p-7 bg-white rounded-3xl shadow-xl'>
-        <h2 className='text-3xl font-bold mb-4'>Skills</h2>
+    <InfoSection title='Skills 👨‍💻'>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum veniam fugit harum at eius doloribus dolore aut laudantium ut fugiat consequatur dolor, ex possimus consequuntur quis earum unde reiciendis magnam.
         </p>
@@ -47,23 +47,25 @@ const Skills = () => {
           </ul>
         </div>
         <h3 className='text-xl font-bold my-3'>Languages:</h3>
-        <div className='font-bold'>
-          <ul>
+        <div className='my-5 font-bold'>
+          <ul className='flex justify-evenly'>
             <li className='text-center'>
-              <div className='w-9 mx-auto'>
+              <div className='w-9 md:w-14 lg:w-20 mx-auto'>
                 <UKFlagIcon />
               </div>
-              <p>English - B2</p>
+              <p className=' my-2'>English</p>
+              <p className='italic text-gray-600'>Intermediate / Advance</p>
             </li>
             <li className='text-center'>
-              <div className='w-9 mx-auto'>
-                <img src={SpainIcon} alt="Spain flag" />
+              <div className='w-9 md:w-14 lg:w-20 mx-auto'>
+                <img className='rounded-full' src={SpainIcon} alt="Spain flag" />
               </div>
-              <p>Spanish - Native</p>
+              <p className=' my-2'>Spanish</p>
+              <p className='italic text-gray-600'>Native</p>
             </li>
           </ul>
         </div>
-    </section>
+    </InfoSection>
   )
 }
 

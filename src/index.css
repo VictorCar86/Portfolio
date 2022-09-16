@@ -3,9 +3,14 @@
 @tailwind utilities;
 
 /* @layer components {
+
 } */
 
 @layer utilities {
+    .backgroundMainImage {
+        background: linear-gradient(0deg, rgba(227,209,138,1) 0%, rgba(189,147,84,1) 33%, rgba(158,117,64,1) 66%, rgba(133,96,63,1) 100%);
+    }
+
     @keyframes minus-spin {
         to {
             transform: rotate(-360deg)
