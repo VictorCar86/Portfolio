@@ -1,5 +1,12 @@
 import React from 'react'
-import { FaRegEnvelope, FaMapMarkerAlt, FaTwitter, FaGithub, FaLinkedin } from 'react-icons/fa'
+import {
+    FaRegEnvelope,
+    FaMapMarkerAlt,
+    FaTwitter,
+    FaGithub,
+    FaLinkedin
+} from 'react-icons/fa'
+import profileImg from "../assets/images/profile.webp"
 
 const Home = () => {
   return (
@@ -36,11 +43,12 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <div className='w-64 md:w-auto rounded-full backgroundMainImage'>
+            <div className='relative w-64 md:w-auto rounded-full z-0 backgroundMainImage'>
+                <img className='absolute top-0 rotate-45 -z-10 scale-[1.60]' src="https://imgs.search.brave.com/RX8vEePswpP6RnPLuls81TpLiAWgu_8IadXrkyfN6A8/rs:fit:1200:1200:1/g:ce/aHR0cDovL3B1cmVw/bmcuY29tL3B1Ymxp/Yy91cGxvYWRzL2xh/cmdlL3B1cmVwbmcu/Y29tLWF1dHVtbi1s/ZWFmbmF0dXJldHJl/ZWxlYWZsZWF2ZXNh/dXR1bW4tOTYxNTI0/Njc2ODU3cTVmdWou/cG5n" alt="xd" />
                 <img
                     className='w-11/12 m-[4%] rounded-full shadow-xl'
-                    src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/assets/images/hero.png"
-                    alt="dummy"
+                    src={profileImg}
+                    alt="Profile picture of Victor Carreño"
                 />
             </div>
         </section>
