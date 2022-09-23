@@ -1,9 +1,9 @@
 import React from 'react'
-import { SiCss3, SiHtml5, SiJavascript, SiReact, SiGit } from 'react-icons/si'
-import WebpackIcon from '../assets/images/webpack.png'
-import UKFlagIcon from '../components/Icons/UKFlagIcon'
-import SpainIcon from '../assets/images/spain.png'
 import InfoSection from '../components/InfoSection'
+import { SiCss3, SiHtml5, SiJavascript, SiReact, SiGit } from 'react-icons/si'
+import WebpackIcon from '../assets/images/webpack.webp'
+import UKFlagIcon from '../components/Icons/UKFlagIcon'
+import SpainIcon from '../assets/images/spain.webp'
 
 const Skills = () => {
   return (
@@ -13,7 +13,7 @@ const Skills = () => {
         </p>
         <h3 className='text-xl font-bold my-3'>Tools:</h3>
         <div className='relative h-auto max-w-3xl mx-auto my-6 font-bold md:text-xl text-center'>
-          <ul className='grid sm:grid-cols-3 sm:grid-rows-2 grid-cols-2 grid-rows-3 gap-x-4 gap-y-5 justify-items-center mt-7'>
+          <ul className='grid sm:grid-cols-3 sm:grid-rows-2 grid-cols-2 grid-rows-3 gap-x-4 gap-y-5 justify-items-center items-center mt-7'>
             <li>
               <SiHtml5 className='w-14 lg:w-20 h-auto mx-auto fill-orange-500' />
               <p>HTML</p>
@@ -38,7 +38,7 @@ const Skills = () => {
             </li>
             <li>
               <img
-                className='w-14 lg:w-20 h-auto object-cover mx-auto'
+                className='h-min w-14 lg:w-20 object-cover mx-auto'
                 src={WebpackIcon}
                 alt="Webpack icon"
               />
@@ -53,12 +53,12 @@ const Skills = () => {
               <div className='w-9 md:w-14 lg:w-20 mx-auto'>
                 <UKFlagIcon />
               </div>
-              <p className=' my-2'>English</p>
+              <p className='my-2'>English</p>
               <p className='italic text-gray-600'>Intermediate</p>
             </li>
             <li className='text-center'>
               <div className='w-9 md:w-14 lg:w-20 mx-auto'>
-                <img className='rounded-full' src={SpainIcon} alt="Spain flag" />
+                <img className='h-min w-full rounded-full' src={SpainIcon} alt="Spain flag" />
               </div>
               <p className=' my-2'>Spanish</p>
               <p className='italic text-gray-600'>Native</p>

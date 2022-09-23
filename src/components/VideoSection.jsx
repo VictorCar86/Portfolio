@@ -47,7 +47,7 @@ const VideoSection = ({ sourceArray = [] }) => {
                             title={`github repository of ${video.title}`}>
                             <a
                                 className='inline-block w-full h-full p-1.5'
-                                aria-label={`github repository of ${video.title}`}
+                                aria-label={`Github repository of ${video.title}`}
                                 href="">
                                 <FiGithub className='svg'/>
                             </a>
@@ -58,7 +58,7 @@ const VideoSection = ({ sourceArray = [] }) => {
                             title={`online page of ${video.title}`}>
                             <a
                                 className='inline-block w-full h-full p-1.5'
-                                aria-label={`online page of ${video.title}`}
+                                aria-label={`Online page of ${video.title}`}
                                 href="">
                                 <FiExternalLink className='svg'/>
                             </a>

@@ -8,7 +8,7 @@ const MainPage = () => {
   return (
     <>
       <header></header>
-      <main className='px-[7%] bg-orange-100 overflow-hidden'>
+      <main className='px-[7%] text-amber-900 bg-orange-100 overflow-hidden'>
           <Home />
           <AboutMe />
           <Skills />

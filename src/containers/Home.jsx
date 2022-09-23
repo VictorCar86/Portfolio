@@ -7,13 +7,14 @@ import {
     FaLinkedin
 } from 'react-icons/fa'
 import profileImg from "../assets/images/profile.webp"
+import fallImg from "../assets/images/fall.webp"
 
 const Home = () => {
   return (
-        <section className='flex flex-col-reverse h-screen justify-center items-center gap-10 md:flex-row'>
+        <section className='flex flex-col-reverse h-screen justify-center items-center gap-6 sm:gap-10 md:flex-row'>
             <div>
                 <h1 className='text-4xl sm:text-5xl font-bold text-center md:text-left'>Victor Manuel Carreño Peña</h1>
-                <h3 className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>Front-end Developer</h3>
+                <h2 className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>Front-end Developer</h2>
                 <div className='w-max mx-auto md:mx-0'>
                     <p>
                         <FaRegEnvelope className='inline-block w-6 h-6 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1' />
@@ -25,13 +26,13 @@ const Home = () => {
                     </p>
                 </div>
                 <div className='w-52 mt-3 flex justify-around mx-auto md:mx-0'>
-                    <a href="https://twitter.com/victorcar86_">
+                    <a aria-label="Link to Twitter's profile" href="https://twitter.com/victorcar86_">
                         <FaTwitter className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
                     </a>
-                    <a href="https://github.com/VictorCar86">
+                    <a aria-label="Link to Github's profile" href="https://github.com/VictorCar86">
                         <FaGithub className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
                     </a>
-                    <a href="https://www.linkedin.com/in/victorcar86/">
+                    <a aria-label="Link to Linkedin's profile" href="https://www.linkedin.com/in/victorcar86/">
                         <FaLinkedin className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
                     </a>
                 </div>
@@ -44,9 +45,13 @@ const Home = () => {
                 </div>
             </div>
             <div className='relative w-64 md:w-auto rounded-full z-0 backgroundMainImage'>
-                <img className='absolute top-0 rotate-45 -z-10 scale-[1.60]' src="https://imgs.search.brave.com/RX8vEePswpP6RnPLuls81TpLiAWgu_8IadXrkyfN6A8/rs:fit:1200:1200:1/g:ce/aHR0cDovL3B1cmVw/bmcuY29tL3B1Ymxp/Yy91cGxvYWRzL2xh/cmdlL3B1cmVwbmcu/Y29tLWF1dHVtbi1s/ZWFmbmF0dXJldHJl/ZWxlYWZsZWF2ZXNh/dXR1bW4tOTYxNTI0/Njc2ODU3cTVmdWou/cG5n" alt="xd" />
                 <img
-                    className='w-11/12 m-[4%] rounded-full shadow-xl'
+                    className='absolute top-0 rotate-45 -z-10 scale-[1.35] -translate-y-4'
+                    src={fallImg}
+                    alt="xd"
+                />
+                <img
+                    className='h-[91.666667%] w-11/12 m-[4%] rounded-full shadow-xl'
                     src={profileImg}
                     alt="Profile picture of Victor Carreño"
                 />
