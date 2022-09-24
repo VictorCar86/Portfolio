@@ -8,6 +8,7 @@ import {
 } from 'react-icons/fa'
 import profileImg from "../assets/images/profile.webp"
 import fallImg from "../assets/images/fall.webp"
+import cvPdf from '../assets/files/CV - Victor Carreño.pdf'
 
 const Home = () => {
     const [fall, setFall] = useState("")
@@ -54,7 +55,7 @@ const Home = () => {
                     </a>
                 </div>
                 <div className='ml-0 md:ml-9 my-4 text-center md:text-left'>
-                    <a href="#">
+                    <a href={cvPdf} download>
                         <button className='text-amber-900 font-bold bg-amber-100 border-2 border-amber-600 rounded-2xl px-3 py-1 shadow-md active:scale-105 hover:scale-105 hover:shadow-lg transition-transform ease-out' type='button'>
                             Download CV
                         </button>
