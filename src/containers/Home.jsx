@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {
     FaRegEnvelope,
     FaMapMarkerAlt,
@@ -10,11 +10,13 @@ import profileImg from "../assets/images/profile.webp"
 import fallImg from "../assets/images/fall.webp"
 
 const Home = () => {
+    const [fall, setFall] = useState("")
+
   return (
         <section className='flex flex-col-reverse h-screen justify-center items-center gap-6 sm:gap-10 md:flex-row'>
             <div>
                 <h1 className='text-4xl sm:text-5xl font-bold text-center md:text-left'>Victor Manuel Carreño Peña</h1>
-                <h2 className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>Front-end Developer</h2>
+                <h2 className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>Frontend Developer</h2>
                 <div className='w-max mx-auto md:mx-0'>
                     <p>
                         <FaRegEnvelope className='inline-block w-6 h-6 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1' />
@@ -26,13 +28,28 @@ const Home = () => {
                     </p>
                 </div>
                 <div className='w-52 mt-3 flex justify-around mx-auto md:mx-0'>
-                    <a aria-label="Link to Twitter's profile" href="https://twitter.com/victorcar86_">
+                    <a
+                        aria-label="Link to Twitter's profile"
+                        href="https://twitter.com/victorcar86_"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <FaTwitter className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
                     </a>
-                    <a aria-label="Link to Github's profile" href="https://github.com/VictorCar86">
+                    <a
+                        aria-label="Link to Github's profile"
+                        href="https://github.com/VictorCar86"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <FaGithub className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
                     </a>
-                    <a aria-label="Link to Linkedin's profile" href="https://www.linkedin.com/in/victorcar86/">
+                    <a
+                        aria-label="Link to Linkedin's profile"
+                        href="https://www.linkedin.com/in/victorcar86/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
                         <FaLinkedin className='w-6 h-6 hover:scale-110 transition-transform ease-out' />
                     </a>
                 </div>
@@ -46,9 +63,10 @@ const Home = () => {
             </div>
             <div className='relative w-64 md:w-auto rounded-full z-0 backgroundMainImage'>
                 <img
-                    className='absolute top-0 rotate-45 -z-10 scale-[1.35] -translate-y-4'
+                    className={`absolute top-0 rotate-45 -z-10 scale-[1.35] -translate-y-4 cursor-pointer ${fall}`}
                     src={fallImg}
                     alt="xd"
+                    onClick={() => setFall("animate-fall")}
                 />
                 <img
                     className='h-[91.666667%] w-11/12 m-[4%] rounded-full shadow-xl'

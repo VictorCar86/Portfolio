@@ -1,15 +1,18 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection'
+import mushroomImg from '../assets/images/mushroom.webp'
 
 const AboutMe = () => {
   return (
     <InfoSection title="About me 👋">
       <div className='grid grid-cols-1 md:grid-cols-2 justify-around gap-6'>
-        <p className=''>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cupiditate consequatur laborum saepe voluptate nihil, sed repellendus ab harum non earum voluptas molestias quisquam delectus dignissimos! Obcaecati nesciunt assumenda dolores.
-            Repellat veniam quis eius quaerat, non debitis tempore doloribus iusto, laudantium consectetur hic sit blanditiis rem. Expedita architecto quae iste eligendi numquam ipsa tempora atque vero dolorum, natus nihil iusto!
-        </p>
-        <img className='mx-auto' src="https://imgs.search.brave.com/olcx29M-asPkl4wnVLR-O2es8CpVdSDTo_WfB9fPFRw/rs:fit:216:300:1/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2U5LzRl/L2ZkL2U5NGVmZGFm/ZDA0MzNiZWVjNGFh/OWNiMmMwZTI4NThi/LnBuZw" alt="" />
+        <ul className='ml-4 list-disc'>
+            <li>I'm a frontend developer with one year building projects of all kinds, passionate about technology and learning.</li>
+            <li>My current knowledge was adquired by self-study reading blogs, watching videos and practicing while reading some books.</li>
+            <li>My expectations being a developer are to create great experiences for users, improving people's life solving their problems with technology and create products that can be valuable for clients.</li>
+            <li>My passions in life are to hike through nature, observe landspaces and discover new places and people along I travel around the World.</li>
+        </ul>
+        <img className='mx-auto' src={mushroomImg} alt="Orange tall mushroom" />
       </div>
     </InfoSection>
   )

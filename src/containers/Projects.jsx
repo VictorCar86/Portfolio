@@ -6,9 +6,10 @@ import videoSources from '../utils/videoSources'
 const Projects = () => {
   return (
     <InfoSection title='Projects 📑'>
-      <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam amet architecto animi harum illo ea, fugit quam minima quia dolorem porro nulla voluptatum iste dignissimos, odit velit sunt earum numquam.
-      </p>
+      <ul className='max-w-xl ml-4 list-disc'>
+        <li>I've created at least 21 projects from little experiments to more complex webpage with a lot of features, but in this section I'll show you, in my opinion, the most complete of them.</li>
+        <li>If you are curious, check out my Github's profile where I usually post my recent projects.</li>
+      </ul>
       <VideoSection sourceArray={videoSources} />
     </InfoSection>
   )

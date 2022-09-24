@@ -1,21 +1,46 @@
-import mp4 from "../assets/videos/2022-08-20 11-45-38.mp4"
+import reginaVideo from '../assets/videos/regina.mp4';
+import pokeapiVideo from '../assets/videos/pokeapi.mp4';
+import weatherVideo from '../assets/videos/weather.mp4';
+import timerVideo from '../assets/videos/timer.mp4';
+import todoVideo from '../assets/videos/todo.mp4';
+import wordleVideo from '../assets/videos/wordle.mp4';
 
 const videoSources = [
     {
         title: "La Regina - Italian Restaurant",
-        src: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm",
+        videoSrc: reginaVideo,
+        github: "https://github.com/VictorCar86/La_Regina_italian_restaurant",
+        page: "https://laregina.netlify.app/",
     },
     {
-        title: "page",
-        src: mp4,
+        title: "PokeAPI",
+        videoSrc: pokeapiVideo,
+        github: "https://github.com/VictorCar86/Pokemon-API",
+        page: "https://victorcar86.github.io/Pokemon-API/",
     },
     {
-        title: "page",
-        src: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm",
+        title: "Wheater-React-App",
+        videoSrc: weatherVideo,
+        github: "https://github.com/VictorCar86/Weather-React-App",
+        page: "https://weather-app-withreact.herokuapp.com/",
     },
     {
-        title: "page",
-        src: "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm",
+        title: "Ultimate Timer",
+        videoSrc: timerVideo,
+        github: "https://github.com/VictorCar86/Ultimate-Timer",
+        page: "https://victorcar86.github.io/Ultimate-Timer/",
+    },
+    {
+        title: "ToDo React App - Mobile",
+        videoSrc: todoVideo,
+        github: "https://github.com/VictorCar86/ToDo-React-App",
+        page: "https://react-app-to-do.netlify.app/",
+    },
+    {
+        title: "WordleJS",
+        videoSrc: wordleVideo,
+        github: "https://github.com/VictorCar86/WordleJS",
+        page: "https://victorcar86.github.io/WordleJS/",
     },
 ];
 
