@@ -4,7 +4,7 @@ import mushroomImg from '../assets/images/mushroom.webp'
 
 const AboutMe = () => {
   return (
-    <InfoSection title="About me 👋">
+    <InfoSection title="About me 👋" bgColor='bg-cream-200'>
       <div className='grid grid-cols-1 md:grid-cols-2 justify-around gap-6'>
         <ul className='ml-4 list-disc'>
             <li>I'm a frontend developer with one year building projects of all kinds, passionate about technology and learning.</li>

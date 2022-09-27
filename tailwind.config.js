@@ -13,6 +13,17 @@ module.exports = {
       classes: []
     },
     extend: {
+      colors: {
+        "cream-100": "#fcdeba",
+        "cream-200": "#e7c7a5",
+        "cream-300": "#d2b18f",
+        "cream-400": "#bd9a7a",
+        "cream-500": "#a98365",
+        "cream-600": "#946c4f",
+        "cream-700": "#7f563a",
+        "cream-800": "#6a3f24",
+        "cream-900": "#55280f",
+      },
       animation: {
         "fall": "fall 5s ease-in forwards",
       },
