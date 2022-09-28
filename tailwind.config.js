@@ -13,6 +13,13 @@ module.exports = {
       classes: []
     },
     extend: {
+      screens: {
+        '-2xl': {'max': '1536px'},
+        '-xl': {'max': '1280px'},
+        '-lg': {'max': '1024px'},
+        '-md': {'max': '768px'},
+        '-sm': {'max': '640px'},
+      },
       colors: {
         "cream-100": "#fcdeba",
         "cream-200": "#e7c7a5",

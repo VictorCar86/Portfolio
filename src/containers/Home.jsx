@@ -14,7 +14,7 @@ const Home = () => {
     const [fall, setFall] = useState("")
 
   return (
-        <section className='flex flex-col-reverse h-screen justify-center items-center gap-6 sm:gap-10 md:flex-row'>
+        <section className='flex flex-col-reverse h-screen px-[7%] justify-center items-center gap-6 sm:gap-10 md:flex-row'>
             <div>
                 <h1 className='text-4xl sm:text-5xl font-bold text-center md:text-left'>Victor Manuel Carreño Peña</h1>
                 <h2 className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>Frontend Developer</h2>

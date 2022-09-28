@@ -11,7 +11,7 @@ const VideoSection = ({ sourceArray = [] }) => {
         const project = itemRef.current[index];
         project.muted = true;
         project.currentTime = 1;
-        project.playbackRate = 1;
+        project.playbackRate = 1.5;
         project.play();
     }
 
@@ -28,21 +28,26 @@ const VideoSection = ({ sourceArray = [] }) => {
     }
 
     return (
-        <ul className='grid md:grid-cols-2 grid-cols-1 mt-6 gap-6'>
+        <ul className='grid grid-cols-1 mt-6 gap-6 even:animate__bounceInLeft odd:animate__bounceInRight'>
             {sourceArray.map((project, index) => (
                 <li
-                    className="relative group hover:scale-105 transition-transform ease-out"
-                    key={index}
-                    onMouseEnter={() => startPreview(index)}
-                    onMouseLeave={() => stopPreview(index)}>
-                    <video
-                        className='rounded-xl cursor-pointer group-hover:rounded-b-none sm:group-hover:rounded-b-xl border-amber-600 border-4'
-                        src={project.videoSrc}
-                        ref={refElm => itemRef.current[index] = refElm}
-                    />
-                    <div className='sm:absolute hidden group-hover:flex sm:visible sm:bottom-0 sm:flex justify-start items-center flex-col-reverse h-max sm:h-1/2 w-full rounded-b-xl bg-amber-800 sm:bg-transparent sm:bg-gradient-to-t from-amber-900 to-transparent text-center -z-10 sm:z-0 cursor-pointer'>
-                        <p className='mt-2 mb-5 text-amber-100 text-lg font-bold'>{project.title}</p>
-                        <div className='pt-5'>
+                    className="md:flex transition-transform ease-out even:flex-row-reverse animate__animated"
+                    key={index}>
+                    <div className='group relative h-fit w-full md:w-1/2 rounded-xl hover:scale-105 transition-transform ease-out cursor-pointer z-10'>
+                        <video
+                            className='w-full -md:group-hover:rounded-b-xl rounded-xl -md:rounded-b-none border-amber-600 border-4'
+                            src={project.videoSrc}
+                            ref={refElm => itemRef.current[index] = refElm}
+                            onMouseEnter={() => startPreview(index)}
+                            onMouseLeave={() => stopPreview(index)}
+                        />
+                        <div className='group-hover:invisible absolute top-0 w-full h-full rounded-xl -md:rounded-b-none bg-black/30'>
+                            <AiFillPlayCircle className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-1/4 fill-amber-100' />
+                        </div>
+                    </div>
+                    <div className='flow-root flex-col-reverse h-max w-full md:w-1/2 -md:rounded-b-xl md:rounded-xl bg-cream-600 text-center -z-10 sm:z-0'>
+                        <p className='mt-4 mb-5 text-amber-100 text-xl sm:text-2xl font-bold'>{project.title}</p>
+                        <div className='pb-5'>
                             <button
                                 className='bg-amber-100 w-9 h-9 mx-4 border-amber-600 border-2 rounded-full hover:scale-110 transition-transform ease-out'
                                 type='button'
@@ -72,9 +77,6 @@ const VideoSection = ({ sourceArray = [] }) => {
                                 </a>
                             </button>
                         </div>
-                    </div>
-                    <div className='sm:hidden group-hover:invisible absolute top-0 w-full h-full rounded-xl bg-black/30'>
-                        <AiFillPlayCircle className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-1/4 fill-amber-100' />
                     </div>
                 </li>
             ))}
