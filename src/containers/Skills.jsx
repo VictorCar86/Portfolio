@@ -10,7 +10,7 @@ const Skills = () => {
   const svgStyles = "h-min w-14 lg:w-20 mx-auto animate__animated hover:animate__rubberBand"
 
   return (
-    <InfoSection title='Skills 💻' bgColor='bg-cream-300'>
+    <InfoSection title='Skills 💻' bgColor='bg-cream-300' customId='skills'>
         <ul className='max-w-xl ml-4 list-disc'>
           <li>Through out last year I've discover a huge amount of technologies in order to create different kind of projects based on their complexity such as SASS, Vue or even Bootstrap.</li>
           <li>So this year I decided to focus my efforts on learning this six tools, but I'm currently learning how to use TailwindCSS and Three.js as well.</li>

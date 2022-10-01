@@ -1,4 +1,5 @@
 import React from 'react'
+import Navbar from '../containers/Navbar'
 import Home from '../containers/Home'
 import AboutMe from '../containers/AboutMe'
 import Skills from '../containers/Skills'
@@ -8,15 +9,18 @@ import Contact from '../containers/Contact'
 const MainPage = () => {
   return (
     <>
-      <header></header>
-      <main className='text-amber-900 bg-cream-100 overflow-hidden'>
+      <header>
+        <Navbar />
+      </header>
+      <main className='text-amber-900 overflow-hidden'>
           <Home />
           <AboutMe />
           <Skills />
           <Projects />
-          <Contact />
       </main>
-      <footer></footer>
+      <footer className='text-amber-900'>
+          <Contact />
+      </footer>
     </>
   )
 }

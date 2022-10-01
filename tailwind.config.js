@@ -14,11 +14,11 @@ module.exports = {
     },
     extend: {
       screens: {
-        '-2xl': {'max': '1536px'},
-        '-xl': {'max': '1280px'},
-        '-lg': {'max': '1024px'},
-        '-md': {'max': '768px'},
-        '-sm': {'max': '640px'},
+        '-2xl': {'max': '1535px'},
+        '-xl': {'max': '1279px'},
+        '-lg': {'max': '1023px'},
+        '-md': {'max': '767px'},
+        '-sm': {'max': '639px'},
       },
       colors: {
         "cream-100": "#fcdeba",
@@ -33,13 +33,23 @@ module.exports = {
       },
       animation: {
         "fall": "fall 5s ease-in forwards",
+        "navbar-open": "navbar-open 0.65s ease-out forwards",
+        "navbar-close": "navbar-close 0.25s ease-in forwards",
       },
       keyframes: {
         "fall": {
           "0%, 5%": {transform: "translate(0%, -1rem) scale(1.35) rotate(45deg)"},
           "50%, 51%": {transform: "translate(-10%, 20%) scale(1.20) rotate(80deg)"},
           "100%": {transform: "translate(250%, 300%) rotate(-10deg)", display: "none"},
-        }
+        },
+        "navbar-open": {
+          from: {height: "56px"},
+          to: {height: "100vh"},
+        },
+        "navbar-close": {
+          from: {height: "100vh"},
+          to: {height: "56px"},
+        },
       }
     },
   },

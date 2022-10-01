@@ -13,7 +13,7 @@ const Contact = () => {
     const svgStyles = "w-12 h-12";
 
     return (
-        <InfoSection title='Contact 📧' bgColor='bg-cream-500'>
+        <InfoSection title='Contact 📧' bgColor='bg-cream-500' customId='contact'>
             <div className='flex justify-evenly my-5'>
                 <a
                     className={buttonStyles}
