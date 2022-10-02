@@ -1,7 +1,13 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection'
 import { SiCss3, SiHtml5, SiJavascript, SiReact, SiGit } from 'react-icons/si'
-import WebpackIcon from '../assets/images/webpack.webp'
+import HtmlImg from '../assets/images/html.webp'
+import cssImg from '../assets/images/css.webp'
+import jsImg from '../assets/images/js.webp'
+import reactImg from '../assets/images/react.webp'
+import gitImg from '../assets/images/git.webp'
+import webpackImg from '../assets/images/webpack.webp'
+import WebpackIcon from '../assets/images/webpack-icon.webp'
 import UKFlagIcon from '../components/Icons/UKFlagIcon'
 import SpainIcon from '../assets/images/spain.webp'
 
@@ -17,37 +23,55 @@ const Skills = () => {
           <li>I have been learning English since 2019, and recently I'm trying to improve with resources from Platzi.</li>
         </ul>
         <h3 className='text-xl font-bold my-3'>Tools:</h3>
-        <div className='relative h-auto max-w-3xl mx-auto my-6 font-bold md:text-xl text-center'>
-          <ul className='grid sm:grid-cols-3 sm:grid-rows-2 grid-cols-2 grid-rows-3 gap-x-4 gap-y-5 justify-items-center items-center mt-7'>
-            <li>
-              <SiHtml5 className={`fill-orange-500 ${svgStyles}` }/>
-              <p>HTML</p>
-            </li>
-            <li>
-              <SiCss3 className={`fill-blue-600 ${svgStyles}` }/>
-              <p>CSS3</p>
-            </li>
-            <li>
-              <div className={`bg-black ${svgStyles}`}>
-                <SiJavascript className="w-full h-full fill-yellow-300"/>
+        <div className='relative h-auto mx-auto my-6 font-bold md:text-xl text-center'>
+          <ul className='grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-4 justify-items-center items-center mt-7'>
+            <li className='w-full h-48 max-w-sm relative'>
+              <div className='absolute right-2 bottom-2 pt-1 bg-white rounded-lg'>
+                <SiHtml5 className={`fill-orange-500 ${svgStyles}` }/>
+                <p className='mt-1 rounded-lg bg-cream-200'>HTML</p>
               </div>
-              <p>JavaScript</p>
+              <img className='w-full h-full object-cover object-center' src={HtmlImg} alt="Monitor displaying lines of HTML code" />
             </li>
-            <li>
-              <SiReact className={`fill-blue-400 ${svgStyles}` }/>
-              <p>React</p>
+            <li className='w-full h-48 max-w-sm relative'>
+              <div className='absolute right-2 bottom-2 pt-1 bg-white rounded-lg'>
+                <SiCss3 className={`fill-blue-600 ${svgStyles}` }/>
+                <p className='mt-1 rounded-lg bg-cream-200'>CSS3</p>
+              </div>
+              <img className='w-full h-full object-cover object-center' src={cssImg} alt="Monitor displaying lines of CSS code" />
             </li>
-            <li>
-              <SiGit className={`fill-orange-600 ${svgStyles}` }/>
-              <p>Git</p>
+            <li className='w-full h-48 max-w-sm relative'>
+              <div className='absolute right-2 bottom-2 pt-1 bg-white rounded-lg'>
+                <div className={`bg-black ${svgStyles}`}>
+                  <SiJavascript className="w-full h-full fill-yellow-300"/>
+                </div>
+                <p className='mt-1 rounded-lg bg-cream-200'>JavaScript</p>
+              </div>
+              <img className='w-full h-full object-cover object-center' src={jsImg} alt="Monitor displaying lines of JavaScript code" />
             </li>
-            <li>
-              <img
-                className={`object-cover ${svgStyles}`}
-                src={WebpackIcon}
-                alt="Webpack icon"
-              />
-              <p>Webpack</p>
+            <li className='w-full h-48 max-w-sm relative'>
+              <div className='absolute right-2 bottom-2 pt-1 bg-white rounded-lg'>
+                <SiReact className={`fill-blue-400 ${svgStyles}` }/>
+                <p className='mt-1 rounded-lg bg-cream-200'>React</p>
+              </div>
+              <img className='w-full h-full object-cover object-center' src={reactImg} alt="Monitor displaying lines of React code" />
+            </li>
+            <li className='w-full h-48 max-w-sm relative'>
+              <div className='absolute right-2 bottom-2 pt-1 bg-white rounded-lg'>
+                <SiGit className={`fill-orange-600 ${svgStyles}` }/>
+                <p className='mt-1 rounded-lg bg-cream-200'>Git</p>
+              </div>
+              <img className='w-full h-full object-cover object-center' src={gitImg} alt="Monitor displaying lines of Git code" />
+            </li>
+            <li className='w-full h-48 max-w-sm relative'>
+              <div className='absolute right-2 bottom-2 pt-1 bg-white rounded-lg'>
+                <img
+                  className={`object-cover ${svgStyles}`}
+                  src={WebpackIcon}
+                  alt="Webpack icon"
+                />
+                <p className='mt-1 rounded-lg bg-cream-200'>Webpack</p>
+              </div>
+              <img className='w-full h-full object-cover object-center' src={webpackImg} alt="Monitor displaying lines of Webpack code" />
             </li>
           </ul>
         </div>
