@@ -1,7 +1,7 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection'
 import { SiCss3, SiHtml5, SiJavascript, SiReact, SiGit } from 'react-icons/si'
-import ToolsDescription from '../components/toolsDescription'
+import ToolsDescription from '../components/ToolsDescription'
 import htmlImg from '../assets/images/html.webp'
 import cssImg from '../assets/images/css.webp'
 import jsImg from '../assets/images/js.webp'
