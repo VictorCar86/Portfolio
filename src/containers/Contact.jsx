@@ -13,8 +13,10 @@ const Contact = () => {
     const svgStyles = "w-9 h-9";
 
     return (
-        <InfoSection title='Contact 📧' bgColor='bg-cream-500' customId='contact'>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere adipisci hic optio dolores obcaecati sed dolor unde numquam veniam eaque aliquam, iure non neque dignissimos ratione. Corporis, totam? Repellendus.</p>
+        <InfoSection title='Contact 📡' bgColor='bg-cream-500' customId='contact'>
+            <p className='max-w-xl'>
+                Send me an email to say g'day, let me know your ideas through any social media or ask me if we can build something together. 🥳
+            </p>
             <div className='flex justify-evenly flex-wrap max-w-2xl mt-5 mx-auto font-bold'>
                 <a
                     className={buttonStyles}

@@ -28,28 +28,28 @@ const Navbar = () => {
         if (window.innerWidth <= 767){
             setExpand({
                 button: !expand.button,
-                navbar: expand.button ? "animate-navbar-close" : "animate-navbar-open bg-cream-700/90",
+                navbar: expand.button ? "animate-navbar-close" : "animate-navbar-open",
                 list: expand.button ? "" : "!translate-y-0",
             })
         }
     }
 
     return (
-        <nav className={`w-full h-14 bg-cream-700/80 fixed ${expand.navbar} ${scrollPosition <= 100 ? "-translate-y-14" : "translate-y-0"} duration-500 z-30`}>
+        <nav className={`w-full h-14 bg-cream-700/90 fixed ${expand.navbar} ${scrollPosition <= 100 ? "-translate-y-14" : "translate-y-0"} duration-500 z-30`}>
             <ul className={`h-full px-[22%] flex -md:flex-col -md:justify-center -md:items-center -md:gap-[5%] -md:-translate-y-[1000px] md:justify-around md:items-center ${expand.list} transition-transform duration-1000 text-amber-100 -md:text-2xl text-lg italic font-bold`}>
-                <li>
+                <li className='px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500'>
                     <a onClick={toggleNavbar} href="#home">Home</a>
                 </li>
-                <li>
+                <li className='px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500'>
                     <a onClick={toggleNavbar} href="#about">About me</a>
                 </li>
-                <li>
+                <li className='px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500'>
                     <a onClick={toggleNavbar} href="#skills">Skills</a>
                 </li>
-                <li>
+                <li className='px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500'>
                     <a onClick={toggleNavbar} href="#projects">Projects</a>
                 </li>
-                <li>
+                <li className='px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500'>
                     <a onClick={toggleNavbar} href="#contact">Contact</a>
                 </li>
             </ul>

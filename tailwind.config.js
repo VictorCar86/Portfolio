@@ -39,8 +39,9 @@ module.exports = {
       keyframes: {
         "fall": {
           "0%, 5%": {transform: "translate(0%, -1rem) scale(1.35) rotate(45deg)"},
-          "50%, 51%": {transform: "translate(-10%, 20%) scale(1.20) rotate(80deg)"},
-          "100%": {transform: "translate(250%, 300%) rotate(-10deg)", display: "none"},
+          "50%, 51%": {transform: "translate(-10%, 20%) scale(1.20) rotate(80deg)", opacity: 1},
+          "70%": {opacity: 1},
+          "100%": {transform: "translate(250%, 300%) rotate(-10deg)", opacity: 0, display: "none"},
         },
         "navbar-open": {
           from: {height: "56px"},

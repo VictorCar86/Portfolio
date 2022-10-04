@@ -11,10 +11,8 @@ const Projects = () => {
 
   return (
     <InfoSection title='Projects 📚' bgColor='bg-cream-400' customId='projects'>
-      <ul className='max-w-xl ml-4 list-disc'>
-        <li>I've created at least 21 projects from little experiments to more complex webpage with a lot of features, but in this section I'll show you, in my opinion, the most complete of them.</li>
-        <li>If you are curious, check out my Github's profile where I usually post my recent projects.</li>
-      </ul>
+      <p className='max-w-xl mb-1.5'>I've created at least 21 projects from little experiments to more complex webpage with a lot of features, but in this section I'll show you, in my opinion, the most complete of them.</p>
+      <p className='max-w-xl mb-1.5'>If you are curious, check out my Github's profile where I usually post my recent projects.</p>
       <VideoSection sourceArray={videoSources} itemsRef={setItemsRef} />
     </InfoSection>
   )

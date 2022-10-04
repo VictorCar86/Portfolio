@@ -18,11 +18,23 @@ const Skills = () => {
 
   return (
     <InfoSection title='Skills 💻' bgColor='bg-cream-300' customId='skills'>
-        <ul className='max-w-xl ml-4 list-disc'>
-          <li className='mb-1.5'>Through out last year I've discover a huge amount of technologies in order to create different kind of projects based on their complexity such as SASS, Vue or even Bootstrap.</li>
-          <li className='mb-1.5'>So this year I decided to focus my efforts on learning this six tools, but I'm currently learning TailwindCSS and Three.js as well.</li>
-          <li className='mb-1.5'>I have been learning English since 2019, and recently I'm trying to improve with resources from Platzi.</li>
-        </ul>
+        <p className='max-w-xl mb-1.5'>
+          Through out last year I've discover a huge amount of technologies in order to create different kind of projects, so I decided to focus my efforts on learning this six tools.
+        </p>
+        <p className='max-w-xl mb-1.5'>
+          I have been learning English since 2019, and recently I'm trying to improve with resources from&nbsp;
+          <a
+            className='text-amber-600 underline'
+            aria-label='Link to Platzi home page'
+            href="https://platzi.com/"
+            target="_blank"
+            rel="noopener noreferrer">
+              Platzi
+          </a>.
+        </p>
+        <p className='max-w-xl mb-1.5'>
+          I'm currently learning TailwindCSS and Three.js as well.
+        </p>
         <h3 className='text-xl font-bold my-3'>Tools:</h3>
         <div className='relative h-auto mx-auto my-6 font-bold md:text-xl text-center'>
           <ul className='grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-4 justify-items-center items-center mt-7'>

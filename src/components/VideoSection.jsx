@@ -82,7 +82,7 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                             </button>
                         </div>
                         <div className='h-full p-3 rounded-b-xl bg-cream-200'>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi recusandae earum quae architecto doloribus, dolorem tempora dolorum natus, ullam animi deserunt! Ratione eius totam corporis iste est voluptatum, delectus quasi!</p>
+                            <p>{project.description}</p>
                         </div>
                     </section>
                 </li>

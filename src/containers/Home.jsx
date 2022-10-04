@@ -62,11 +62,11 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <div className='relative w-64 md:w-auto rounded-full z-0 backgroundMainImage'>
+            <div className='relative w-64 -md:h-64 md:w-auto rounded-full z-0 backgroundMainImage'>
                 <img
                     className={`absolute top-0 rotate-45 -z-10 scale-[1.35] -translate-y-4 cursor-pointer ${fall}`}
                     src={fallImg}
-                    alt="xd"
+                    alt="Plane image of an autumn leaf"
                     onClick={() => setFall("animate-fall")}
                 />
                 <img
