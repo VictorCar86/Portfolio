@@ -37,7 +37,7 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                     className="md:flex transition-transform ease-out even:flex-row-reverse animate__animated opacity-0"
                     ref={refElm => liRef.current[index] = refElm}
                     key={index}>
-                    <section className='group relative h-fit w-full md:w-1/2 rounded-xl hover:scale-105 transition-transform ease-out cursor-pointer z-10'>
+                    <section className='group relative h-fit w-full md:w-1/2 rounded-xl hover:scale-105 transition-transform ease-out z-10'>
                         <video
                             className='w-full -md:group-hover:rounded-b-xl rounded-xl -md:rounded-b-none border-amber-600 border-4'
                             src={project.videoSrc}

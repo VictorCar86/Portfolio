@@ -9,15 +9,16 @@ import {
 
 const Contact = () => {
 
-    const buttonStyles = "border-4 border-amber-900 rounded-full p-2 hover:scale-110 transition-transform ease-out";
-    const svgStyles = "w-12 h-12";
+    const buttonStyles = "block w-min h-min mx-auto mb-1 border-4 border-amber-900 rounded-full p-2 hover:scale-110 transition-transform ease-out";
+    const svgStyles = "w-9 h-9";
 
     return (
         <InfoSection title='Contact 📧' bgColor='bg-cream-500' customId='contact'>
-            <div className='flex justify-evenly my-5'>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit facere adipisci hic optio dolores obcaecati sed dolor unde numquam veniam eaque aliquam, iure non neque dignissimos ratione. Corporis, totam? Repellendus.</p>
+            <div className='flex justify-evenly flex-wrap max-w-2xl mt-5 mx-auto font-bold'>
                 <a
                     className={buttonStyles}
-                    aria-label="Link to write me an email! 😉"
+                    aria-label="Link to send me an email! 😉"
                     href="mailto:vmanuelcar@hotmail.com"
                 >
                     <FaRegEnvelope className={svgStyles} />
