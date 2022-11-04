@@ -10,8 +10,8 @@ const AboutMe = () => {
     <InfoSection title="About me 👋" bgColor='bg-cream-200' customId='about'>
       <div className='grid grid-cols-1 md:grid-cols-2 justify-around gap-6'>
         <div>
-          <p className='mb-1.5'>I'm a frontend developer with one year building projects of all kinds, passionate about technology and learning.</p>
-          <p className='mb-1.5'>My current knowledge was adquired by self-study reading blogs, watching videos and practicing while reading some books.</p>
+          <p className='mb-1.5'>Hi there, I'm Victor, a frontend developer with one year of experience building projects of all kinds in web technologies and infrastructure tools.</p>
+          <p className='mb-1.5'>My current knowledge was adquired by self-study reading blogs, watching videos and practicing while reading books.</p>
           <p className='mb-1.5'>The future expectations that I have being a developer are to create great experiences for users, improving people's life solving their problems with technology and create products that can be valuable for clients.</p>
           <p className='mb-1.5'>My favorite hobbies in life are to hike through nature, observe landspaces and discover new places and people along I travel around the world.</p>
           <p className='mb-1.5'>When I have free time usually create 3D models with Blender, I'm not an expert but I enjoy every moment to imagine a curious object. As well as play video games and skate through the city where I live.</p>

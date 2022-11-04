@@ -19,7 +19,7 @@ const Skills = () => {
   return (
     <InfoSection title='Skills 💻' bgColor='bg-cream-300' customId='skills'>
         <p className='max-w-xl mb-1.5'>
-          Through out last year I've discover a huge amount of technologies in order to create different kind of projects, so I decided to focus my efforts on learning this six tools.
+          Throughout last year I've discover a huge amount of technologies in order to create different kind of projects, so I decided to focus my efforts on learning this tools.
         </p>
         <p className='max-w-xl mb-1.5'>
           I have been learning English since 2019, and recently I'm trying to improve with resources from&nbsp;
@@ -33,7 +33,7 @@ const Skills = () => {
           </a>.
         </p>
         <p className='max-w-xl mb-1.5'>
-          I'm currently learning TailwindCSS and Three.js as well.
+          I'm currently learning Backend technologies as Express in order to create more complete web pages as well as create APIs REST and CRUD applications with MySQL to reach a better understanding of what means to build an entire and functional program.
         </p>
         <h3 className='text-xl font-bold my-3'>Tools:</h3>
         <div className='relative h-auto mx-auto my-6 font-bold md:text-xl text-center'>
