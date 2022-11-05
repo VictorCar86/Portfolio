@@ -1,13 +1,16 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection'
-import { SiCss3, SiHtml5, SiJavascript, SiReact, SiGit } from 'react-icons/si'
+import { SiCss3, SiHtml5, SiJavascript, SiReact, SiGit, SiSass, SiTailwindcss, SiNodedotjs } from 'react-icons/si'
 import ToolsDescription from '../components/ToolsDescription'
 import htmlImg from '../assets/images/html.webp'
 import cssImg from '../assets/images/css.webp'
 import jsImg from '../assets/images/js.webp'
 import reactImg from '../assets/images/react.webp'
+import tailwindImg from '../assets/images/tailwind.webp'
+import sassImg from '../assets/images/sass.webp'
 import gitImg from '../assets/images/git.webp'
 import webpackImg from '../assets/images/webpack.webp'
+import nodeImg from '../assets/images/node.webp'
 import WebpackIcon from '../assets/images/webpack-icon.webp'
 import UKFlagIcon from '../components/Icons/UKFlagIcon'
 import SpainIcon from '../assets/images/spain.webp'
@@ -33,7 +36,7 @@ const Skills = () => {
           </a>.
         </p>
         <p className='max-w-xl mb-1.5'>
-          I'm currently learning Backend technologies as Express in order to create more complete web pages as well as create APIs REST and CRUD applications with MySQL to reach a better understanding of what means to build an entire and functional program.
+          I'm currently learning Backend technologies in order to create more complete applications with tools like MySQL to reach a better understanding of what means to build an entire and functional program.
         </p>
         <h3 className='text-xl font-bold my-3'>Tools:</h3>
         <div className='relative h-auto mx-auto my-6 font-bold md:text-xl text-center'>
@@ -56,6 +59,14 @@ const Skills = () => {
               <SiReact className={`fill-blue-400 ${svgStyles}` }/>
             </ToolsDescription>
 
+            <ToolsDescription name='Tailwind' imgSrc={tailwindImg}>
+              <SiTailwindcss className={`fill-teal-500 ${svgStyles}` }/>
+            </ToolsDescription>
+
+            <ToolsDescription name='Sass' imgSrc={sassImg}>
+              <SiSass className={`fill-pink-500 ${svgStyles}` }/>
+            </ToolsDescription>
+
             <ToolsDescription name='Git' imgSrc={gitImg}>
               <SiGit className={`fill-orange-600 ${svgStyles}` }/>
             </ToolsDescription>
@@ -66,6 +77,10 @@ const Skills = () => {
                 src={WebpackIcon}
                 alt="Webpack icon"
               />
+            </ToolsDescription>
+
+            <ToolsDescription name='Node.js' imgSrc={nodeImg}>
+              <SiNodedotjs className={`fill-green-700 ${svgStyles}` }/>
             </ToolsDescription>
           </ul>
         </div>
