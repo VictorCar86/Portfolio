@@ -63,9 +63,9 @@ const Skills = () => {
               <SiTailwindcss className={`fill-teal-500 ${svgStyles}` }/>
             </ToolsDescription>
 
-            <ToolsDescription name='Sass' imgSrc={sassImg}>
+            {/* <ToolsDescription name='Sass' imgSrc={sassImg}>
               <SiSass className={`fill-pink-500 ${svgStyles}` }/>
-            </ToolsDescription>
+            </ToolsDescription> */}
 
             <ToolsDescription name='Git' imgSrc={gitImg}>
               <SiGit className={`fill-orange-600 ${svgStyles}` }/>
