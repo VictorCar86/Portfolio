@@ -15,20 +15,12 @@ const Home = () => {
 
     return (
         <section className='h-screen w-full bg-cream-100'>
-            <div className='h-full w-full flex flex-col-reverse px-[7%] justify-center items-center gap-6 sm:gap-10 md:flex-row bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
+            <div className='h-screen w-full flex flex-col-reverse px-[7%] justify-center items-center gap-6 sm:gap-10 md:flex-row bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
                 <div>
                     <h1 className='text-4xl sm:text-5xl font-bold text-center md:text-left'>Victor Manuel Carreño Peña</h1>
                     <p className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>💻 Frontend Developer</p>
                     <p className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>⚛ React Developer</p>
                     <div className='flex gap-5 w-max mx-auto md:mx-0'>
-                        {/* <p>
-                            <FaRegEnvelope className='inline-block w-6 h-6 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1' />
-                            vmanuelcar@hotmail.com
-                        </p>
-                        <address>
-                            <FaMapMarkerAlt className='inline-block w-6 h-6 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1' />
-                            Bogotá D.C, Colombia
-                        </address> */}
                         <a
                             className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-normal'
                             aria-label="Link to Twitter's profile"

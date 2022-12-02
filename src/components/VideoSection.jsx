@@ -31,25 +31,25 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
     useEffect(() => itemsRef(liRef.current), [liRef])
 
     return (
-        <ul className='grid grid-cols-1 mt-6 gap-8'>
+        <ul className='grid grid-cols-1 md:grid-cols-2 mt-6 gap-4'>
             {sourceArray.map((project, index) => (
                 <li
-                    className="md:flex transition-transform ease-out even:flex-row-reverse animate__animated opacity-0"
+                    className="transition-transform ease-out animate__animated opacity-0"
                     ref={refElm => liRef.current[index] = refElm}
                     key={index}>
-                    <section className='group relative h-fit w-full md:w-1/2 rounded-xl hover:scale-105 transition-transform ease-out z-10'>
+                    <section className='group relative h-fit w-full rounded-xl rounded-b-none hover:scale-105 transition-transform ease-out z-10'>
                         <video
-                            className='w-full -md:group-hover:rounded-b-xl rounded-xl -md:rounded-b-none border-amber-600 border-4'
+                            className='w-full rounded-xl rounded-b-none group-hover:rounded-b-xl border-amber-600 border-4'
                             src={project.videoSrc}
                             ref={refElm => videoRef.current[index] = refElm}
                             onMouseEnter={() => startPreview(index)}
                             onMouseLeave={() => stopPreview(index)}
                         />
-                        <div className='group-hover:invisible absolute top-0 w-full h-full rounded-xl -md:rounded-b-none bg-black/30'>
+                        <div className='group-hover:invisible absolute top-0 w-full h-full rounded-xl rounded-b-none bg-black/30'>
                             <AiFillPlayCircle className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-1/4 fill-amber-100' />
                         </div>
                     </section>
-                    <section className='flow-root flex-col-reverse h-max w-full md:w-1/2 -md:rounded-b-xl md:rounded-xl bg-cream-600 text-center -z-10 sm:z-0'>
+                    <section className='flow-root flex-col-reverse h-max w-full rounded-b-xl bg-cream-600 text-center overflow-hidden -z-10 sm:z-0'>
                         <p className='mt-4 mb-5 text-amber-100 text-xl sm:text-2xl font-bold'>{project.title}</p>
                         <div className='pb-3'>
                             <button
@@ -81,9 +81,9 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                                 </a>
                             </button>
                         </div>
-                        <div className='h-full p-3 rounded-b-xl bg-cream-200'>
+                        {/* <div className='h-full p-3 rounded-b-xl bg-cream-200'>
                             <p>{project.description}</p>
-                        </div>
+                        </div> */}
                     </section>
                 </li>
             ))}

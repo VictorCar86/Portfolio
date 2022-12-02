@@ -40,7 +40,7 @@ const Skills = () => {
         </p>
         <h3 className='text-xl font-bold my-3'>Tools:</h3>
         <div className='relative h-auto mx-auto my-6 font-bold md:text-xl text-center'>
-          <ul className='grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-3 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-4 justify-items-center items-center mt-7'>
+          <ul className='grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-4 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-1.5 justify-items-center items-center mt-7'>
             <ToolsDescription name='HTML' imgSrc={htmlImg}>
               <SiHtml5 className={`fill-orange-500 ${svgStyles}` }/>
             </ToolsDescription>
