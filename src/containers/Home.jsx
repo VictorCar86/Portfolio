@@ -18,9 +18,9 @@ const Home = () => {
             <div className='h-screen w-full flex flex-col-reverse px-[7%] justify-center items-center gap-6 sm:gap-10 md:flex-row bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
                 <div>
                     <h1 className='text-4xl sm:text-5xl font-bold text-center md:text-left'>Victor Manuel Carreño Peña</h1>
-                    <p className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>💻 Frontend Developer</p>
-                    <p className='text-2xl sm:text-3xl my-4 font-bold text-center md:text-left'>⚛ React Developer</p>
-                    <div className='flex gap-5 w-max mx-auto md:mx-0'>
+                    <p className='text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left'>💻 Frontend Developer</p>
+                    <p className='text-2xl sm:text-3xl mb-3 md:mb-4 font-bold text-center md:text-left'>⚛ React Developer</p>
+                    <div className='flex gap-5 -sm:grid -sm:gap-1 w-max mx-auto md:mx-0'>
                         <a
                             className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-normal'
                             aria-label="Link to Twitter's profile"
@@ -29,7 +29,7 @@ const Home = () => {
                             rel="noopener noreferrer"
                         >
                             <FaTwitter className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 group-hover:scale-110 transition-transform ease-out' />
-                            <span>Twitter</span>
+                            <span className='align-middle'>Twitter</span>
                         </a>
                         <a
                             className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-normal'
@@ -39,7 +39,7 @@ const Home = () => {
                             rel="noopener noreferrer"
                         >
                             <FaGithub className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 group-hover:scale-110 transition-transform ease-out' />
-                            <span>Github</span>
+                            <span className='align-middle'>Github</span>
                         </a>
                         <a
                             className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-normal'
@@ -49,7 +49,7 @@ const Home = () => {
                             rel="noopener noreferrer"
                         >
                             <FaLinkedin className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 group-hover:scale-110 transition-transform ease-out' />
-                            <span>LinkedIn</span>
+                            <span className='align-middle'>LinkedIn</span>
                         </a>
                     </div>
                     <a className='md:inline-block table my-4 mx-auto' href={cvPdf} download>

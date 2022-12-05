@@ -50,7 +50,7 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                         </div>
                     </section>
                     <section className='flow-root flex-col-reverse h-max w-full rounded-b-xl bg-cream-600 text-center overflow-hidden -z-10 sm:z-0'>
-                        <p className='mt-4 mb-5 text-amber-100 text-xl sm:text-2xl font-bold'>{project.title}</p>
+                        <p className='mt-4 mb-5 mx-2.5 text-amber-100 text-xl sm:text-2xl md:responsiveFontSize font-bold'>{project.title}</p>
                         <div className='pb-3'>
                             <button
                                 className='bg-amber-100 w-9 h-9 mx-4 border-amber-600 border-2 rounded-full hover:scale-110 transition-transform ease-out'
