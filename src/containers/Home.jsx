@@ -9,18 +9,25 @@ import {
 import profileImg from "../assets/images/profile.webp"
 import fallImg from "../assets/images/fall.webp"
 import cvPdf from '../assets/files/CV - Victor Carreño.pdf'
+import currentLanguage from '../utils/currentLanguage'
 
 const Home = () => {
-    const [fall, setFall] = useState("")
+    const [fall, setFall] = useState("");
 
     return (
         <section className='h-screen w-full bg-cream-100'>
             <div className='h-screen w-full flex flex-col-reverse px-[7%] justify-center items-center gap-6 sm:gap-10 md:flex-row bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
                 <div>
                     <h1 className='text-4xl sm:text-5xl font-bold text-center md:text-left'>Victor Manuel Carreño Peña</h1>
-                    <p className='text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left'>💻 Frontend Developer</p>
-                    <p className='text-2xl sm:text-3xl mb-3 md:mb-4 font-bold text-center md:text-left'>⚛ React Developer</p>
-                    <div className='flex gap-5 -sm:grid -sm:gap-1 w-max mx-auto md:mx-0'>
+                    <p className='text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left'>
+                        {currentLanguage.includes('en-') && '💻 Frontend Developer'}
+                        {currentLanguage.includes('es-') && '💻 Desarrollador Frontend'}
+                    </p>
+                    <p className='text-2xl sm:text-3xl mb-3 md:mb-4 font-bold text-center md:text-left'>
+                        {currentLanguage.includes('en-') && '⚛ React Developer'}
+                        {currentLanguage.includes('es-') && '⚛ Desarrollador React'}
+                    </p>
+                    <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0'>
                         <a
                             className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-normal'
                             aria-label="Link to Twitter's profile"
@@ -54,7 +61,8 @@ const Home = () => {
                     </div>
                     <a className='md:inline-block table my-4 mx-auto' href={cvPdf} download>
                         <button className='text-amber-900 font-bold bg-amber-100 border-2 border-amber-600 rounded-2xl px-3 py-1 shadow-md active:scale-105 hover:scale-105 hover:shadow-lg transition-transform ease-out' type='button'>
-                            Download CV
+                            {currentLanguage.includes('en-') && 'Download CV'}
+                            {currentLanguage.includes('es-') && 'Descargar CV'}
                         </button>
                     </a>
                 </div>

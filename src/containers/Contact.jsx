@@ -6,16 +6,35 @@ import {
     FaGithub,
     FaLinkedin
 } from 'react-icons/fa'
+import currentLanguage from '../utils/currentLanguage';
+import TextIncludes from '../utils/TextIncludes';
 
 const Contact = () => {
 
     const buttonStyles = "block w-min h-min mx-auto mb-1 border-4 border-amber-900 rounded-full p-2 hover:scale-110 transition-transform ease-out";
     const svgStyles = "w-9 h-9";
 
+    const titleLanguage = () => {
+        if (currentLanguage.includes('en-')){
+            return 'Contact 📡'
+        }
+        if (currentLanguage.includes('es-')){
+            return 'Contacto 📡'
+        }
+    }
+
     return (
-        <InfoSection title='Contact 📡' bgColor='bg-cream-500' customId='contact'>
+        <InfoSection title={titleLanguage()} bgColor='bg-cream-500' customId='contact'>
             <p className='max-w-xl'>
-                Send me an email to say g'day, let me know your ideas through any social media or ask me if we can build something together. 🥳
+
+                <TextIncludes compare='en-'>
+                    Let me know your ideas through any social media or ask me if we can build something together. 🥳
+                </TextIncludes>
+
+                <TextIncludes compare='es-'>
+                    Déjame saber tus ideas a través de cualquier red social o pregúntame si podemos construir algo en compañía. 🥳
+                </TextIncludes>
+
             </p>
             <div className='flex justify-evenly flex-wrap max-w-2xl mt-5 mx-auto font-bold'>
                 <a
