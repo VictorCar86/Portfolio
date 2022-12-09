@@ -27,9 +27,9 @@ const Home = () => {
                         {currentLanguage.includes('en-') && '⚛ React Developer'}
                         {currentLanguage.includes('es-') && '⚛ Desarrollador React'}
                     </p>
-                    <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0'>
+                    <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0 font-medium'>
                         <a
-                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-normal'
+                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-[0.0115em] '
                             aria-label="Link to Twitter's profile"
                             href="https://twitter.com/victorcar86_"
                             target="_blank"
@@ -39,7 +39,7 @@ const Home = () => {
                             <span className='align-middle'>Twitter</span>
                         </a>
                         <a
-                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-normal'
+                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-wide'
                             aria-label="Link to Github's profile"
                             href="https://github.com/VictorCar86"
                             target="_blank"
@@ -49,7 +49,7 @@ const Home = () => {
                             <span className='align-middle'>Github</span>
                         </a>
                         <a
-                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-normal'
+                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-wide'
                             aria-label="Link to Linkedin's profile"
                             href="https://www.linkedin.com/in/victorcar86/"
                             target="_blank"
