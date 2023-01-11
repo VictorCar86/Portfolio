@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 import {
-    FaRegEnvelope,
-    FaMapMarkerAlt,
     FaTwitter,
     FaGithub,
     FaLinkedin
 } from 'react-icons/fa'
+import { SiReact } from 'react-icons/si'
 import profileImg from "../assets/images/profile.webp"
 import fallImg from "../assets/images/fall.webp"
 import cvPdf from '../assets/files/CV - Victor Carreño.pdf'
@@ -20,12 +19,22 @@ const Home = () => {
                 <div>
                     <h1 className='text-4xl sm:text-5xl font-bold text-center md:text-left'>Victor Manuel Carreño Peña</h1>
                     <p className='text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left'>
-                        {currentLanguage.includes('en-') && '💻 Frontend Developer'}
-                        {currentLanguage.includes('es-') && '💻 Desarrollador Frontend'}
+                        {currentLanguage.includes('en') && '💻 Frontend Developer'}
+                        {currentLanguage.includes('es') && '💻 Desarrollador Frontend'}
                     </p>
                     <p className='text-2xl sm:text-3xl mb-3 md:mb-4 font-bold text-center md:text-left'>
-                        {currentLanguage.includes('en-') && '⚛ React Developer'}
-                        {currentLanguage.includes('es-') && '⚛ Desarrollador React'}
+                        {currentLanguage.includes('en') && (
+                          <>
+                            <SiReact className='inline-block align-bottom p-0.5 rounded-full fill-blue-400 bg-blue-900'/>
+                            <span> React Developer</span>
+                          </>
+                        )}
+                        {currentLanguage.includes('es') && (
+                          <>
+                            <SiReact className='fill-blue-400'/>
+                            <span>Desarrollador React</span>
+                          </>
+                        )}
                     </p>
                     <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0 font-medium'>
                         <a
@@ -61,8 +70,8 @@ const Home = () => {
                     </div>
                     <a className='md:inline-block table my-4 mx-auto' href={cvPdf} download>
                         <button className='text-amber-900 font-bold bg-amber-100 border-2 border-amber-600 rounded-2xl px-3 py-1 shadow-md active:scale-105 hover:scale-105 hover:shadow-lg transition-transform ease-out' type='button'>
-                            {currentLanguage.includes('en-') && 'Download CV'}
-                            {currentLanguage.includes('es-') && 'Descargar CV'}
+                            {currentLanguage.includes('en') && 'Download CV'}
+                            {currentLanguage.includes('es') && 'Descargar CV'}
                         </button>
                     </a>
                 </div>

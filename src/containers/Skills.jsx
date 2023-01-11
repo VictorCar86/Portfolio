@@ -22,10 +22,10 @@ const Skills = () => {
   const svgStyles = "h-min w-14 lg:w-20 mx-auto animate__animated hover:animate__rubberBand";
 
   const titleLanguage = () => {
-    if (currentLanguage.includes('en-')){
+    if (currentLanguage.includes('en')){
         return 'Skills 💻'
     }
-    if (currentLanguage.includes('es-')){
+    if (currentLanguage.includes('es')){
         return 'Habilidades 💻'
     }
   }
@@ -34,33 +34,33 @@ const Skills = () => {
     <InfoSection title={titleLanguage()} bgColor='bg-cream-300' customId='skills'>
       <p className='max-w-xl mb-1.5'>
 
-        <TextIncludes compare="en-">
+        <TextIncludes compare="en">
           The skills, technologies and tools I use to create products:
         </TextIncludes>
 
-        <TextIncludes compare="es-">
+        <TextIncludes compare="es">
           Las habilidades, tecnologías y herramientas que uso para crear productos:
         </TextIncludes>
 
       </p>
       <p className='max-w-xl mb-1.5'>
 
-        <TextIncludes compare="en-">
+        <TextIncludes compare="en">
           I'm also currently learning about Backend technologies and relational databases.
         </TextIncludes>
 
-        <TextIncludes compare="es-">
+        <TextIncludes compare="es">
           Actualmente también estoy aprendiendo sobre tecnologías Backend y Bases de Datos Relacionales.
         </TextIncludes>
 
       </p>
       <h3 className='text-xl font-bold my-3'>
 
-        <TextIncludes compare="en-">
+        <TextIncludes compare="en">
           Tools:
         </TextIncludes>
 
-        <TextIncludes compare="es-">
+        <TextIncludes compare="es">
           Herramientas:
         </TextIncludes>
 
@@ -112,11 +112,11 @@ const Skills = () => {
       </div>
       <h3 className='text-xl font-bold my-3'>
 
-        <TextIncludes compare="en-">
+        <TextIncludes compare="en">
           Languages:
         </TextIncludes>
 
-        <TextIncludes compare="es-">
+        <TextIncludes compare="es">
           Lenguajes:
         </TextIncludes>
 
@@ -129,22 +129,22 @@ const Skills = () => {
             </div>
             <p className='my-2'>
 
-              <TextIncludes compare="en-">
+              <TextIncludes compare="en">
                 English
               </TextIncludes>
 
-              <TextIncludes compare="es-">
+              <TextIncludes compare="es">
                 Inglés
               </TextIncludes>
 
             </p>
             <p className='italic text-amber-700'>
 
-              <TextIncludes compare="en-">
+              <TextIncludes compare="en">
                 Intermediate
               </TextIncludes>
 
-              <TextIncludes compare="es-">
+              <TextIncludes compare="es">
                 Intermedio
               </TextIncludes>
 
@@ -156,22 +156,22 @@ const Skills = () => {
             </div>
             <p className='my-2'>
 
-              <TextIncludes compare="en-">
+              <TextIncludes compare="en">
                 Spanish
               </TextIncludes>
 
-              <TextIncludes compare="es-">
+              <TextIncludes compare="es">
                 Español
               </TextIncludes>
 
             </p>
             <p className='italic text-amber-700'>
 
-              <TextIncludes compare="en-">
+              <TextIncludes compare="en">
                 Native
               </TextIncludes>
 
-              <TextIncludes compare="es-">
+              <TextIncludes compare="es">
                 Nativo
               </TextIncludes>
 

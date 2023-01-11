@@ -15,10 +15,10 @@ const Contact = () => {
     const svgStyles = "w-9 h-9";
 
     const titleLanguage = () => {
-        if (currentLanguage.includes('en-')){
+        if (currentLanguage.includes('en')){
             return 'Contact 📡'
         }
-        if (currentLanguage.includes('es-')){
+        if (currentLanguage.includes('es')){
             return 'Contacto 📡'
         }
     }
@@ -27,11 +27,11 @@ const Contact = () => {
         <InfoSection title={titleLanguage()} bgColor='bg-cream-500' customId='contact'>
             <p className='max-w-xl'>
 
-                <TextIncludes compare='en-'>
+                <TextIncludes compare='en'>
                     Let me know your ideas through any social media or ask me if we can build something together. 🥳
                 </TextIncludes>
 
-                <TextIncludes compare='es-'>
+                <TextIncludes compare='es'>
                     Déjame saber tus ideas a través de cualquier red social o pregúntame si podemos construir algo en compañía. 🥳
                 </TextIncludes>
 

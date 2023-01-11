@@ -3,9 +3,15 @@ import pokeapiVideo from '../assets/videos/pokeapi.mp4';
 import weatherVideo from '../assets/videos/weather.mp4';
 import timerVideo from '../assets/videos/timer.mp4';
 import todoVideo from '../assets/videos/todo.mp4';
-import wordleVideo from '../assets/videos/wordle.mp4';
+// import wordleVideo from '../assets/videos/wordle.mp4';
 
 const videoSources = [
+    {
+        title: "Alifake mobile e-commerce",
+        videoSrc: pokeapiVideo,
+        github: "https://github.com/VictorCar86/AliFake-E-commerce-webpage",
+        page: "https://alifake.netlify.app/",
+    },
     {
         title: "La Regina - Italian Restaurant",
         videoSrc: reginaVideo,
@@ -36,12 +42,12 @@ const videoSources = [
         github: "https://github.com/VictorCar86/ToDo-React-App",
         page: "https://react-app-to-do.netlify.app/",
     },
-    {
-        title: "WordleJS",
-        videoSrc: wordleVideo,
-        github: "https://github.com/VictorCar86/WordleJS",
-        page: "https://victorcar86.github.io/WordleJS/",
-    },
+    // {
+    //     title: "WordleJS",
+    //     videoSrc: wordleVideo,
+    //     github: "https://github.com/VictorCar86/WordleJS",
+    //     page: "https://victorcar86.github.io/WordleJS/",
+    // },
 ];
 
 export default videoSources

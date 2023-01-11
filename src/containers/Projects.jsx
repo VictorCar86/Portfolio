@@ -12,10 +12,10 @@ const Projects = () => {
   itemsRef.forEach(elm => useIntersection(["animate__bounceIn"]).observe(elm))
 
   const titleLanguage = () => {
-    if (currentLanguage.includes('en-')){
+    if (currentLanguage.includes('en')){
         return 'Projects 📚'
     }
-    if (currentLanguage.includes('es-')){
+    if (currentLanguage.includes('es')){
         return 'Projectos 📚'
     }
 }
@@ -28,7 +28,7 @@ const Projects = () => {
           I've created a lot of projects from little experiments to more complex webpages. If you are curious, check out my Github's profile where I post my most recent projects.
         </TextIncludes>
 
-        <TextIncludes compare='es-'>
+        <TextIncludes compare='es'>
           He creado muchos proyectos, desde pequeños experimentos hasta páginas web más complejas. Si desea puede consultar mi perfil de Github donde publico mis proyectos más recientes.
         </TextIncludes>
 
