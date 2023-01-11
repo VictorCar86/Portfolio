@@ -28,7 +28,7 @@ const videoSources = [
         title: "Wheater-React-App",
         videoSrc: weatherVideo,
         github: "https://github.com/VictorCar86/Weather-React-App",
-        page: "https://weather-app-withreact.herokuapp.com/",
+        page: "https://weather-to-react.netlify.app/",
     },
     {
         title: "Ultimate Timer",
