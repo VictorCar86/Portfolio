@@ -1,11 +1,11 @@
-import React from 'react'
-import InfoSection from '../components/InfoSection'
-import mushroom3dImg from '../assets/images/mushroom-3d.webp'
-import landscapeImg from '../assets/images/landscape.webp'
-import skull3dImg from '../assets/images/skull-3d.webp'
-import flowerImg from '../assets/images/flower.webp'
-import currentLanguage from '../utils/currentLanguage'
-import TextIncludes from '../utils/TextIncludes'
+import React from 'react';
+import InfoSection from '../components/InfoSection';
+import mushroom3dImg from '../assets/images/mushroom-3d.webp';
+import landscapeImg from '../assets/images/landscape.webp';
+import skull3dImg from '../assets/images/skull-3d.webp';
+import flowerImg from '../assets/images/flower.webp';
+import currentLanguage from '../utils/currentLanguage';
+import TextIncludes from '../utils/TextIncludes';
 
 const AboutMe = () => {
 
@@ -24,15 +24,15 @@ const AboutMe = () => {
         <div>
 
           <TextIncludes compare='en'>
-            <p className='mb-1.5'>Hi there, I'm Victor, a frontend developer with one year of experience building projects of all kinds in web technologies and infrastructure tools. As well as being able to speak intermediate English.</p>
-            <p className='mb-1.5'>My favorite hobbies in life are to hike through nature and observe landscapes, discover new people and places, travel and enjoy around the world</p>
-            <p className='mb-1.5'>When I have free time usually create 3D models with Blender, I'm not an expert but I enjoy every moment to imagine an interesting object. As well as play video games and skate through the city where I live.</p>
+            <p className='mb-1.5'>Hi, I'm Victor, a frontend developer with a year of experience in web technologies. Continuously enhancing my skills through self-study and online resources such as blogs, videos, and books.</p>
+            <p className='mb-1.5'>Additionally, I'm proficient in English with a intermediate B2 level and actively working to improve it further.</p>
+            <p className='mb-1.5'>My favorite hobbies in life are to hike through nature and observe landscapes, discover new people and places, as well as play video games and skate through the city where I live.</p>
           </TextIncludes>
 
           <TextIncludes compare='es'>
-            <p className='mb-1.5'>Hola, soy Victor, desarrollador frontend con un año de experiencia construyendo proyectos de todo tipo en tecnologías web y herramientas de infraestructura. Además de poder hablar inglés intermedio.</p>
-            <p className='mb-1.5'>Mis pasatiempos favoritos en la vida son caminar por la naturaleza y observar paisajes, descubrir nuevas personas y lugares, viajar y disfrutar alrededor del mundo.</p>
-            <p className='mb-1.5'>Cuando tengo tiempo libre suelo crear modelos 3D con Blender, no soy un experto pero disfruto cada momento imaginando un objeto interesante. Además de jugar videojuegos y patinar por la ciudad donde vivo.</p>
+            <p className='mb-1.5'>Hola, soy Victor, un desarrollador frontend con un año de experiencia en tecnologías web. Mejorando continuamente mis habilidades a través del autoaprendizaje y recursos en línea como blogs, videos y libros.</p>
+            <p className='mb-1.5'>Además, soy competente en inglés con un nivel B2 intermedio y estoy trabajando activamente para mejorarlo aún más.</p>
+            <p className='mb-1.5'>Mis pasatiempos favoritos en la vida son caminar por la naturaleza y observar paisajes, descubrir nuevas personas y lugares, así como jugar videojuegos y patinar por la ciudad donde vivo.</p>
           </TextIncludes>
 
         </div>
@@ -47,4 +47,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default AboutMe;

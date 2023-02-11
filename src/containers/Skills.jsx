@@ -1,17 +1,18 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection'
-import { SiCss3, SiHtml5, SiJavascript, SiReact, SiGit, /*SiSass,*/ SiTailwindcss, SiNodedotjs } from 'react-icons/si'
+import { SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux, /*SiGit,*/ /*SiSass,*/ SiTailwindcss, SiNodedotjs } from 'react-icons/si'
+import WebpackIcon from '../components/Icons/WebpackIcon'
 import ToolsDescription from '../components/ToolsDescription'
 import htmlImg from '../assets/images/html.webp'
 import cssImg from '../assets/images/css.webp'
 import jsImg from '../assets/images/js.webp'
 import reactImg from '../assets/images/react.webp'
+import reduxImg from '../assets/images/redux.webp'
 import tailwindImg from '../assets/images/tailwind.webp'
 // import sassImg from '../assets/images/sass.webp'
-import gitImg from '../assets/images/git.webp'
+// import gitImg from '../assets/images/git.webp'
 import webpackImg from '../assets/images/webpack.webp'
 import nodeImg from '../assets/images/node.webp'
-import WebpackIcon from '../assets/images/webpack-icon.webp'
 import UKFlagIcon from '../components/Icons/UKFlagIcon'
 import SpainIcon from '../assets/images/spain.webp'
 import currentLanguage from '../utils/currentLanguage'
@@ -19,7 +20,7 @@ import TextIncludes from '../utils/TextIncludes'
 
 const Skills = () => {
 
-  const svgStyles = "h-min w-14 lg:w-20 mx-auto animate__animated hover:animate__rubberBand";
+  const svgStyles = "h-min w-14 lg:w-20 mx-auto animate__animated group-hover:animate__rubberBand";
 
   const titleLanguage = () => {
     if (currentLanguage.includes('en')){
@@ -54,7 +55,7 @@ const Skills = () => {
         </TextIncludes>
 
       </p>
-      <h3 className='text-xl font-bold my-3'>
+      <p className='text-xl font-bold my-3'>
 
         <TextIncludes compare="en">
           Tools:
@@ -64,9 +65,9 @@ const Skills = () => {
           Herramientas:
         </TextIncludes>
 
-      </h3>
-      <div className='relative h-auto mx-auto my-6 font-bold md:text-xl text-center'>
-        <ul className='grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-4 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-1.5 justify-items-center items-center mt-7'>
+      </p>
+      <div className='relative h-auto mx-auto my-6 font-bold md:text-lg text-center'>
+        <ul className='grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-4 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-2 justify-items-center items-center mt-7'>
           <ToolsDescription name='HTML' imgSrc={htmlImg}>
             <SiHtml5 className={`fill-orange-500 ${svgStyles}` }/>
           </ToolsDescription>
@@ -85,6 +86,10 @@ const Skills = () => {
             <SiReact className={`fill-blue-400 ${svgStyles}` }/>
           </ToolsDescription>
 
+          <ToolsDescription name='Redux' imgSrc={reduxImg}>
+            <SiRedux className={`fill-purple-700 ${svgStyles}` }/>
+          </ToolsDescription>
+
           <ToolsDescription name='Tailwind' imgSrc={tailwindImg}>
             <SiTailwindcss className={`fill-teal-500 ${svgStyles}` }/>
           </ToolsDescription>
@@ -93,16 +98,17 @@ const Skills = () => {
             <SiSass className={`fill-pink-500 ${svgStyles}` }/>
           </ToolsDescription> */}
 
-          <ToolsDescription name='Git' imgSrc={gitImg}>
+          {/* <ToolsDescription name='Git' imgSrc={gitImg}>
             <SiGit className={`fill-orange-600 ${svgStyles}` }/>
-          </ToolsDescription>
+          </ToolsDescription> */}
 
           <ToolsDescription name='Webpack' imgSrc={webpackImg}>
-            <img
+            <WebpackIcon className={svgStyles} />
+            {/* <img
               className={`object-cover ${svgStyles}`}
               src={WebpackIcon}
               alt="Webpack icon"
-            />
+            /> */}
           </ToolsDescription>
 
           <ToolsDescription name='Node.js' imgSrc={nodeImg}>
@@ -110,7 +116,7 @@ const Skills = () => {
           </ToolsDescription>
         </ul>
       </div>
-      <h3 className='text-xl font-bold my-3'>
+      <p className='text-xl font-bold my-3'>
 
         <TextIncludes compare="en">
           Languages:
@@ -120,7 +126,7 @@ const Skills = () => {
           Lenguajes:
         </TextIncludes>
 
-      </h3>
+      </p>
       <div className='my-5 font-bold'>
         <ul className='flex justify-evenly'>
           <li className='w-24 text-center'>

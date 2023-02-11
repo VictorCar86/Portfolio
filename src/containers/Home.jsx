@@ -14,26 +14,23 @@ const Home = () => {
     const [fall, setFall] = useState("");
 
     return (
-        <section className='h-screen w-full bg-cream-100'>
-            <div className='h-screen w-full flex flex-col-reverse px-[7%] justify-center items-center gap-6 sm:gap-10 md:flex-row bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
+        <section className='min-h-[640px] h-screen w-full bg-cream-100'>
+            <div className='min-h-[640px] h-screen w-full flex flex-col-reverse px-[7%] justify-center items-center gap-6 sm:gap-10 md:flex-row bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
                 <div>
-                    <h1 className='text-4xl sm:text-5xl font-bold text-center md:text-left'>Victor Manuel Carreño Peña</h1>
+                    <h1 className='max-w-xs text-center font-bold text-[38px] leading-10 sm:max-w-none sm:text-[40px] md:text-5xl md:text-left'>Victor Manuel Carreño Peña</h1>
                     <p className='text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left'>
                         {currentLanguage.includes('en') && '💻 Frontend Developer'}
                         {currentLanguage.includes('es') && '💻 Desarrollador Frontend'}
                     </p>
-                    <p className='text-2xl sm:text-3xl mb-3 md:mb-4 font-bold text-center md:text-left'>
+                    <p className='flex items-center gap-2 h-max w-max mx-auto text-2xl text-center font-bold md:mx-0 sm:text-3xl mb-3 md:mb-4 md:text-left'>
+
+                        <SiReact className='inline-block align-bottom p-0.5 rounded-full fill-blue-400 bg-blue-900'/>
+
                         {currentLanguage.includes('en') && (
-                          <>
-                            <SiReact className='inline-block align-bottom p-0.5 rounded-full fill-blue-400 bg-blue-900'/>
-                            <span> React Developer</span>
-                          </>
+                            <span>React Developer</span>
                         )}
                         {currentLanguage.includes('es') && (
-                          <>
-                            <SiReact className='fill-blue-400'/>
                             <span>Desarrollador React</span>
-                          </>
                         )}
                     </p>
                     <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0 font-medium'>

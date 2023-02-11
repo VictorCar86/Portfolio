@@ -34,7 +34,7 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
         <ul className='grid grid-cols-1 md:grid-cols-2 mt-6 gap-4'>
             {sourceArray.map((project, index) => (
                 <li
-                    className="transition-transform ease-out animate__animated opacity-0"
+                    className="rounded-xl transition-transform ease-out animate__animated opacity-0 shadow-[1px_2px_6px_#868686]"
                     ref={refElm => liRef.current[index] = refElm}
                     key={index}>
                     <section className='group relative h-fit w-full rounded-xl rounded-b-none hover:scale-105 transition-transform ease-out z-10'>
@@ -52,34 +52,39 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                     <section className='flow-root flex-col-reverse h-max w-full rounded-b-xl bg-cream-600 text-center overflow-hidden -z-10 sm:z-0'>
                         <p className='mt-4 mb-5 mx-2.5 text-amber-100 text-xl sm:text-2xl md:responsiveFontSize font-bold'>{project.title}</p>
                         <div className='pb-3'>
-                            <button
-                                className='bg-amber-100 w-9 h-9 mx-4 border-amber-600 border-2 rounded-full hover:scale-110 transition-transform ease-out'
-                                type='button'
-                                title={`github repository of ${project.title}`}>
-                                <a
-                                    className='inline-block w-full h-full p-1.5'
-                                    aria-label={`Github repository of ${project.title}`}
-                                    href={project.github}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                            <a
+                                className='inline-flex items-center gap-1.5 mx-4 font-medium hover:scale-110 transition-transform ease-out'
+                                aria-label={`Github repository of ${project.title}`}
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button
+                                    className='inline-block w-9 h-9 p-1.5 border-2 border-amber-600 rounded-full bg-amber-100'
+                                    title={`Github repository of ${project.title}`}
+                                    type='button'
                                 >
                                     <FiGithub className='svg'/>
-                                </a>
-                            </button>
-                            <button
-                                className='bg-amber-100 w-9 h-9 mx-4 border-amber-600 border-2 rounded-full hover:scale-110 transition-transform ease-out'
-                                type='button'
-                                title={`online page of ${project.title}`}>
-                                <a
-                                    className='inline-block w-full h-full p-1.5'
-                                    aria-label={`Online page of ${project.title}`}
-                                    href={project.page}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
+                                </button>
+                                <span className='text-amber-100'>Source Code</span>
+                            </a>
+
+                            <a
+                                className='inline-flex items-center gap-1.5 mx-4 font-medium hover:scale-110 transition-transform ease-out'
+                                aria-label={`Online page of ${project.title}`}
+                                href={project.page}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <button
+                                    className='inline-block w-9 h-9 p-1.5 border-2 border-amber-600 rounded-full bg-amber-100'
+                                    title={`Online page of ${project.title}`}
+                                    type='button'
                                 >
                                     <FiExternalLink className='svg'/>
-                                </a>
-                            </button>
+                                </button>
+                                <span className='text-amber-100'>See Live</span>
+                            </a>
                         </div>
                         {/* <div className='h-full p-3 rounded-b-xl bg-cream-200'>
                             <p>{project.description}</p>

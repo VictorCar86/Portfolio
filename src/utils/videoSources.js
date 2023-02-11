@@ -7,7 +7,7 @@ import todoVideo from '../assets/videos/todo.mp4';
 
 const videoSources = [
     {
-        title: "Alifake mobile e-commerce",
+        title: "Alifake - Mobile e-commerce",
         videoSrc: pokeapiVideo,
         github: "https://github.com/VictorCar86/AliFake-E-commerce-webpage",
         page: "https://alifake.netlify.app/",

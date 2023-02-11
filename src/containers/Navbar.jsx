@@ -96,7 +96,7 @@ const Navbar = () => {
             <button
                 className='md:hidden w-9 h-9 absolute right-5 top-2.5 fill-amber-100 animate__animated active:animate__heartBeat'
                 onClick={toggleNavbar}
-                name='Navigation menu'
+                aria-label='Navigation menu'
                 type='button'>
                 {expand.button ?
                     <ImCross className='w-[80%] h-full mx-auto fill-amber-100' />
