@@ -7,7 +7,8 @@ import {
 import { SiReact } from 'react-icons/si'
 import profileImg from "../assets/images/profile.webp"
 import fallImg from "../assets/images/fall.webp"
-import cvPdf from '../assets/files/CV - Victor Carreño.pdf'
+import englishCvPdf from '../assets/files/Victor Carreno - Frontend CV - English.pdf'
+import spanishCvPdf from '../assets/files/Victor Carreno - Frontend CV - Espanol.pdf'
 import currentLanguage from '../utils/currentLanguage'
 
 const Home = () => {
@@ -15,9 +16,9 @@ const Home = () => {
 
     return (
         <section className='min-h-[640px] h-screen w-full bg-cream-100'>
-            <div className='min-h-[640px] h-screen w-full flex flex-col-reverse px-[7%] justify-center items-center gap-6 sm:gap-10 md:flex-row bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
+            <div className='min-h-[640px] h-screen w-full flex flex-col-reverse justify-center items-center gap-6 sm:gap-10 md:gap-[8%] xl:gap-10 md:flex-row px-[7%] bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
                 <div>
-                    <h1 className='max-w-xs text-center font-bold text-[38px] leading-10 sm:max-w-none sm:text-[40px] md:text-5xl md:text-left'>Victor Manuel Carreño Peña</h1>
+                    <h1 className='max-w-xs text-center font-bold text-[38px] leading-10 xl:max-w-none md:max-w-sm md:text-5xl md:text-left sm:max-w-none sm:text-[40px]'>Victor Manuel Carreño Peña</h1>
                     <p className='text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left'>
                         {currentLanguage.includes('en') && '💻 Frontend Developer'}
                         {currentLanguage.includes('es') && '💻 Desarrollador Frontend'}
@@ -65,7 +66,7 @@ const Home = () => {
                             <span className='align-middle'>LinkedIn</span>
                         </a>
                     </div>
-                    <a className='md:inline-block table my-4 mx-auto' href={cvPdf} download>
+                    <a className='md:inline-block table my-4 mx-auto' href={currentLanguage.includes('en') ? englishCvPdf : spanishCvPdf} download>
                         <button className='text-amber-900 font-bold bg-amber-100 border-2 border-amber-600 rounded-2xl px-3 py-1 shadow-md active:scale-105 hover:scale-105 hover:shadow-lg transition-transform ease-out' type='button'>
                             {currentLanguage.includes('en') && 'Download CV'}
                             {currentLanguage.includes('es') && 'Descargar CV'}

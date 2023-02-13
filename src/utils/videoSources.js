@@ -1,3 +1,4 @@
+import alifakeVideo from '../assets/videos/alifake.mp4';
 import reginaVideo from '../assets/videos/regina.mp4';
 import pokeapiVideo from '../assets/videos/pokeapi.mp4';
 import weatherVideo from '../assets/videos/weather.mp4';
@@ -8,8 +9,8 @@ import todoVideo from '../assets/videos/todo.mp4';
 const videoSources = [
     {
         title: "Alifake - Mobile e-commerce",
-        videoSrc: pokeapiVideo,
-        github: "https://github.com/VictorCar86/AliFake-E-commerce-webpage",
+        videoSrc: alifakeVideo,
+        github: "https://github.com/VictorCar86/AliFake-Mobile-E-Commerce",
         page: "https://alifake.netlify.app/",
     },
     {

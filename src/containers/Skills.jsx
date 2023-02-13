@@ -3,6 +3,7 @@ import InfoSection from '../components/InfoSection'
 import { SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux, /*SiGit,*/ /*SiSass,*/ SiTailwindcss, SiNodedotjs } from 'react-icons/si'
 import WebpackIcon from '../components/Icons/WebpackIcon'
 import ToolsDescription from '../components/ToolsDescription'
+import climbingPlantImg from '../assets/images/climbing-plant.webp'
 import htmlImg from '../assets/images/html.webp'
 import cssImg from '../assets/images/css.webp'
 import jsImg from '../assets/images/js.webp'
@@ -33,7 +34,9 @@ const Skills = () => {
 
   return (
     <InfoSection title={titleLanguage()} bgColor='bg-cream-300' customId='skills'>
-      <p className='max-w-xl mb-1.5'>
+      <img className='absolute top-0 right-0 -translate-y-[10%] translate-x-[7%] h-min w-min select-none' draggable='false' src={climbingPlantImg} alt="Climbing plant decoration" />
+
+      <p className='relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>
 
         <TextIncludes compare="en">
           The skills, technologies and tools I use to create products:
@@ -44,7 +47,7 @@ const Skills = () => {
         </TextIncludes>
 
       </p>
-      <p className='max-w-xl mb-1.5'>
+      <p className='relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>
 
         <TextIncludes compare="en">
           I'm also currently learning about Backend technologies and relational databases.
@@ -55,7 +58,7 @@ const Skills = () => {
         </TextIncludes>
 
       </p>
-      <p className='text-xl font-bold my-3'>
+      <p className='text-2xl font-bold my-3'>
 
         <TextIncludes compare="en">
           Tools:
@@ -104,11 +107,6 @@ const Skills = () => {
 
           <ToolsDescription name='Webpack' imgSrc={webpackImg}>
             <WebpackIcon className={svgStyles} />
-            {/* <img
-              className={`object-cover ${svgStyles}`}
-              src={WebpackIcon}
-              alt="Webpack icon"
-            /> */}
           </ToolsDescription>
 
           <ToolsDescription name='Node.js' imgSrc={nodeImg}>
@@ -116,7 +114,7 @@ const Skills = () => {
           </ToolsDescription>
         </ul>
       </div>
-      <p className='text-xl font-bold my-3'>
+      <p className='text-2xl font-bold my-3'>
 
         <TextIncludes compare="en">
           Languages:
@@ -127,61 +125,65 @@ const Skills = () => {
         </TextIncludes>
 
       </p>
-      <div className='my-5 font-bold'>
+      <div className='mt-5 font-bold'>
         <ul className='flex justify-evenly'>
-          <li className='w-24 text-center'>
-            <div className='w-9 md:w-14 lg:w-20 mx-auto animate__animated hover:animate__pulse'>
+          <li className='group w-min h-min -sm:w-[45%] text-center sm:grid sm:grid-flow-col sm:gap-5'>
+            <div className='w-14 sm:w-20 mx-auto animate__animated group-hover:animate__pulse'>
               <UKFlagIcon />
             </div>
-            <p className='my-2'>
+            <div className='sm:grid'>
+              <p className='sm:self-end -sm:my-2 text-[22px]'>
 
-              <TextIncludes compare="en">
-                English
-              </TextIncludes>
+                <TextIncludes compare="en">
+                  English
+                </TextIncludes>
 
-              <TextIncludes compare="es">
-                Inglés
-              </TextIncludes>
+                <TextIncludes compare="es">
+                  Inglés
+                </TextIncludes>
 
-            </p>
-            <p className='italic text-amber-700'>
+              </p>
+              <p className='italic text-lg text-amber-700'>
 
-              <TextIncludes compare="en">
-                Intermediate
-              </TextIncludes>
+                <TextIncludes compare="en">
+                  Intermediate
+                </TextIncludes>
 
-              <TextIncludes compare="es">
-                Intermedio
-              </TextIncludes>
+                <TextIncludes compare="es">
+                  Intermedio
+                </TextIncludes>
 
-            </p>
+              </p>
+            </div>
           </li>
-          <li className='w-24 text-center'>
-            <div className='w-9 md:w-14 lg:w-20 mx-auto animate__animated hover:animate__pulse'>
+          <li className='group w-min h-min -sm:w-[45%] text-center sm:grid sm:grid-flow-col sm:gap-5'>
+            <div className='w-14 sm:w-20 mx-auto animate__animated group-hover:animate__pulse'>
               <img className='h-min w-full rounded-full' src={SpainIcon} alt="Spain flag" />
             </div>
-            <p className='my-2'>
+            <div className='sm:grid'>
+              <p className='sm:self-end -sm:my-2 text-[22px]'>
 
-              <TextIncludes compare="en">
-                Spanish
-              </TextIncludes>
+                <TextIncludes compare="en">
+                  Spanish
+                </TextIncludes>
 
-              <TextIncludes compare="es">
-                Español
-              </TextIncludes>
+                <TextIncludes compare="es">
+                  Español
+                </TextIncludes>
 
-            </p>
-            <p className='italic text-amber-700'>
+              </p>
+              <p className='italic text-lg text-amber-700'>
 
-              <TextIncludes compare="en">
-                Native
-              </TextIncludes>
+                <TextIncludes compare="en">
+                  Native
+                </TextIncludes>
 
-              <TextIncludes compare="es">
-                Nativo
-              </TextIncludes>
+                <TextIncludes compare="es">
+                  Nativo
+                </TextIncludes>
 
-            </p>
+              </p>
+            </div>
           </li>
         </ul>
       </div>

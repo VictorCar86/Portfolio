@@ -37,10 +37,10 @@ const AboutMe = () => {
 
         </div>
         <aside className='grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-2 h-[600px] sm:h-80'>
-          <img className='w-full h-full object-cover object-center hover:scale-105 transition-transform' src={mushroom3dImg} alt="" />
-          <img className='w-full h-full object-cover object-center hover:scale-105 transition-transform' src={skull3dImg} alt="" />
-          <img className='w-full h-full object-cover object-center hover:scale-105 transition-transform' src={landscapeImg} alt="" />
-          <img className='w-full h-full object-cover object-center hover:scale-105 transition-transform' src={flowerImg} alt="" />
+          <img className='w-full h-full rounded-md object-cover object-center hover:scale-105 transition-transform shadow-[1px_2px_6px_#868686]' src={mushroom3dImg} alt="" />
+          <img className='w-full h-full rounded-md object-cover object-center hover:scale-105 transition-transform shadow-[1px_2px_6px_#868686]' src={skull3dImg} alt="" />
+          <img className='w-full h-full rounded-md object-cover object-center hover:scale-105 transition-transform shadow-[1px_2px_6px_#868686]' src={landscapeImg} alt="" />
+          <img className='w-full h-full rounded-md object-cover object-center hover:scale-105 transition-transform shadow-[1px_2px_6px_#868686]' src={flowerImg} alt="" />
         </aside>
       </div>
     </InfoSection>
