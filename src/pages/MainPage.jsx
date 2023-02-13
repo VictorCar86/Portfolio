@@ -12,13 +12,13 @@ const MainPage = () => {
       <header>
         <Navbar />
       </header>
-      <main className='text-amber-900 overflow-hidden'>
+      <main className='sm:text-lg text-amber-900 overflow-hidden'>
           <Home />
           <AboutMe />
           <Skills />
           <Projects />
       </main>
-      <footer className='text-amber-900'>
+      <footer className='sm:text-lg text-amber-900'>
           <Contact />
       </footer>
     </>

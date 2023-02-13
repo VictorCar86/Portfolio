@@ -30,7 +30,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(gif|png|webp|pdf|mp4|jpe?g)$/,
+        test: /\.(gif|png|webp|pdf|webm|jpe?g)$/,
         type: "asset/resource",
         generator: {
           filename: "assets/[name][hash][ext]"

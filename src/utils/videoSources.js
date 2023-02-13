@@ -1,10 +1,9 @@
-import alifakeVideo from '../assets/videos/alifake.mp4';
-import reginaVideo from '../assets/videos/regina.mp4';
-import pokeapiVideo from '../assets/videos/pokeapi.mp4';
-import weatherVideo from '../assets/videos/weather.mp4';
-import timerVideo from '../assets/videos/timer.mp4';
-import todoVideo from '../assets/videos/todo.mp4';
-// import wordleVideo from '../assets/videos/wordle.mp4';
+import alifakeVideo from '../assets/videos/alifake.webm';
+import reginaVideo from '../assets/videos/regina.webm';
+import pokeapiVideo from '../assets/videos/pokeapi.webm';
+import weatherVideo from '../assets/videos/weather.webm';
+import timerVideo from '../assets/videos/timer.webm';
+import todoVideo from '../assets/videos/todo.webm';
 
 const videoSources = [
     {
@@ -43,12 +42,6 @@ const videoSources = [
         github: "https://github.com/VictorCar86/ToDo-React-App",
         page: "https://react-app-to-do.netlify.app/",
     },
-    // {
-    //     title: "WordleJS",
-    //     videoSrc: wordleVideo,
-    //     github: "https://github.com/VictorCar86/WordleJS",
-    //     page: "https://victorcar86.github.io/WordleJS/",
-    // },
 ];
 
 export default videoSources
