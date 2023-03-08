@@ -161,8 +161,8 @@ const Skills = () => {
               <img className='h-min w-full rounded-full' src={SpainIcon} alt="Spain flag" />
             </div>
             <div className='sm:grid'>
-              <p className='sm:self-end -sm:my-2 text-[22px]'>
 
+              <p className='sm:self-end -sm:my-2 text-[22px]'>
                 <TextIncludes compare="en">
                   Spanish
                 </TextIncludes>
@@ -170,10 +170,9 @@ const Skills = () => {
                 <TextIncludes compare="es">
                   Español
                 </TextIncludes>
-
               </p>
-              <p className='italic text-lg text-amber-700'>
 
+              <p className='italic text-lg text-amber-700'>
                 <TextIncludes compare="en">
                   Native
                 </TextIncludes>
@@ -181,8 +180,8 @@ const Skills = () => {
                 <TextIncludes compare="es">
                   Nativo
                 </TextIncludes>
-
               </p>
+
             </div>
           </li>
         </ul>

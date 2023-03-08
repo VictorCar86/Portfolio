@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import ladyBugImg from '../assets/images/ladybug.webp'
+import mushroomImg from '../assets/images/mushroom.webp'
 import InfoSection from '../components/InfoSection'
 import VideoSection from '../components/VideoSection'
 import videoSources from '../utils/videoSources'
@@ -22,6 +24,17 @@ const Projects = () => {
 
   return (
     <InfoSection title={titleLanguage()} bgColor='bg-cream-400' customId='projects'>
+      <img
+        className='absolute -top-8 w-10 h-min cursor-pointer'
+        src={ladyBugImg}
+        alt="little ladybug image"
+      />
+      <img
+        className='absolute top-7 -right-1.5 w-[14vw] max-w-[110px] min-w-[78px] h-min'
+        src={mushroomImg}
+        alt="little ladybug image"
+      />
+
       <p className='max-w-xl mb-1.5'>
 
         <TextIncludes compare='en-'>
