@@ -15,8 +15,8 @@ const MainPage = () => {
       <main className='sm:text-lg text-amber-900 overflow-hidden'>
           <Home />
           <AboutMe />
-          <Skills />
           <Projects />
+          <Skills />
       </main>
       <footer className='sm:text-lg text-amber-900'>
           <Contact />

@@ -33,7 +33,7 @@ const Skills = () => {
   }
 
   return (
-    <InfoSection title={titleLanguage()} bgColor='bg-cream-300' customId='skills'>
+    <InfoSection title={titleLanguage()} bgColor='bg-cream-400' customId='skills'>
       <img className='absolute top-0 right-0 -translate-y-[10%] translate-x-[7%] h-min w-min select-none' draggable='false' src={climbingPlantImg} alt="Climbing plant decoration" />
 
       <p className='relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>
@@ -70,7 +70,7 @@ const Skills = () => {
 
       </p>
       <div className='relative h-auto mx-auto my-6 font-bold md:text-lg text-center'>
-        <ul className='grid sm:grid-cols-2 sm:grid-rows-3 md:grid-cols-4 md:grid-rows-2 grid-cols-1 grid-rows-6 gap-2 justify-items-center items-center mt-7'>
+        <ul className='grid grid-cols-2 grid-rows-3 md:grid-cols-4 md:grid-rows-2 gap-2 justify-items-center items-center mt-7'>
           <ToolsDescription name='HTML' imgSrc={htmlImg}>
             <SiHtml5 className={`fill-orange-500 ${svgStyles}` }/>
           </ToolsDescription>

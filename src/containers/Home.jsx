@@ -5,6 +5,7 @@ import {
     FaLinkedin
 } from 'react-icons/fa'
 import { SiReact } from 'react-icons/si'
+import landscapeImg from "../assets/images/main_landscape.webp"
 import profileImg from "../assets/images/profile.webp"
 import fallImg from "../assets/images/fall.webp"
 import englishCvPdf from '../assets/files/Victor Carreno - Frontend CV - English.pdf'
@@ -15,8 +16,9 @@ const Home = () => {
     const [fall, setFall] = useState("");
 
     return (
-        <section className='min-h-[640px] h-screen w-full bg-cream-100'>
-            <div className='min-h-[640px] h-screen w-full flex flex-col-reverse justify-center items-center gap-6 sm:gap-10 md:gap-[8%] xl:gap-10 md:flex-row px-[7%] bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
+        <section className='relative min-h-[640px] h-screen w-full bg-cream-100'>
+            <img className='absolute h-screen w-screen object-cover object-bottom sepia mask-deg' src={landscapeImg} alt="Landscape" />
+            <div className='min-h-[640px] h-screen w-full flex flex-col-reverse justify-center items-center gap-6 sm:gap-10 md:gap-[8%] xl:gap-10 md:flex-row px-[7%] thin-text bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
                 <div>
                     <h1 className='max-w-xs text-center font-bold text-[38px] leading-10 xl:max-w-none md:max-w-sm md:text-5xl md:text-left sm:max-w-none sm:text-[40px]'>Victor Manuel Carreño Peña</h1>
                     <p className='text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left'>

@@ -23,7 +23,7 @@ const Projects = () => {
 }
 
   return (
-    <InfoSection title={titleLanguage()} bgColor='bg-cream-400' customId='projects'>
+    <InfoSection title={titleLanguage()} bgColor='bg-cream-300' customId='projects'>
       <img
         className='absolute -top-8 w-10 h-min cursor-pointer'
         src={ladyBugImg}

@@ -25,4 +25,13 @@
     .responsiveFontSize {
         font-size: clamp(12px, 2.2vw, 1.5rem);
     }
+
+    .mask-deg {
+        mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    }
+
+    .thin-text {
+        text-shadow: 2px 2px #fcdeba, -1px -1px #fcdeba, 2px 2px #fcdeba, -1px -1px #fcdeba, 2px 2px 5px #fcdeba;
+    }
 }
