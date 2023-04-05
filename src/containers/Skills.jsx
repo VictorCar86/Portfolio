@@ -1,23 +1,24 @@
-import React from 'react'
-import InfoSection from '../components/InfoSection'
-import { SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux, /*SiGit,*/ /*SiSass,*/ SiTailwindcss, SiNodedotjs } from 'react-icons/si'
-import WebpackIcon from '../components/Icons/WebpackIcon'
-import ToolsDescription from '../components/ToolsDescription'
-import climbingPlantImg from '../assets/images/climbing-plant.webp'
-import htmlImg from '../assets/images/html.webp'
-import cssImg from '../assets/images/css.webp'
-import jsImg from '../assets/images/js.webp'
-import reactImg from '../assets/images/react.webp'
-import reduxImg from '../assets/images/redux.webp'
-import tailwindImg from '../assets/images/tailwind.webp'
+import React from 'react';
+import InfoSection from '../components/InfoSection';
+import { SiCss3, SiHtml5, SiJavascript, SiReact, SiRedux, /*SiGit,*/ /*SiSass,*/ SiTailwindcss, SiNodedotjs } from 'react-icons/si';
+import WebpackIcon from '../components/Icons/WebpackIcon';
+import ToolsDescription from '../components/ToolsDescription';
+// import ladyBugImg from '../assets/images/ladybug.webp';
+import mushroomImg from '../assets/images/mushroom.webp';
+import htmlImg from '../assets/images/html.webp';
+import cssImg from '../assets/images/css.webp';
+import jsImg from '../assets/images/js.webp';
+import reactImg from '../assets/images/react.webp';
+import reduxImg from '../assets/images/redux.webp';
+import tailwindImg from '../assets/images/tailwind.webp';
 // import sassImg from '../assets/images/sass.webp'
 // import gitImg from '../assets/images/git.webp'
-import webpackImg from '../assets/images/webpack.webp'
-import nodeImg from '../assets/images/node.webp'
-import UKFlagIcon from '../components/Icons/UKFlagIcon'
-import SpainIcon from '../assets/images/spain.webp'
-import currentLanguage from '../utils/currentLanguage'
-import TextIncludes from '../utils/TextIncludes'
+import webpackImg from '../assets/images/webpack.webp';
+import nodeImg from '../assets/images/node.webp';
+import UKFlagIcon from '../components/Icons/UKFlagIcon';
+import SpainIcon from '../assets/images/spain.webp';
+import currentLanguage from '../utils/currentLanguage';
+import TextIncludes from '../utils/TextIncludes';
 
 const Skills = () => {
 
@@ -34,7 +35,18 @@ const Skills = () => {
 
   return (
     <InfoSection title={titleLanguage()} bgColor='bg-cream-400' customId='skills'>
-      <img className='absolute top-0 right-0 -translate-y-[10%] translate-x-[7%] h-min w-min select-none' draggable='false' src={climbingPlantImg} alt="Climbing plant decoration" />
+      {/* <img
+        className='absolute -top-8 w-10 h-min cursor-pointer select-none'
+        draggable='false'
+        src={ladyBugImg}
+        alt="Little ladybug image"
+      /> */}
+      <img
+        className='absolute top-7 -right-[0.45rem] w-[14vw] max-w-[140px] min-w-[110px] h-min select-none'
+        draggable='false'
+        src={mushroomImg}
+        alt="Cute brown mushroom image"
+      />
 
       <p className='relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>
 
@@ -158,7 +170,7 @@ const Skills = () => {
           </li>
           <li className='group w-min h-min -sm:w-[45%] text-center sm:grid sm:grid-flow-col sm:gap-5'>
             <div className='w-14 sm:w-20 mx-auto animate__animated group-hover:animate__pulse'>
-              <img className='h-min w-full rounded-full' src={SpainIcon} alt="Spain flag" />
+              <img className='h-min w-full rounded-full select-none' draggable='false' src={SpainIcon} alt="Spain flag" />
             </div>
             <div className='sm:grid'>
 

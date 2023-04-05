@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
-import ladyBugImg from '../assets/images/ladybug.webp'
-import mushroomImg from '../assets/images/mushroom.webp'
-import InfoSection from '../components/InfoSection'
-import VideoSection from '../components/VideoSection'
-import videoSources from '../utils/videoSources'
+import React, { useState } from 'react';
+import climbingPlantImg from '../assets/images/climbing-plant.webp';
+import InfoSection from '../components/InfoSection';
+import VideoSection from '../components/VideoSection';
+import videoSources from '../utils/videoSources';
 import useIntersection from '../hooks/useIntersection';
 import currentLanguage from '../utils/currentLanguage';
 import TextIncludes from '../utils/TextIncludes';
@@ -24,18 +23,14 @@ const Projects = () => {
 
   return (
     <InfoSection title={titleLanguage()} bgColor='bg-cream-300' customId='projects'>
-      <img
-        className='absolute -top-8 w-10 h-min cursor-pointer'
-        src={ladyBugImg}
-        alt="little ladybug image"
-      />
-      <img
-        className='absolute top-7 -right-1.5 w-[14vw] max-w-[110px] min-w-[78px] h-min'
-        src={mushroomImg}
-        alt="little ladybug image"
+
+      <img className='absolute top-0 right-0 -translate-y-[10%] translate-x-[7%] h-min w-min select-none'
+        src={climbingPlantImg}
+        alt="Climbing plant decoration"
+        draggable='false'
       />
 
-      <p className='max-w-xl mb-1.5'>
+      <p className='relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>
 
         <TextIncludes compare='en-'>
           I've created a lot of projects from little experiments to more complex webpages. If you are curious, check out my Github's profile where I post my most recent projects.

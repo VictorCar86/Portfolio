@@ -36,16 +36,16 @@ const Home = () => {
                             <span>Desarrollador React</span>
                         )}
                     </p>
-                    <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0 font-medium'>
+                    <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0 font-medium strong-shadow'>
                         <a
-                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-[0.0115em] '
-                            aria-label="Link to Twitter's profile"
-                            href="https://twitter.com/victorcar86_"
+                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-wide'
+                            aria-label="Link to Linkedin's profile"
+                            href="https://www.linkedin.com/in/victorcar86/"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FaTwitter className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 group-hover:scale-110 transition-transform ease-out' />
-                            <span className='align-middle'>Twitter</span>
+                            <FaLinkedin className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 bg-cream-100 group-hover:scale-110 transition-transform ease-out' />
+                            <span className='align-middle'>LinkedIn</span>
                         </a>
                         <a
                             className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-wide'
@@ -54,18 +54,18 @@ const Home = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FaGithub className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 group-hover:scale-110 transition-transform ease-out' />
+                            <FaGithub className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 bg-cream-100 group-hover:scale-110 transition-transform ease-out' />
                             <span className='align-middle'>Github</span>
                         </a>
                         <a
-                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-wide'
-                            aria-label="Link to Linkedin's profile"
-                            href="https://www.linkedin.com/in/victorcar86/"
+                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-[0.0115em] '
+                            aria-label="Link to Twitter's profile"
+                            href="https://twitter.com/victorcar86_"
                             target="_blank"
                             rel="noopener noreferrer"
                         >
-                            <FaLinkedin className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 group-hover:scale-110 transition-transform ease-out' />
-                            <span className='align-middle'>LinkedIn</span>
+                            <FaTwitter className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 bg-cream-100 group-hover:scale-110 transition-transform ease-out' />
+                            <span className='align-middle'>Twitter</span>
                         </a>
                     </div>
                     <a className='md:inline-block table my-4 mx-auto' href={currentLanguage.includes('en') ? englishCvPdf : spanishCvPdf} download>

@@ -1,7 +1,6 @@
 import React from 'react'
 import InfoSection from '../components/InfoSection'
 import {
-    FaRegEnvelope,
     FaTwitter,
     FaGithub,
     FaLinkedin
@@ -25,52 +24,46 @@ const Contact = () => {
 
     return (
         <InfoSection title={titleLanguage()} bgColor='bg-cream-500' customId='contact'>
-            <p className='max-w-xl'>
+            <div className='flex flex-col md:flex-row'>
+                <p className='max-w-xl'>
+                    <TextIncludes compare='en'>
+                        Let me know your ideas through any social media or ask me if we can build something together. 🥳
+                    </TextIncludes>
 
-                <TextIncludes compare='en'>
-                    Let me know your ideas through any social media or ask me if we can build something together. 🥳
-                </TextIncludes>
+                    <TextIncludes compare='es'>
+                        Déjame saber tus ideas a través de cualquier red social o pregúntame si podemos construir algo en compañía. 🥳
+                    </TextIncludes>
+                </p>
 
-                <TextIncludes compare='es'>
-                    Déjame saber tus ideas a través de cualquier red social o pregúntame si podemos construir algo en compañía. 🥳
-                </TextIncludes>
-
-            </p>
-            <div className='flex justify-evenly flex-wrap max-w-2xl mt-5 mx-auto font-bold'>
-                <a
-                    className={buttonStyles}
-                    aria-label="Link to send me an email! 😉"
-                    href="mailto:vmanuelcar@hotmail.com"
-                >
-                    <FaRegEnvelope className={svgStyles} />
-                </a>
-                <a
-                    className={buttonStyles}
-                    aria-label="Link to Twitter's profile"
-                    href="https://twitter.com/victorcar86_"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FaTwitter className={svgStyles} />
-                </a>
-                <a
-                    className={buttonStyles}
-                    aria-label="Link to Github's profile"
-                    href="https://github.com/VictorCar86"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FaGithub className={svgStyles} />
-                </a>
-                <a
-                    className={buttonStyles}
-                    aria-label="Link to Linkedin's profile"
-                    href="https://www.linkedin.com/in/victorcar86/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <FaLinkedin className={svgStyles} />
-                </a>
+                <div className='flex justify-evenly flex-wrap w-4/5 md:w-1/2 max-w-2xl -md:mt-5 -md:mx-auto font-bold'>
+                    <a
+                        className={buttonStyles}
+                        aria-label="Link to Linkedin's profile"
+                        href="https://www.linkedin.com/in/victorcar86/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FaLinkedin className={svgStyles} />
+                    </a>
+                    <a
+                        className={buttonStyles}
+                        aria-label="Link to Github's profile"
+                        href="https://github.com/VictorCar86"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FaGithub className={svgStyles} />
+                    </a>
+                    <a
+                        className={buttonStyles}
+                        aria-label="Link to Twitter's profile"
+                        href="https://twitter.com/victorcar86_"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <FaTwitter className={svgStyles} />
+                    </a>
+                </div>
             </div>
         </InfoSection>
     )
