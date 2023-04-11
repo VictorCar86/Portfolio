@@ -1,10 +1,10 @@
-import React from 'react'
-import InfoSection from '../components/InfoSection'
+import React from 'react';
+import InfoSection from '../components/InfoSection';
 import {
     FaLinkedin,
     FaGithub,
     FaTwitter,
-} from 'react-icons/fa'
+} from 'react-icons/fa';
 import currentLanguage from '../utils/currentLanguage';
 import TextIncludes from '../utils/TextIncludes';
 
@@ -51,13 +51,14 @@ const Contact = () => {
                 </p>
 
                 <div className='flex justify-evenly flex-wrap gap-[2%] w-4/5 md:w-1/2 max-w-2xl -md:mt-5 -md:mx-auto font-bold'>
-                    {contactPages.map(page => (
+                    {contactPages.map((page, index) => (
                         <a
                             className="block w-min h-min -md:mx-auto mb-1 border-4 border-amber-900 rounded-full p-2 hover:scale-110 transition-transform ease-out"
                             aria-label={`Link to ${page.name}'s profile`}
                             href={page.href}
                             target="_blank"
                             rel="noopener noreferrer"
+                            key={index}
                         >
                             { page.svg }
                         </a>
@@ -68,4 +69,4 @@ const Contact = () => {
     )
 }
 
-export default Contact
+export default Contact;

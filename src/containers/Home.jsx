@@ -47,7 +47,7 @@ const Home = () => {
                     </p>
                     <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0 font-medium strong-shadow'>
                         <a
-                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-wide'
+                            className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-[0.028em]'
                             aria-label="Link to Linkedin's profile"
                             href="https://www.linkedin.com/in/victorcar86/"
                             target="_blank"
