@@ -39,7 +39,7 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                     key={index}>
                     <section className='group relative h-fit w-full rounded-xl rounded-b-none hover:scale-105 transition-transform ease-out z-10'>
                         <video
-                            className='w-full rounded-xl rounded-b-none group-hover:rounded-b-xl border-amber-600 border-4'
+                            className='w-full rounded-xl rounded-b-none group-hover:rounded-b-xl border-amber-600 border-4 aspect-[16/9.1] object-cover object-top'
                             src={project.videoSrc}
                             ref={refElm => videoRef.current[index] = refElm}
                             onMouseEnter={() => startPreview(index)}

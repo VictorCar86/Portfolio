@@ -1,13 +1,19 @@
+import yardsaleVideo from '../assets/videos/yardsale.webm';
 import alifakeVideo from '../assets/videos/alifake.webm';
 import reginaVideo from '../assets/videos/regina.webm';
 import pokeapiVideo from '../assets/videos/pokeapi.webm';
 import weatherVideo from '../assets/videos/weather.webm';
 import timerVideo from '../assets/videos/timer.webm';
-import todoVideo from '../assets/videos/todo.webm';
 
 const videoSources = [
     {
-        title: "Alifake - Mobile e-commerce",
+        title: "YardSale E-Commerce - Fullstack",
+        videoSrc: yardsaleVideo,
+        github: "https://github.com/VictorCar86/YardSale-E-Commerce",
+        page: "https://yardsale-ecommerce.netlify.app/",
+    },
+    {
+        title: "Alifake - Mobile E-Commerce",
         videoSrc: alifakeVideo,
         github: "https://github.com/VictorCar86/AliFake-Mobile-E-Commerce",
         page: "https://alifake.netlify.app/",
@@ -35,12 +41,6 @@ const videoSources = [
         videoSrc: timerVideo,
         github: "https://github.com/VictorCar86/Ultimate-Timer",
         page: "https://victorcar86.github.io/Ultimate-Timer/",
-    },
-    {
-        title: "ToDo-React-App - Mobile",
-        videoSrc: todoVideo,
-        github: "https://github.com/VictorCar86/ToDo-React-App",
-        page: "https://react-app-to-do.netlify.app/",
     },
 ];
 
