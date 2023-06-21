@@ -9,8 +9,8 @@ import landscapeImg from "../assets/images/main_landscape.webp"
 import landscapeMobileImg from "../assets/images/main_landscape-mobile.webp"
 import profileImg from "../assets/images/profile.webp"
 import fallImg from "../assets/images/fall.webp"
-import englishCvPdf from '../assets/files/Victor Carreno - Frontend CV - English.pdf'
-import spanishCvPdf from '../assets/files/Victor Carreno - Frontend CV - Espanol.pdf'
+import englishCvPdf from '../assets/files/Victor Carreno - Web Developer CV - English.pdf'
+import spanishCvPdf from '../assets/files/Victor Carreno - Desarrollador Web CV - Espanol.pdf'
 import currentLanguage from '../utils/currentLanguage'
 
 const Home = () => {
@@ -29,21 +29,12 @@ const Home = () => {
 
             <div className='min-h-[640px] h-screen w-full flex flex-col-reverse justify-center items-center gap-6 sm:gap-10 md:gap-[8%] xl:gap-10 md:flex-row px-[7%] thin-text bg-transparent animate__zoomIn animate__animated animate__delay' id="home">
                 <div>
-                    <h1 className='max-w-xs text-center font-bold text-[38px] leading-10 xl:max-w-none md:max-w-sm md:text-5xl md:text-left sm:max-w-none sm:text-[40px]'>Victor Manuel Carreño Peña</h1>
+                    <h1 className='relative max-w-xs text-center font-bold text-[38px] leading-10 xl:max-w-none md:max-w-sm md:text-5xl md:text-left sm:max-w-none sm:text-[40px] z-10'>
+                        Victor Manuel Carreño Peña
+                    </h1>
                     <p className='text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left'>
-                        {currentLanguage.includes('en') && '💻 Frontend Developer'}
-                        {currentLanguage.includes('es') && '💻 Desarrollador Frontend'}
-                    </p>
-                    <p className='flex items-center gap-2 h-max w-max mx-auto text-2xl text-center font-bold md:mx-0 sm:text-3xl mb-3 md:mb-4 md:text-left'>
-
-                        <SiReact className='inline-block align-bottom p-0.5 rounded-full fill-blue-400 bg-blue-900'/>
-
-                        {currentLanguage.includes('en') && (
-                            <span>React Developer</span>
-                        )}
-                        {currentLanguage.includes('es') && (
-                            <span>Desarrollador React</span>
-                        )}
+                        {currentLanguage.includes('en') && '💻 Web Developer'}
+                        {currentLanguage.includes('es') && '💻 Desarrollador Web'}
                     </p>
                     <div className='flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0 font-medium strong-shadow'>
                         <a
@@ -77,7 +68,7 @@ const Home = () => {
                             <span className='align-middle'>Twitter</span>
                         </a>
                     </div>
-                    <a className='md:inline-block table my-4 mx-auto' href={currentLanguage.includes('en') ? englishCvPdf : spanishCvPdf} download>
+                    <a className='md:inline-block table mt-4 mx-auto' href={currentLanguage.includes('en') ? englishCvPdf : spanishCvPdf} download>
                         <button className='text-amber-900 font-bold bg-amber-100 border-2 border-amber-600 rounded-2xl px-3 py-1 shadow-md active:scale-105 hover:scale-105 hover:shadow-lg transition-transform ease-out' type='button'>
                             {currentLanguage.includes('en') && 'Download CV'}
                             {currentLanguage.includes('es') && 'Descargar CV'}
