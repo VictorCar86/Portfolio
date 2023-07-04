@@ -29,10 +29,10 @@ const AboutMe = () => {
       <div className='relative grid grid-cols-1 md:grid-cols-2 justify-around items-center gap-y-6 md:gap-y-6 lg:gap-y-3 w-full lg:w-[87%] mx-auto text-center'>
         <>
           <TextIncludes compare='en'>
-            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>Hello! I'm Victor, a web developer with a passion for creating beautiful and easy-to-use user interfaces. I love working on challenging projects and finding creative solutions to complex problems.</p>
+            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>Hello! I'm Victor, Web Developer with a passion for creating high-impact applications with intuitive, easy-to-use user interfaces. I love working on challenging projects and finding creative solutions to complex problems.</p>
           </TextIncludes>
           <TextIncludes compare='es'>
-            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>¡Hola! Soy Victor, un desarrollador web apasionado por crear interfaces de usuario atractivas y fáciles de usar. Me encanta trabajar en proyectos desafiantes y encontrar soluciones creativas para problemas complejos.</p>
+            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>¡Hola! Soy Victor, un desarrollador web apasionado por la creación de aplicaciones de gran impacto e interfaces de usuario intuituvas y fáciles de usar. Me encanta trabajar en proyectos desafiantes y encontrar soluciones creativas a problemas complejos.</p>
           </TextIncludes>
 
           <img className={imagesStyle} src={projectScreenImg} alt="" />
