@@ -10,7 +10,7 @@ import TextIncludes from '../utils/TextIncludes';
 const Projects = () => {
 
   const [itemsRef, setItemsRef] = useState([])
-  itemsRef.forEach(elm => useIntersection(["animate__bounceIn"]).observe(elm))
+  itemsRef.forEach(elm => useIntersection(['animate__bounceIn']).observe(elm))
 
   const titleLanguage = () => {
     if (currentLanguage.includes('en')){
@@ -26,7 +26,7 @@ const Projects = () => {
 
       <img className='absolute top-0 right-0 -translate-y-[10%] translate-x-[7%] h-min w-min select-none'
         src={climbingPlantImg}
-        alt="Climbing plant decoration"
+        alt='Climbing plant decoration'
         draggable='false'
       />
 

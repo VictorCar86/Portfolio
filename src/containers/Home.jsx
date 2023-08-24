@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
 import {
     FaTwitter,
     FaGithub,
     FaLinkedin
-} from 'react-icons/fa'
-import { SiReact } from 'react-icons/si'
-import landscapeImg from "../assets/images/main_landscape.webp"
-import landscapeMobileImg from "../assets/images/main_landscape-mobile.webp"
-import profileImg from "../assets/images/profile.webp"
-import fallImg from "../assets/images/fall.webp"
-import englishCvPdf from '../assets/files/Victor Carreno - Web Developer CV - English.pdf'
-import spanishCvPdf from '../assets/files/Victor Carreno - Desarrollador Web CV - Espanol.pdf'
-import currentLanguage from '../utils/currentLanguage'
+} from 'react-icons/fa';
+import landscapeImg from "../assets/images/main_landscape.webp";
+import landscapeMobileImg from "../assets/images/main_landscape-mobile.webp";
+import profileImg from "../assets/images/profile.webp";
+import fallImg from "../assets/images/fall.webp";
+import currentLanguage from '../utils/currentLanguage';
 
 const Home = () => {
     const [fall, setFall] = useState("");
@@ -68,12 +65,6 @@ const Home = () => {
                             <span className='align-middle'>Twitter</span>
                         </a>
                     </div>
-                    <a className='md:inline-block table mt-4 mx-auto' href={currentLanguage.includes('en') ? englishCvPdf : spanishCvPdf} download>
-                        <button className='text-amber-900 font-bold bg-amber-100 border-2 border-amber-600 rounded-2xl px-3 py-1 shadow-md active:scale-105 hover:scale-105 hover:shadow-lg transition-transform ease-out' type='button'>
-                            {currentLanguage.includes('en') && 'Download CV'}
-                            {currentLanguage.includes('es') && 'Descargar CV'}
-                        </button>
-                    </a>
                 </div>
                 <div className='relative w-64 -md:h-64 md:w-auto rounded-full z-0 backgroundMainImage'>
                     <img

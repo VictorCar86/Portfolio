@@ -38,16 +38,27 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                     ref={refElm => liRef.current[index] = refElm}
                     key={index}>
                     <section className='group relative h-fit w-full rounded-xl rounded-b-none hover:scale-105 transition-transform ease-out z-10'>
-                        <video
-                            className='w-full rounded-xl rounded-b-none group-hover:rounded-b-xl border-amber-600 border-4 aspect-[16/9.1] object-cover object-top'
-                            src={project.videoSrc}
-                            ref={refElm => videoRef.current[index] = refElm}
-                            onMouseEnter={() => startPreview(index)}
-                            onMouseLeave={() => stopPreview(index)}
-                        />
-                        <div className='group-hover:invisible absolute top-0 w-full h-full rounded-xl rounded-b-none bg-black/30'>
-                            <AiFillPlayCircle className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-1/4 fill-amber-100' />
-                        </div>
+                        {project.videoSrc && (
+                          <>
+                            <video
+                                className='w-full rounded-xl rounded-b-none group-hover:rounded-b-xl border-amber-600 border-4 aspect-[16/9.1] object-cover object-top'
+                                src={project.videoSrc}
+                                ref={refElm => videoRef.current[index] = refElm}
+                                onMouseEnter={() => startPreview(index)}
+                                onMouseLeave={() => stopPreview(index)}
+                            />
+                            <div className={'group-hover:invisible absolute top-0 w-full h-full rounded-xl rounded-b-none bg-black/30'}>
+                                <AiFillPlayCircle className='absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-1/4 h-1/4 fill-amber-100' />
+                            </div>
+                          </>
+                        )}
+                        {!project.videoSrc && (
+                            <img
+                                className='w-full rounded-xl rounded-b-none group-hover:rounded-b-xl border-amber-600 border-4 aspect-[16/9.1] object-cover object-top'
+                                src={project.imageSrc || "https://engineeredsys.com/wp-content/uploads/2019/08/download.png"}
+                                alt={project.title}
+                            />
+                        )}
                     </section>
                     <section className='flow-root flex-col-reverse h-max w-full rounded-b-xl bg-cream-600 text-center overflow-hidden -z-10 sm:z-0'>
                         <p className='mt-4 mb-5 mx-2.5 text-amber-100 text-xl sm:text-2xl md:responsiveFontSize font-bold'>{project.title}</p>
