@@ -21,11 +21,11 @@ const Contact = () => {
             href: "https://github.com/VictorCar86",
             svg: <FaGithub className={svgStyles} />
         },
-        {
-            name: "Twitter",
-            href: "https://twitter.com/victorcar86_",
-            svg: <FaTwitter className={svgStyles} />
-        },
+        // {
+        //     name: "Twitter",
+        //     href: "https://twitter.com/victorcar86_",
+        //     svg: <FaTwitter className={svgStyles} />
+        // },
     ];
 
     const titleLanguage = () => {

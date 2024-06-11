@@ -54,7 +54,7 @@ const Home = () => {
                             <FaGithub className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 bg-cream-100 group-hover:scale-110 transition-transform ease-out' />
                             <span className='align-middle'>Github</span>
                         </a>
-                        <a
+                        {/* <a
                             className='group block min-w-[106px] hover:font-bold tracking-wider hover:tracking-[0.0115em] '
                             aria-label="Link to Twitter's profile"
                             href="https://twitter.com/victorcar86_"
@@ -63,7 +63,7 @@ const Home = () => {
                         >
                             <FaTwitter className='inline-block w-7 h-7 border-2 border-amber-900 rounded-md p-0.5 mr-3 my-1 bg-cream-100 group-hover:scale-110 transition-transform ease-out' />
                             <span className='align-middle'>Twitter</span>
-                        </a>
+                        </a> */}
                     </div>
                 </div>
                 <div className='relative w-64 -md:h-64 md:w-auto rounded-full z-0 backgroundMainImage'>

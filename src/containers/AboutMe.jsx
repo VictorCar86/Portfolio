@@ -42,10 +42,10 @@ const AboutMe = () => {
           <img className={`hidden md:block ${imagesStyle}`} src={templatesImg} alt="" />
 
           <TextIncludes compare='en'>
-            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>With more than 1 year of experience in programming, I have built a wide variety of projects, acquiring very valuable experiences in the process, thus generating applications with greater added value.</p>
+            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>With more than 2 years of experience in programming, I have built a wide variety of projects, acquiring very valuable experiences in the process, thus generating applications with greater added value.</p>
           </TextIncludes>
           <TextIncludes compare='es'>
-            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>Con más de 1 año de experiencia en programación, he construido una amplia variedad de proyectos, adquiriendo en el proceso experiencias muy valiosas generando así aplicaciones con mayor valor añadido.</p>
+            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>Con más de 2 años de experiencia en programación, he construido una amplia variedad de proyectos, adquiriendo en el proceso experiencias muy valiosas generando así aplicaciones con mayor valor añadido.</p>
           </TextIncludes>
 
           <img className={`block md:hidden ${imagesStyle}`} src={templatesImg} alt="" />
@@ -53,10 +53,10 @@ const AboutMe = () => {
 
         <>
           <TextIncludes compare='en'>
-            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>In addition to being a developer, I am a person focused on teamwork and communication. Outside of work, I enjoy the landscapes, traveling and skateboarding.</p>
+            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>In addition to being a developer, I am a person focused on teamwork and communication. Outside of work, I enjoy the landscapes, traveling and listen to music.</p>
           </TextIncludes>
           <TextIncludes compare='es'>
-            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>Además de ser desarrollador, soy una persona enfocada en el trabajo en equipo y la comunicación. Fuera del trabajo, disfruto de los paisajes, viajar mucho y hacer skate.</p>
+            <p className='mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80'>Además de ser desarrollador, soy una persona enfocada en el trabajo en equipo y la comunicación. Fuera del trabajo, disfruto de los paisajes, viajar mucho y escuchar música.</p>
           </TextIncludes>
 
           <img className={imagesStyle} src={teamworkImg} alt="" />
