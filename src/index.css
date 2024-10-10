@@ -18,8 +18,14 @@
 }
 
 @layer utilities {
-    .backgroundMainImage {
-        background: linear-gradient(0deg, rgba(227,209,138,1) 0%, rgba(189,147,84,1) 33%, rgba(158,117,64,1) 66%, rgba(133,96,63,1) 100%);
+    .mainBackground {
+        background: linear-gradient(
+            0deg,
+            rgb(214, 197, 126) 0%,
+            rgba(189, 147, 84, 1) 33%,
+            rgba(158, 117, 64, 1) 66%,
+            rgba(133, 96, 63, 1) 100%
+        );
     }
 
     .responsiveFontSize {
@@ -27,15 +33,40 @@
     }
 
     .mask-deg {
-        mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
-        -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+        mask-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 1)),
+            to(rgba(0, 0, 0, 0))
+        );
+        -webkit-mask-image: -webkit-gradient(
+            linear,
+            left top,
+            left bottom,
+            from(rgba(0, 0, 0, 1)),
+            to(rgba(0, 0, 0, 0))
+        );
     }
 
     .thin-text {
-        text-shadow: 2px 2px #fcdeba, -2px -2px #fcdeba, -2px 2px #fcdeba, 2px -2px #fcdeba, 2px 2px 6px #fcdeba;
+        text-shadow:
+            2px 2px #fcdeba,
+            -2px -2px #fcdeba,
+            -2px 2px #fcdeba,
+            2px -2px #fcdeba,
+            2px 2px 6px #fcdeba;
     }
 
     .strong-shadow {
-        text-shadow: 0px 0px 8px #fcdeba, 0px 0px 8px #fcdeba, 0px 0px 8px #fcdeba, 0px 0px 8px #fcdeba, 0px 0px 8px #fcdeba, 0px 0px 8px #fcdeba, 0px 0px 8px #fcdeba, 0px 0px 8px #fcdeba;
+        text-shadow:
+            0px 0px 8px #fcdeba,
+            0px 0px 8px #fcdeba,
+            0px 0px 8px #fcdeba,
+            0px 0px 8px #fcdeba,
+            0px 0px 8px #fcdeba,
+            0px 0px 8px #fcdeba,
+            0px 0px 8px #fcdeba,
+            0px 0px 8px #fcdeba;
     }
 }
