@@ -37,22 +37,12 @@ const Skills = () => {
 
             <p className="relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
                 <TextIncludes compare="en">
-                    The skills, technologies and tools I use to create products:
+                    Fundamental technologies and tools that I often use to design and
+                    develop efficient and functional web applications.
                 </TextIncludes>
                 <TextIncludes compare="es">
-                    Las habilidades, tecnologías y herramientas que uso para crear
-                    productos:
-                </TextIncludes>
-            </p>
-
-            <p className="relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
-                <TextIncludes compare="en">
-                    I'm also currently learning about Backend technologies and relational
-                    databases.
-                </TextIncludes>
-                <TextIncludes compare="es">
-                    Actualmente también estoy aprendiendo sobre tecnologías Backend y
-                    Bases de Datos Relacionales.
+                    Tecnologías y herramientas fundamentales que más suelo utilizar para
+                    diseñar y desarrollar aplicaciones web eficientes y funcionales.
                 </TextIncludes>
             </p>
 

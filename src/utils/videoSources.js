@@ -27,16 +27,16 @@ const videoSources = [
         page: "https://laregina.netlify.app/",
     },
     {
-        title: "Trello Auth - Angular",
-        imageSrc: trelloImg,
-        github: "https://github.com/VictorCar86/Trello-Auth-Angular",
-        page: "https://trello-auth.netlify.app/",
-    },
-    {
         title: "PokeAPI",
         videoSrc: pokeapiVideo,
         github: "https://github.com/VictorCar86/Pokemon-API",
         page: "https://victorcar86.github.io/Pokemon-API/",
+    },
+    {
+        title: "Trello Auth - Angular",
+        imageSrc: trelloImg,
+        github: "https://github.com/VictorCar86/Trello-Auth-Angular",
+        page: "https://trello-auth.netlify.app/",
     },
     {
         title: "Drops Manager API",

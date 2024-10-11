@@ -31,14 +31,15 @@ const Projects = () => {
 
             <p className="relative max-w-xl mb-5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
                 <TextIncludes compare="en-">
-                    I've created a lot of projects from little experiments to more complex
-                    webpages. If you are curious, check out my Github's profile where I
-                    post my most recent projects.
+                    I've built various projects, each designed to address specific
+                    challenges. Here, I aim to reflect my skills as a developer and my
+                    commitment to quality and innovation at every stage of development.
                 </TextIncludes>
                 <TextIncludes compare="es">
-                    He creado muchos proyectos, desde pequeños experimentos hasta páginas
-                    web más complejas. Si desea puede consultar mi perfil de Github donde
-                    publico mis proyectos más recientes.
+                    He construido diversos proyectos, cada uno diseñado para resolver
+                    desafíos específicos. Aquí se busca reflejar mi habilidad como
+                    desarrollador y mi compromiso con la calidad y la innovación en cada
+                    etapa del desarrollo.
                 </TextIncludes>
             </p>
 
