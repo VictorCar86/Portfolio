@@ -1,6 +1,12 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FiGithub, FiExternalLink } from "react-icons/fi";
 import { AiFillPlayCircle } from "react-icons/ai";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "./../styles/CustomPagination.css";
 
 const VideoSection = ({ sourceArray = [], itemsRef }) => {
     const [timePreview, setTimePreview] = useState(null);
@@ -29,19 +35,38 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
 
     useEffect(() => itemsRef(liRef.current), [liRef]);
 
+    const [slidesPerView, setSlidesPerView] = useState(window.innerWidth <= 768 ? 1 : 2);
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 768) {
+                setSlidesPerView(1);
+            } else {
+                setSlidesPerView(2);
+            }
+        };
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
     return (
-        <ul className="grid grid-cols-1 md:grid-cols-2 mt-6 gap-4">
+        <Swiper
+            modules={[Navigation, Pagination]}
+            spaceBetween={10}
+            slidesPerView={slidesPerView}
+            navigation
+            pagination={{ clickable: true, dynamicBullets: true }}
+        >
             {sourceArray.map((project, index) => (
-                <li
-                    className="rounded-xl transition-transform ease-out animate__animated opacity-0 shadow-[1px_2px_6px_#868686]"
+                <SwiperSlide
+                    // className="rounded-xl transition-transform ease-out animate__animated opacity-0 shadow-[1px_2px_6px_#868686]"
                     ref={(refElm) => (liRef.current[index] = refElm)}
                     key={index}
                 >
-                    <section className="group relative h-fit w-full rounded-xl rounded-b-none hover:scale-105 transition-transform ease-out z-10">
+                    <section className="group relative h-fit w-full rounded-xl rounded-b-none z-10">
                         {project.videoSrc && (
                             <>
                                 <video
-                                    className="w-full rounded-xl rounded-b-none group-hover:rounded-b-xl border-amber-600 border-4 aspect-[16/9.1] object-cover object-top"
+                                    className="w-full rounded-xl rounded-b-none border-amber-600 border-4 aspect-[16/9.1] object-cover object-top"
                                     src={project.videoSrc}
                                     ref={(refElm) => (videoRef.current[index] = refElm)}
                                     onMouseEnter={() => startPreview(index)}
@@ -58,7 +83,7 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                         )}
                         {!project.videoSrc && (
                             <img
-                                className="w-full rounded-xl rounded-b-none group-hover:rounded-b-xl border-amber-600 border-4 aspect-[16/9.1] object-cover object-top"
+                                className="w-full rounded-xl rounded-b-none border-amber-600 border-4 aspect-[16/9.1] object-cover object-top"
                                 src={
                                     project.imageSrc ||
                                     "https://engineeredsys.com/wp-content/uploads/2019/08/download.png"
@@ -110,9 +135,9 @@ const VideoSection = ({ sourceArray = [], itemsRef }) => {
                             <p>{project.description}</p>
                         </div> */}
                     </section>
-                </li>
+                </SwiperSlide>
             ))}
-        </ul>
+        </Swiper>
     );
 };
 

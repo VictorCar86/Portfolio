@@ -70,3 +70,15 @@
             0px 0px 8px #fcdeba;
     }
 }
+
+:root {
+    --color-cream-100: #fcdeba;
+    --color-cream-200: #e7c7a5;
+    --color-cream-300: #d2b18f;
+    --color-cream-400: #bd9a7a;
+    --color-cream-500: #a98365;
+    --color-cream-600: #946c4f;
+    --color-cream-700: #7f563a;
+    --color-cream-800: #6a3f24;
+    --color-cream-900: #55280f;
+}

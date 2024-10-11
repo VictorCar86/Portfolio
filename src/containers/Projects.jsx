@@ -29,7 +29,7 @@ const Projects = () => {
                 draggable="false"
             />
 
-            <p className="relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
+            <p className="relative max-w-xl mb-5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
                 <TextIncludes compare="en-">
                     I've created a lot of projects from little experiments to more complex
                     webpages. If you are curious, check out my Github's profile where I
@@ -41,6 +41,7 @@ const Projects = () => {
                     publico mis proyectos más recientes.
                 </TextIncludes>
             </p>
+
             <VideoSection sourceArray={videoSources} itemsRef={setItemsRef} />
         </InfoSection>
     );

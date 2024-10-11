@@ -1,18 +1,18 @@
-import trelloImg from '../assets/images/trello_login.webp';
-import dropsImg from '../assets/images/drops_image.webp';
-import yardsaleVideo from '../assets/videos/yardsale.webm';
-import alifakeVideo from '../assets/videos/alifake.webm';
-import reginaVideo from '../assets/videos/regina.webm';
-import pokeapiVideo from '../assets/videos/pokeapi.webm';
+import trelloImg from "../assets/images/trello_login.webp";
+import dropsImg from "../assets/images/drops_image.webp";
+import yardsaleVideo from "../assets/videos/yardsale.webm";
+import alifakeVideo from "../assets/videos/alifake.webm";
+import reginaVideo from "../assets/videos/regina.webm";
+import pokeapiVideo from "../assets/videos/pokeapi.webm";
 // import weatherVideo from '../assets/videos/weather.webm';
 // import timerVideo from '../assets/videos/timer.webm';
 
 const videoSources = [
     {
-        title: "Drops Manager API",
-        imageSrc: dropsImg,
-        github: "https://github.com/VictorCar86/Drops-Manager-API",
-        page: "https://dropsmanager-1-z2490798.deta.app/docs",
+        title: "Alifake - Mobile E-Commerce",
+        videoSrc: alifakeVideo,
+        github: "https://github.com/VictorCar86/AliFake-Mobile-E-Commerce",
+        page: "https://alifake.netlify.app/",
     },
     {
         title: "YardSale E-Commerce - Fullstack",
@@ -21,28 +21,28 @@ const videoSources = [
         page: "https://yardsale-ecommerce.netlify.app/",
     },
     {
-        title: "Trello Auth - Angular",
-        imageSrc: trelloImg,
-        github: "https://github.com/VictorCar86/Trello-Auth-Angular",
-        page: "https://trello-auth.netlify.app/",
-    },
-    {
-        title: "Alifake - Mobile E-Commerce",
-        videoSrc: alifakeVideo,
-        github: "https://github.com/VictorCar86/AliFake-Mobile-E-Commerce",
-        page: "https://alifake.netlify.app/",
-    },
-    {
         title: "La Regina - Italian Restaurant",
         videoSrc: reginaVideo,
         github: "https://github.com/VictorCar86/La_Regina_italian_restaurant",
         page: "https://laregina.netlify.app/",
     },
     {
+        title: "Trello Auth - Angular",
+        imageSrc: trelloImg,
+        github: "https://github.com/VictorCar86/Trello-Auth-Angular",
+        page: "https://trello-auth.netlify.app/",
+    },
+    {
         title: "PokeAPI",
         videoSrc: pokeapiVideo,
         github: "https://github.com/VictorCar86/Pokemon-API",
         page: "https://victorcar86.github.io/Pokemon-API/",
+    },
+    {
+        title: "Drops Manager API",
+        imageSrc: dropsImg,
+        github: "https://github.com/VictorCar86/Drops-Manager-API",
+        page: "https://dropsmanager-1-z2490798.deta.app/docs",
     },
     // {
     //     title: "Wheater-React-App",
@@ -58,4 +58,4 @@ const videoSources = [
     // },
 ];
 
-export default videoSources
+export default videoSources;

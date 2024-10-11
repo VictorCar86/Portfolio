@@ -56,9 +56,9 @@ const Skills = () => {
                 </TextIncludes>
             </p>
 
-            <div className="relative flex flex-col md:flex-row justify-evenly md:h-80 lg:h-[400px] mx-auto my-6 font-bold md:text-lg">
+            <div className="relative flex flex-col md:flex-row justify-evenly md:h-80 lg:h-[400px] mx-auto font-bold md:text-lg">
                 <aside>
-                    <p className="text-2xl font-bold pl-3 my-4 border-amber-900 border-l-4">
+                    <p className="text-2xl font-bold my-4">
                         <TextIncludes compare="en">Tools 🛠️</TextIncludes>
                         <TextIncludes compare="es">Herramientas 🛠️</TextIncludes>
                     </p>
@@ -74,7 +74,7 @@ const Skills = () => {
                     </ul>
                 </aside>
                 <aside className="h-full">
-                    <p className="text-2xl font-bold pl-3 my-4 border-amber-900 border-l-4">
+                    <p className="text-2xl font-bold my-4">
                         <TextIncludes compare="en">Languages 🌎</TextIncludes>
                         <TextIncludes compare="es">Lenguajes 🌎</TextIncludes>
                     </p>
