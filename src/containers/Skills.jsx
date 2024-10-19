@@ -6,22 +6,14 @@ import ToolsDescription from "../components/ToolsDescription";
 import mushroomImg from "../assets/images/mushroom.webp";
 import UKFlagIcon from "../components/Icons/UKFlagIcon";
 import SpainIcon from "../assets/images/spain.webp";
-import currentLanguage from "../utils/currentLanguage";
-import TextIncludes from "../utils/TextIncludes";
+import { CheckLanguage, GetByLanguage } from "../utils/languageTools";
 import { tools } from "../utils/toolsList";
 
-const Skills = () => {
-    const titleLanguage = () => {
-        if (currentLanguage.includes("en")) {
-            return "Skills 💻";
-        }
-        if (currentLanguage.includes("es")) {
-            return "Habilidades 💻";
-        }
-    };
+const titleLanguage = CheckLanguage(["Skills 💻", "en"], ["Habilidades 💻", "es"]);
 
+const Skills = () => {
     return (
-        <InfoSection title={titleLanguage()} bgColor="bg-cream-400" customId="skills">
+        <InfoSection title={titleLanguage} bgColor="bg-cream-500" customId="skills">
             {/* <img
                 className='absolute -top-8 w-10 h-min cursor-pointer select-none'
                 draggable='false'
@@ -36,21 +28,21 @@ const Skills = () => {
             />
 
             <p className="relative max-w-xl mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
-                <TextIncludes compare="en">
+                <GetByLanguage lang="en">
                     Fundamental technologies and tools that I often use to design and
                     develop efficient and functional web applications.
-                </TextIncludes>
-                <TextIncludes compare="es">
+                </GetByLanguage>
+                <GetByLanguage lang="es">
                     Tecnologías y herramientas fundamentales que más suelo utilizar para
                     diseñar y desarrollar aplicaciones web eficientes y funcionales.
-                </TextIncludes>
+                </GetByLanguage>
             </p>
 
             <div className="relative flex flex-col md:flex-row justify-evenly md:h-80 lg:h-[400px] mx-auto font-bold md:text-lg">
                 <aside>
                     <p className="text-2xl font-bold my-4">
-                        <TextIncludes compare="en">Tools 🛠️</TextIncludes>
-                        <TextIncludes compare="es">Herramientas 🛠️</TextIncludes>
+                        <GetByLanguage lang="en">Tools 🛠️</GetByLanguage>
+                        <GetByLanguage lang="es">Herramientas 🛠️</GetByLanguage>
                     </p>
                     <ul className="grid sm:grid-flow-col grid-cols-3 grid-rows-5 gap-y-3 sm:gap-y-6 lg:gap-x-2 justify-items-center sm:justify-items-start items-center max-w-sm sm:max-w-full mx-auto">
                         {tools.map((tool, index) => (
@@ -65,8 +57,8 @@ const Skills = () => {
                 </aside>
                 <aside className="h-full">
                     <p className="text-2xl font-bold my-4">
-                        <TextIncludes compare="en">Languages 🌎</TextIncludes>
-                        <TextIncludes compare="es">Lenguajes 🌎</TextIncludes>
+                        <GetByLanguage lang="en">Languages 🌎</GetByLanguage>
+                        <GetByLanguage lang="es">Lenguajes 🌎</GetByLanguage>
                     </p>
                     <div className="h-4/5 mt-5 font-bold">
                         <ul className="flex flex-row md:flex-col justify-evenly items-center h-full">
@@ -76,16 +68,16 @@ const Skills = () => {
                                 </div>
                                 <div className="sm:grid">
                                     <p className="sm:self-end -sm:my-2 text-[22px]">
-                                        <TextIncludes compare="en">English</TextIncludes>
-                                        <TextIncludes compare="es">Inglés</TextIncludes>
+                                        <GetByLanguage lang="en">English</GetByLanguage>
+                                        <GetByLanguage lang="es">Inglés</GetByLanguage>
                                     </p>
                                     <p className="italic text-lg whitespace-nowrap text-amber-700">
-                                        <TextIncludes compare="en">
+                                        <GetByLanguage lang="en">
                                             B2 Intermediate
-                                        </TextIncludes>
-                                        <TextIncludes compare="es">
+                                        </GetByLanguage>
+                                        <GetByLanguage lang="es">
                                             B2 Intermedio
-                                        </TextIncludes>
+                                        </GetByLanguage>
                                     </p>
                                 </div>
                             </li>
@@ -100,12 +92,12 @@ const Skills = () => {
                                 </div>
                                 <div className="sm:grid">
                                     <p className="sm:self-end -sm:my-2 text-[22px]">
-                                        <TextIncludes compare="en">Spanish</TextIncludes>
-                                        <TextIncludes compare="es">Español</TextIncludes>
+                                        <GetByLanguage lang="en">Spanish</GetByLanguage>
+                                        <GetByLanguage lang="es">Español</GetByLanguage>
                                     </p>
                                     <p className="italic text-lg text-amber-700">
-                                        <TextIncludes compare="en">Native</TextIncludes>
-                                        <TextIncludes compare="es">Nativo</TextIncludes>
+                                        <GetByLanguage lang="en">Native</GetByLanguage>
+                                        <GetByLanguage lang="es">Nativo</GetByLanguage>
                                     </p>
                                 </div>
                             </li>
