@@ -1,16 +1,20 @@
-import React, { useMemo } from "react";
+import React from "react";
 import InfoSection from "../components/InfoSection";
 import WorkIcon from "../components/Icons/WorkIcon";
+import { IoMdTime } from "react-icons/io";
+import { FaRegBuilding } from "react-icons/fa";
 import { previousJobs } from "../utils/previousJobs";
 import { CheckLanguage, GetByLanguage } from "../utils/languageTools";
+import clsx from "clsx";
 
 const titleLanguage = CheckLanguage(["Experience 💼", "en"], ["Experiencia 💼", "es"]);
 
 const getMonthName = (dateStr = "") => {
     const date = new Date(dateStr);
+    const wordLength = window.innerWidth >= 768 ? "long" : "short";
     const monthDayName = CheckLanguage(
-        [date.toLocaleString("en-US", { month: "long" }), "en"],
-        [date.toLocaleString("es-ES", { month: "long" }), "es"],
+        [date.toLocaleString("en-US", { month: wordLength }), "en"],
+        [date.toLocaleString("es-ES", { month: wordLength }), "es"],
     );
     return `${monthDayName} ${date.getFullYear()}`;
 };
@@ -27,18 +31,52 @@ const Experience = () => {
                             </i>
                             <div className="h-full w-[3px] mainBackground"></div>
                         </aside>
-                        <GetByLanguage lang="en">
-                            <p className="text-2xl font-bold mb-1.5">{job.en.title}</p>
-                            <p className="mb-1.5">{job.en.description}</p>
-                        </GetByLanguage>
-                        <GetByLanguage lang="es">
-                            <p className="text-2xl font-bold mb-1.5">{job.es.title}</p>
-                            <p className="mb-1.5">{job.es.description}</p>
-                        </GetByLanguage>
-                        <p className="mb-1.5 italic">{job.company}</p>
-                        <p className="mb-1.5 capitalize">
-                            {getMonthName(job.dates[0])} - {getMonthName(job.dates[1])}
-                        </p>
+                        <article
+                            className={clsx("md:grid grid-cols-2 items-center gap-5", {
+                                "pb-3.5": index !== previousJobs.length - 1,
+                            })}
+                        >
+                            <div className="h-max mb-4 md:m-0">
+                                <p className="text-2xl font-bold mb-2">
+                                    <GetByLanguage lang="en">
+                                        {job.en.title}
+                                    </GetByLanguage>
+                                    <GetByLanguage lang="es">
+                                        {job.es.title}
+                                    </GetByLanguage>
+                                </p>
+                                <p className="mb-1.5">
+                                    <GetByLanguage lang="en">
+                                        {job.en.description}
+                                    </GetByLanguage>
+                                    <GetByLanguage lang="es">
+                                        {job.es.description}
+                                    </GetByLanguage>
+                                </p>
+                                <p className="flex items-center gap-1.5 mb-1.5 italic">
+                                    <FaRegBuilding />
+                                    <span>{job.company}</span>
+                                </p>
+                                <p className="flex items-center gap-1.5 mb-1.5 capitalize">
+                                    <IoMdTime className="scale-105" />
+                                    <span>
+                                        {getMonthName(job.dates[0])} -{" "}
+                                        {getMonthName(job.dates[1])}
+                                    </span>
+                                </p>
+                            </div>
+                            <div className="grid grid-cols-2 grid-rows-[repeat(2,_minmax(0,_116px))] justify-items-center gap-1.5 p-1.5 rounded-lg mainBackground">
+                                {job.images.map((image, index) => (
+                                    <img
+                                        className="h-full w-full select-none object-cover"
+                                        src={image}
+                                        alt={`Image ${index}`}
+                                        draggable="false"
+                                        key={index}
+                                    />
+                                ))}
+                            </div>
+                        </article>
                     </li>
                 ))}
             </ul>
