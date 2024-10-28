@@ -1,6 +1,8 @@
 import React from "react";
 import InfoSection from "../components/InfoSection";
 import WorkIcon from "../components/Icons/WorkIcon";
+import Modal from "../components/Modal";
+import useModalStore from "../store/modalStore";
 import { IoMdTime } from "react-icons/io";
 import { FaRegBuilding } from "react-icons/fa";
 import { previousJobs } from "../utils/previousJobs";
@@ -20,6 +22,8 @@ const getMonthName = (dateStr = "") => {
 };
 
 const Experience = () => {
+    const openModal = useModalStore((state) => state.openModal);
+
     return (
         <InfoSection title={titleLanguage} bgColor="bg-cream-300" customId="experience">
             <ul className="pl-[46px]">
@@ -67,13 +71,32 @@ const Experience = () => {
                             </div>
                             <div className="grid grid-cols-2 grid-rows-[repeat(2,_minmax(0,_116px))] justify-items-center gap-1.5 p-1.5 rounded-lg mainBackground">
                                 {job.images.map((image, index) => (
-                                    <img
-                                        className="h-full w-full transition-transform hover:scale-105 select-none object-cover"
-                                        src={image}
-                                        alt={`Image ${index}`}
-                                        draggable="false"
-                                        key={index}
-                                    />
+                                    <React.Fragment key={index}>
+                                        <img
+                                            className={clsx(
+                                                "h-full w-full transition-transform hover:scale-105 select-none object-cover",
+                                                { "cursor-pointer": image.choosable },
+                                            )}
+                                            src={image.src}
+                                            alt={image.title}
+                                            draggable="false"
+                                            onClick={
+                                                image.choosable
+                                                    ? () => openModal(image.title)
+                                                    : null
+                                            }
+                                        />
+                                        {image.choosable && (
+                                            <Modal id={image.title} title={image.title}>
+                                                <img
+                                                    className="w-full select-none"
+                                                    src={image.src}
+                                                    alt={image.title}
+                                                    draggable="false"
+                                                />
+                                            </Modal>
+                                        )}
+                                    </React.Fragment>
                                 ))}
                             </div>
                         </article>

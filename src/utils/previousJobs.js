@@ -17,6 +17,15 @@ export const previousJobs = [
             description:
                 "Desarrollé y mantuve aplicaciones del lado del cliente, gestionando una integración fluida entre el frontend y el backend, así como con APIs externas o servicios web.",
         },
-        images: [Constructores, Ferreteros, Sidoc, Letsdoitnow],
+        images: [
+            {
+                src: Constructores,
+                title: "Marketplace de Constructores",
+                choosable: true,
+            },
+            { src: Ferreteros, title: "Marketplace de Ferreteros", choosable: true },
+            { src: Sidoc, title: "Logo oficial de SIDOC" },
+            { src: Letsdoitnow, title: "Logo de Let's Do It Now" },
+        ],
     },
 ];
