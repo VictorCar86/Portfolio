@@ -68,7 +68,7 @@ const Experience = () => {
                             <div className="grid grid-cols-2 grid-rows-[repeat(2,_minmax(0,_116px))] justify-items-center gap-1.5 p-1.5 rounded-lg mainBackground">
                                 {job.images.map((image, index) => (
                                     <img
-                                        className="h-full w-full select-none object-cover"
+                                        className="h-full w-full transition-transform hover:scale-105 select-none object-cover"
                                         src={image}
                                         alt={`Image ${index}`}
                                         draggable="false"

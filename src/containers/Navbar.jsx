@@ -3,10 +3,43 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { ImCross } from "react-icons/im";
 import { GetByLanguage } from "../utils/languageTools";
 
+const routes = [
+    {
+        to: "#home",
+        en: "Home",
+        es: "Inicio",
+    },
+    {
+        to: "#about",
+        en: "About me",
+        es: "Sobre mi",
+    },
+    {
+        to: "#experience",
+        en: "Experience",
+        es: "Experiencia",
+    },
+    {
+        to: "#projects",
+        en: "Projects",
+        es: "Proyectos",
+    },
+    {
+        to: "#skills",
+        en: "Skills",
+        es: "Habilidades",
+    },
+    {
+        to: "#contact",
+        en: "Contact",
+        es: "Contacto",
+    },
+];
+
 const Navbar = () => {
     const [scrollPosition, setScrollPosition] = useState(0);
     const handleScroll = () => {
-        const position = window.pageYOffset;
+        const position = window.scrollY;
         setScrollPosition(position);
     };
 
@@ -51,36 +84,17 @@ const Navbar = () => {
             <ul
                 className={`h-full px-[22%] flex -md:flex-col -md:justify-center -md:items-center -md:gap-[5%] -md:-translate-y-[1000px] md:justify-around md:items-center ${expand.list} transition-transform duration-1000 text-amber-100 -md:text-2xl text-lg italic font-bold`}
             >
-                <li className="px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500">
-                    <a onClick={toggleNavbar} href="#home">
-                        <GetByLanguage lang="en">Home</GetByLanguage>
-                        <GetByLanguage lang="es">Inicio</GetByLanguage>
-                    </a>
-                </li>
-                <li className="px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500">
-                    <a onClick={toggleNavbar} href="#about">
-                        <GetByLanguage lang="en">About me</GetByLanguage>
-                        <GetByLanguage lang="es">Sobre mí</GetByLanguage>
-                    </a>
-                </li>
-                <li className="px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500">
-                    <a onClick={toggleNavbar} href="#skills">
-                        <GetByLanguage lang="en">Skills</GetByLanguage>
-                        <GetByLanguage lang="es">Habilidades</GetByLanguage>
-                    </a>
-                </li>
-                <li className="px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500">
-                    <a onClick={toggleNavbar} href="#projects">
-                        <GetByLanguage lang="en">Projects</GetByLanguage>
-                        <GetByLanguage lang="es">Projectos</GetByLanguage>
-                    </a>
-                </li>
-                <li className="px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500">
-                    <a onClick={toggleNavbar} href="#contact">
-                        <GetByLanguage lang="en">Contact</GetByLanguage>
-                        <GetByLanguage lang="es">Contacto</GetByLanguage>
-                    </a>
-                </li>
+                {routes.map((route, index) => (
+                    <li
+                        className="px-2 border-b-2 hover:border-b-2 md:hover:border-amber-100 border-transparent transition-all duration-500"
+                        key={index}
+                    >
+                        <a onClick={toggleNavbar} href={route.to}>
+                            <GetByLanguage lang="en">{route.en}</GetByLanguage>
+                            <GetByLanguage lang="es">{route.es}</GetByLanguage>
+                        </a>
+                    </li>
+                ))}
             </ul>
             <button
                 className="md:hidden w-9 h-9 absolute right-5 top-2.5 fill-amber-100 animate__animated active:animate__heartBeat"
