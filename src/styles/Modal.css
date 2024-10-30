@@ -1,0 +1,6 @@
+body:has(dialog[open]) {
+    overflow: hidden !important;
+}
+dialog.hide {
+    -webkit-animation-name: fadeOutDown !important;
+}

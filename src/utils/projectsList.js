@@ -7,7 +7,7 @@ import pokeapiVideo from "../assets/videos/pokeapi.webm";
 // import weatherVideo from '../assets/videos/weather.webm';
 // import timerVideo from '../assets/videos/timer.webm';
 
-const videoSources = [
+const projectsList = [
     {
         title: "Alifake - Mobile E-Commerce",
         videoSrc: alifakeVideo,
@@ -58,4 +58,4 @@ const videoSources = [
     // },
 ];
 
-export default videoSources;
+export default projectsList;

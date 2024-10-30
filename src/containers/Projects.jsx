@@ -1,17 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import climbingPlantImg from "../assets/images/climbing-plant.webp";
 import InfoSection from "../components/InfoSection";
-import VideoSection from "../components/VideoSection";
-import videoSources from "../utils/videoSources";
-import useIntersection from "../hooks/useIntersection";
+import ProjectsSlider from "../components/ProjectsSlider";
+import projectsList from "../utils/projectsList";
 import { CheckLanguage, GetByLanguage } from "../utils/languageTools";
 
 const titleLanguage = CheckLanguage(["Projects 📚", "en"], ["Projectos 📚", "es"]);
 
 const Projects = () => {
-    const [itemsRef, setItemsRef] = useState([]);
-    itemsRef.forEach((elm) => useIntersection(["animate__bounceIn"]).observe(elm));
-
     return (
         <InfoSection title={titleLanguage} bgColor="bg-cream-400" customId="projects">
             <img
@@ -35,7 +31,7 @@ const Projects = () => {
                 </GetByLanguage>
             </p>
 
-            <VideoSection sourceArray={videoSources} itemsRef={setItemsRef} />
+            <ProjectsSlider projects={projectsList} />
         </InfoSection>
     );
 };

@@ -13,7 +13,7 @@ const titleLanguage = CheckLanguage(["Skills 💻", "en"], ["Habilidades 💻", 
 
 const ToolBanner = ({ icon: Icon, name = "", className = "" }) => {
     return (
-        <li className="group relative sm:flex items-center max-w-sm h-min hover:scale-105 transition-transform select-none">
+        <li className="group relative sm:flex items-center max-w-sm h-min cursor-crosshair hover:scale-105 transition-transform select-none">
             {/* <Card3D> */}
             <Icon
                 className={clsx(
