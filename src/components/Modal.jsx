@@ -56,13 +56,13 @@ const Modal = ({ id, title, onClose, children }) => {
             onClick={handleBackdropClick}
             className="backdrop:bg-black/50 p-0 bg-transparent rounded-lg shadow-lg open:animate__fadeInDown"
             style={{
-                animationDuration: "0.3s",
+                animationDuration: "0.25s",
                 animationFillMode: "both",
             }}
         >
             <div className="min-w-[300px] max-w-lg md:max-w-3xl bg-white rounded-lg">
                 <div className="flex items-center justify-between p-4 border-b">
-                    <h2 className="text-lg font-semibold">{title}</h2>
+                    <h2 className="text-lg font-semibold italic">{title}</h2>
                     <button
                         onClick={handleClose}
                         className="p-1 rounded-full hover:bg-gray-100 transition-colors"
