@@ -1,13 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import {
     FaLinkedin,
     FaGithub,
     // FaTwitter,
 } from "react-icons/fa";
+import LeafFall from "../components/LeafFall";
 import landscapeImg from "../assets/images/main_landscape.webp";
 import landscapeMobileImg from "../assets/images/main_landscape-mobile.webp";
 import profileImg from "../assets/images/profile.webp";
-import fallImg from "../assets/images/fall.webp";
 import { CheckLanguage } from "../utils/languageTools";
 
 const titleLanguage = CheckLanguage(
@@ -16,8 +16,6 @@ const titleLanguage = CheckLanguage(
 );
 
 const Home = () => {
-    const [fall, setFall] = useState("");
-
     return (
         <section className="relative min-h-[640px] h-screen w-full bg-cream-100">
             <picture>
@@ -74,13 +72,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="relative w-64 -md:h-64 md:w-auto rounded-full z-0 mainBackground">
-                    <img
-                        className={`absolute top-0 rotate-45 -z-10 scale-[1.35] -translate-y-4 cursor-pointer select-none ${fall}`}
-                        onClick={() => setFall("animate-fall")}
-                        draggable="false"
-                        src={fallImg}
-                        alt="Plane image of an autumn leaf"
-                    />
+                    <LeafFall className="absolute top-0 rotate-45 -z-10 scale-[1.35] -translate-y-4 select-none" />
                     <img
                         className="h-[91.666667%] w-11/12 m-[4%] rounded-full shadow-xl select-none"
                         draggable="false"

@@ -28,6 +28,10 @@
         );
     }
 
+    .leafShadow {
+        filter: drop-shadow(0px 0px 8px #ec9100);
+    }
+
     .responsiveFontSize {
         font-size: clamp(12px, 2.2vw, 1.5rem);
     }
