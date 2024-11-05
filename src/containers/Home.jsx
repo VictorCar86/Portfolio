@@ -72,7 +72,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="relative w-64 -md:h-64 md:w-auto rounded-full z-0 mainBackground">
-                    <LeafFall className="absolute top-0 rotate-45 -z-10 scale-[1.35] -translate-y-4 select-none" />
+                    <LeafFall className="absolute top-0 rotate-45 w-full -z-10 scale-[1.35] -translate-y-4 select-none" />
                     <img
                         className="h-[91.666667%] w-11/12 m-[4%] rounded-full shadow-xl select-none"
                         draggable="false"
