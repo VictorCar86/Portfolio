@@ -37,14 +37,10 @@ const AboutMe = () => {
                         key={index}
                     >
                         <GetByLanguage lang="en">
-                            <p className="mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
-                                {info.en}
-                            </p>
+                            <p className="mb-1.5 shadowLight">{info.en}</p>
                         </GetByLanguage>
                         <GetByLanguage lang="es">
-                            <p className="mb-1.5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
-                                {info.es}
-                            </p>
+                            <p className="mb-1.5 shadowLight">{info.es}</p>
                         </GetByLanguage>
 
                         <CardHover3D

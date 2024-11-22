@@ -15,6 +15,10 @@
     .svg {
         @apply w-full h-full;
     }
+
+    .shadowLight {
+        @apply shadow-[0px_0px_10px_4px_#faebd7] bg-cream-50/80;
+    }
 }
 
 @layer utilities {
@@ -76,6 +80,7 @@
 }
 
 :root {
+    --color-cream-50: #faebd7;
     --color-cream-100: #fcdeba;
     --color-cream-200: #e7c7a5;
     --color-cream-300: #d2b18f;

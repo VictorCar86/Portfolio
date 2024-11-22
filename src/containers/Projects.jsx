@@ -17,7 +17,7 @@ const Projects = () => {
                 draggable="false"
             />
 
-            <p className="relative max-w-xl mb-5 shadow-[0px_0px_10px_4px_#ffffff] bg-white/80">
+            <p className="relative max-w-xl mb-5 shadowLight">
                 <GetByLanguage lang="en-">
                     I've built various projects, each designed to address specific
                     challenges. Here, I aim to reflect my skills as a developer and my

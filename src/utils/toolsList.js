@@ -1,6 +1,4 @@
 import {
-    SiCss3,
-    SiHtml5,
     SiJavascript,
     SiTypescript,
     SiReact,
@@ -13,25 +11,24 @@ import {
     SiExpress,
     SiDjango,
     SiFastapi,
-    SiPostgresql,
     SiDocker,
 } from "react-icons/si";
-import { RiVuejsFill } from "react-icons/ri";
+import HTML5Icon from "../components/Icons/HTML5Icon";
+import CSS3Icon from "../components/Icons/CSS3Icon";
+import VuejsIcon from "../components/Icons/VuejsIcon";
 import PythonIcon from "../components/Icons/PythonIcon";
+import PostgresIcon from "../components/Icons/PostgresIcon";
 
 export const tools = {
     frontend: [
         {
             name: "HTML5",
-            icon: SiHtml5,
-            className: `fill-orange-500`,
-            styles: { fill: "#e34c26" },
+            icon: HTML5Icon,
         },
         {
             name: "CSS3",
-            icon: SiCss3,
-            className: `fill-blue-600`,
-            styles: { fill: "#264de4" },
+            icon: CSS3Icon,
+            className: `-sm:mx-1.5`,
         },
         {
             name: "JavaScript",
@@ -42,7 +39,7 @@ export const tools = {
         {
             name: "TypeScript",
             icon: SiTypescript,
-            className: `fill-blue-900`,
+            className: `fill-blue-900 bg-white`,
             styles: { fill: "#1e3a8a", background: "#ffffff" },
         },
         {
@@ -54,14 +51,13 @@ export const tools = {
         {
             name: "Next.js",
             icon: SiNextdotjs,
-            className: `fill-black`,
+            className: `fill-black bg-white rounded-full`,
             styles: { fill: "#000000" },
         },
         {
             name: "Vue",
-            icon: RiVuejsFill,
-            className: `fill-green-800`,
-            styles: { fill: "#166534" },
+            icon: VuejsIcon,
+            className: `-sm:mx-1.5`,
         },
         {
             name: "Nuxt.js",
@@ -84,7 +80,7 @@ export const tools = {
         {
             name: "SASS",
             icon: SiSass,
-            className: `fill-pink-500`,
+            className: `fill-pink-500 bg-white rounded-full -sm:mx-1.5`,
             styles: { fill: "#ec4899" },
         },
     ],
@@ -108,8 +104,8 @@ export const tools = {
         {
             name: "FastAPI",
             icon: SiFastapi,
-            className: `fill-emerald-800`,
-            styles: { fill: "#065f46" },
+            className: `fill-teal-500 bg-white rounded-full`,
+            styles: { fill: "#14b8a6" },
         },
         {
             name: "Django",
@@ -119,9 +115,7 @@ export const tools = {
         },
         {
             name: "PostgreSQL",
-            icon: SiPostgresql,
-            className: `fill-blue-500`,
-            styles: { fill: "#3b82f6" },
+            icon: PostgresIcon,
         },
         {
             name: "Docker",

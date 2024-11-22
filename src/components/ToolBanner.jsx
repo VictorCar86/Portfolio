@@ -36,13 +36,13 @@ const ToolBanner = ({ icon: Icon, name = "", className = "", styles }) => {
 
     return (
         <button
-            className="group relative sm:flex items-center max-w-sm h-min cursor-pointer hover:scale-105 transition-transform select-none"
+            className="group relative sm:flex items-center max-w-sm h-min sm:px-2 py-2 rounded-xl text-cream-800 cursor-pointer hover:scale-105 transition-transform select-none shadow-[0px_0px_6px_2px_#bd9a7a] bg-cream-100/80"
             onClick={showConfetti}
             type="button"
         >
             <Icon
                 className={clsx(
-                    "sm:inline-block h-min w-8 lg:w-12 mx-auto sm:mr-3 animate__animated group-hover:animate__rubberBand",
+                    "sm:inline-block h-min w-8 lg:w-12 mx-auto sm:mr-2 animate__animated group-hover:animate__rubberBand",
                     className,
                 )}
             />
