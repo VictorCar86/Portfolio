@@ -65,10 +65,10 @@ const Modal = ({ id, title, onClose, children }) => {
                     <h2 className="text-lg font-semibold italic">{title}</h2>
                     <button
                         onClick={handleClose}
-                        className="p-1 rounded-full hover:bg-gray-100 transition-colors"
+                        className="group p-1 rounded-full hover:bg-cream-500 focus-visible:outline-cream-500 transition-colors"
                         type="button"
                     >
-                        <IoCloseOutline className="w-5 h-5" />
+                        <IoCloseOutline className="w-5 h-5 text-cream-900 group-hover:text-white" />
                     </button>
                 </div>
 
