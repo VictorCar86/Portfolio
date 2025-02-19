@@ -7,7 +7,7 @@ import SpainIcon from "../assets/images/spain.webp";
 import { CheckLanguage, GetByLanguage } from "../utils/languageTools";
 import { tools } from "../utils/toolsList";
 import { separateItems } from "../utils/separateItems";
-import { leafsConfetti } from "../utils/leafsConfetti";
+import confettiAtSides from "../utils/confettiAtSides";
 import aestheticFlowers2Img from "../assets/images/aesthetic_flowers2.webp";
 import aestheticBottomImg from "../assets/images/aesthetic_bottom.webp";
 import clsx from "clsx";
@@ -35,7 +35,7 @@ const Skills = () => {
                 src={aestheticBottomImg}
                 alt="Aesthetic plant"
             />
-            <button onClick={leafsConfetti} type="button">
+            <button onClick={() => confettiAtSides(["🍄", "🍄‍🟫"])} type="button">
                 <img
                     className="absolute top-5 -right-[0.45rem] w-[14vw] max-w-[140px] min-w-[110px] h-min select-none hover:scale-105 transition-transform"
                     draggable="false"

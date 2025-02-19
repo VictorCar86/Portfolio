@@ -34,6 +34,7 @@ module.exports = {
             },
             animation: {
                 fall: "fall 5s ease-in forwards",
+                "restart-fall": "restart-fall 1.5s ease-in forwards",
                 "navbar-open": "navbar-open 0.65s ease-out forwards",
                 "navbar-close": "navbar-close 0.25s ease-in forwards",
             },
@@ -51,6 +52,16 @@ module.exports = {
                         transform: "translate(250%, 300%) rotate(-10deg)",
                         opacity: 0,
                         display: "none",
+                    },
+                },
+                "restart-fall": {
+                    "0%": {
+                        scale: 0.7,
+                        opacity: 0,
+                    },
+                    "100%": {
+                        scale: 1,
+                        opacity: 1,
                     },
                 },
                 "navbar-open": {

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import confettiAtSides from "../utils/confettiAtSides";
 import fallImg from "../assets/images/fall.webp";
 import clsx from "clsx";
 
@@ -9,8 +10,12 @@ const LeafFall = ({ className = "" }) => {
 
     const handleClick = () => {
         if (!isFalling) {
+            confettiAtSides();
             canvasRef.current.style.cursor = "";
             setIsFalling(true);
+            setTimeout(() => {
+                setIsFalling(false);
+            }, 8000);
         }
     };
 
@@ -48,7 +53,10 @@ const LeafFall = ({ className = "" }) => {
     return (
         <canvas
             ref={canvasRef}
-            className={clsx(`${className} transition-all`, { "animate-fall": isFalling })}
+            className={clsx(`${className} transition-all`, {
+                "animate-fall": isFalling,
+                "animate-restart-fall": !isFalling,
+            })}
             width="425"
             height="535"
             onClick={handleClick}
