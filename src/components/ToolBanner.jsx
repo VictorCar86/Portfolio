@@ -2,6 +2,7 @@ import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { confetti } from "@tsparticles/confetti";
 import clsx from "clsx";
+import "../styles/Confetti.css";
 
 const ToolBanner = ({ icon: Icon, name = "", className = "", styles }) => {
     const showConfetti = () => {
