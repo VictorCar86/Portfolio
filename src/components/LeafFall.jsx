@@ -52,6 +52,7 @@ const LeafFall = ({ className = "" }) => {
 
     return (
         <canvas
+            id="leafFallCanvas"
             ref={canvasRef}
             className={clsx(`${className} transition-all`, {
                 "animate-fall": isFalling,

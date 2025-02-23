@@ -3,7 +3,6 @@ import {
     SiTypescript,
     SiReact,
     SiNextdotjs,
-    SiNuxtdotjs,
     SiRedux,
     SiTailwindcss,
     SiSass,
@@ -12,6 +11,9 @@ import {
     SiDjango,
     SiFastapi,
     SiDocker,
+    SiPrisma,
+    SiAngular,
+    SiSqlite,
 } from "react-icons/si";
 import HTML5Icon from "../components/Icons/HTML5Icon";
 import CSS3Icon from "../components/Icons/CSS3Icon";
@@ -60,10 +62,10 @@ export const tools = {
             className: `-sm:mx-1.5`,
         },
         {
-            name: "Nuxt.js",
-            icon: SiNuxtdotjs,
-            className: `fill-green-700`,
-            styles: { fill: "#15803d" },
+            name: "Angular",
+            icon: SiAngular,
+            className: `fill-red-500`,
+            styles: { fill: "#dc2626" },
         },
         {
             name: "Redux",
@@ -98,6 +100,12 @@ export const tools = {
             styles: { fill: "#000000" },
         },
         {
+            name: "Prisma",
+            icon: SiPrisma,
+            className: `fill-black`,
+            styles: { fill: "#000000" },
+        },
+        {
             name: "Python",
             icon: PythonIcon,
         },
@@ -116,6 +124,12 @@ export const tools = {
         {
             name: "PostgreSQL",
             icon: PostgresIcon,
+        },
+        {
+            name: "SQLite",
+            icon: SiSqlite,
+            className: `fill-blue-600`,
+            styles: { fill: "#2563eb" },
         },
         {
             name: "Docker",

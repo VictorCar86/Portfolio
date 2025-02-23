@@ -10,7 +10,9 @@ import confettiAtSides from "../utils/confettiAtSides";
 
 const MainPage = () => {
     useEffect(() => {
-        setTimeout(confettiAtSides, 1500);
+        if (window.scrollY < window.innerHeight / 2) {
+            setTimeout(confettiAtSides, 1500);
+        }
     }, []);
 
     return (
