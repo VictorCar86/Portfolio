@@ -26,10 +26,10 @@ const Experience = () => {
 
     return (
         <InfoSection title={titleLanguage} bgColor="bg-cream-300" customId="experience">
-            <ul className="pl-[46px]">
+            <ul className="pl-7 md:pl-[46px]">
                 {previousJobs.map((job, index) => (
                     <li className="relative" key={index}>
-                        <aside className="absolute top-0.5 -left-11 flex flex-col items-center h-full">
+                        <aside className="absolute top-0.5 -left-9 md:-left-11 flex flex-col items-center h-full">
                             <i className="inline-block rounded-full border-[3px] border-amber-900 shadow-[0px_0px_4px_0px] shadow-amber-900">
                                 <WorkIcon className="w-6 h-max p-[3px] fill-amber-900" />
                             </i>

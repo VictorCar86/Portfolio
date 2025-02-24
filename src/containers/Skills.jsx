@@ -44,7 +44,7 @@ const Skills = () => {
                 />
             </button>
 
-            <p className="relative max-w-xl mb-1.5 shadowLight">
+            <p className="relative max-w-[75%] md:max-w-xl mb-1.5 shadowLight">
                 <GetByLanguage lang="en">
                     Fundamental technologies and tools that I often use to design and
                     develop efficient and functional web applications.
