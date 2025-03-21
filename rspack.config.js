@@ -1,5 +1,5 @@
 const path = require("path");
-const HTMLWebpackPlugin = require("html-webpack-plugin");
+const { rspack } = require("@rspack/core");
 
 module.exports = {
     entry: "./src/index.js",
@@ -41,7 +41,7 @@ module.exports = {
         ],
     },
     plugins: [
-        new HTMLWebpackPlugin({
+        new rspack.HtmlRspackPlugin({
             template: "./public/index.html",
             filename: "index.html",
         }),
