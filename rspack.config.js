@@ -44,6 +44,7 @@ module.exports = {
         new rspack.HtmlRspackPlugin({
             template: "./public/index.html",
             filename: "index.html",
+            favicon: "./public/favicon.ico",
         }),
     ],
     devServer: {
@@ -53,6 +54,5 @@ module.exports = {
         historyApiFallback: true,
         compress: true,
         port: 3005,
-        open: true,
     },
 };
