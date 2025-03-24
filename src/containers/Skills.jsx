@@ -24,16 +24,19 @@ const Skills = () => {
                 className="absolute bottom-0 left-0 h-min w-64 rounded-bl-3xl select-none"
                 src={aestheticFlowers2Img}
                 alt="Aesthetic plant"
+                draggable="false"
             />
             <img
                 className="absolute -bottom-[29px] right-7 hidden md:block h-min w-64 rounded-bl-3xl -rotate-90 select-none"
                 src={aestheticFlowers2Img}
                 alt="Aesthetic plant"
+                draggable="false"
             />
             <img
                 className="absolute top-0 right-0 h-min w-[14vw] max-w-[208px] min-w-[148px] rounded-bl-3xl -rotate-180 select-none"
                 src={aestheticBottomImg}
                 alt="Aesthetic plant"
+                draggable="false"
             />
             <button onClick={() => confettiAtSides(["🍄", "🍄‍🟫"])} type="button">
                 <img

@@ -34,7 +34,7 @@ const CardHover3D = ({ className = "", titleImg, bannerImg, bgImg }) => {
     }, []);
 
     return (
-        <div ref={cardRef} className={clsx("card", className)}>
+        <div ref={cardRef} className={clsx("card hover:cursor-crosshair", className)}>
             <div className="wrapper">
                 <img src={bgImg} className={clsx("cover-image", className)} />
             </div>

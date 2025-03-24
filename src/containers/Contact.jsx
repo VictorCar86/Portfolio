@@ -1,11 +1,8 @@
 import React from "react";
 import InfoSection from "../components/InfoSection";
-import {
-    FaLinkedin,
-    FaGithub,
-    // FaTwitter
-} from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { CheckLanguage } from "../utils/languageTools";
+import FooterGrassGif from "../assets/images/footer-ghibli-grass.gif";
 
 const titleLanguage = CheckLanguage(["Contact 📡", "en"], ["Contacto 📡", "es"]);
 const svgStyles = "w-9 h-9";
@@ -20,11 +17,6 @@ const contactPages = [
         href: "https://github.com/VictorCar86",
         svg: <FaGithub className={svgStyles} />,
     },
-    // {
-    //     name: "Twitter",
-    //     href: "https://twitter.com/victorcar86_",
-    //     svg: <FaTwitter className={svgStyles} />
-    // },
 ];
 
 const Contact = () => {
@@ -34,8 +26,14 @@ const Contact = () => {
             maxWidth="max-w-[450px]"
             bgColor="bg-cream-600"
             customId="contact"
+            style={{
+                backgroundImage: `url(${FooterGrassGif})`,
+                backgroundSize: "600px 250px",
+                backgroundPositionY: "bottom",
+                backgroundPositionX: "right",
+            }}
         >
-            <div className="sticky sm:absolute top-[23%] right-5 flex justify-between items-center gap-5 max-w-[200px] sm:max-w-none mx-auto font-bold">
+            <div className="absolute top-[20%] sm:top-[23%] right-5 flex justify-between items-center gap-2 sm:gap-5 max-w-[200px] sm:max-w-none mx-auto font-bold">
                 {contactPages.map((page, index) => (
                     <a
                         className="block w-min h-min -md:mx-auto mb-1 border-4 border-amber-900 rounded-full p-2 hover:scale-110 transition-transform ease-out"
