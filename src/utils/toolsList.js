@@ -20,6 +20,7 @@ import CSS3Icon from "../components/Icons/CSS3Icon";
 import VuejsIcon from "../components/Icons/VuejsIcon";
 import PythonIcon from "../components/Icons/PythonIcon";
 import PostgresIcon from "../components/Icons/PostgresIcon";
+import AWSIcon from "../components/Icons/AWSIcon";
 
 export const tools = {
     frontend: [
@@ -136,6 +137,10 @@ export const tools = {
             icon: SiDocker,
             className: `fill-blue-500`,
             styles: { fill: "#3b82f6" },
+        },
+        {
+            name: "AWS",
+            icon: AWSIcon,
         },
     ],
 };

@@ -1,7 +1,14 @@
+import skateNextShopImg from "../assets/images/skate_next_shop.webp";
 import trelloImg from "../assets/images/trello_login.webp";
 import dropsImg from "../assets/images/drops_image.webp";
 
 const projectsList = [
+    {
+        title: "Skate-Next-Shop",
+        imageSrc: skateNextShopImg,
+        github: "https://github.com/VictorCar86/SkateNextShop",
+        page: "https://skate-next-shop.vercel.app/",
+    },
     {
         title: "Alifake - Mobile E-Commerce",
         videoSrc:

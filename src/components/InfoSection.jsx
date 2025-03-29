@@ -9,11 +9,8 @@ const InfoSection = ({
     ...props
 }) => {
     return (
-        <section
-            className={`w-full h-max p-7 -sm:p-4 ${bgColor}`}
-            id={customId}
-            {...props}
-        >
+        <section className={`relative w-full h-max p-7 -sm:p-4 ${bgColor}`} {...props}>
+            <div className="absolute -top-[50px]" id={customId} />
             <div
                 className={`relative ${maxWidth} mx-auto p-7 -sm:py-5 -sm:px-[18px] bg-cream-50 rounded-3xl shadow-xl`}
             >
