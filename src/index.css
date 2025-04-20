@@ -8,6 +8,8 @@
     }
     body {
         @apply font-medium;
+        font-family: "Outfit", sans-serif;
+        font-optical-sizing: auto;
     }
 }
 
