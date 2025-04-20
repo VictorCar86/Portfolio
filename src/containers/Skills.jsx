@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment as RF } from "react";
 import InfoSection from "../components/InfoSection";
 import ToolBanner from "../components/ToolBanner";
 import mushroomImg from "../assets/images/mushroom.webp";
@@ -16,6 +16,30 @@ import clsx from "clsx";
 const titleLanguage = CheckLanguage(["Skills 💻", "en"], ["Habilidades 💻", "es"]);
 const frontendTools = separateItems(tools.frontend, 4);
 const backendTools = separateItems(tools.backend, 4);
+
+const ToolsList = (tools) => (
+    <ul className="flex flex-col gap-y-3 sm:gap-y-6 lg:gap-x-2 justify-items-center items-center max-w-full mx-auto">
+        {tools.map((items, i) => (
+            <li
+                className={clsx("flex justify-center gap-[5%] sm:gap-[6%] w-full", {
+                    "sm:w-3/4": i === tools.length - 1,
+                })}
+                key={i}
+            >
+                {items.map((tool, j) => (
+                    <RF key={j}>
+                        <ToolBanner
+                            className={tool.className}
+                            icon={tool.icon}
+                            name={tool.name}
+                            styles={tool.styles}
+                        />
+                    </RF>
+                ))}
+            </li>
+        ))}
+    </ul>
+);
 
 const Skills = () => {
     return (
@@ -63,52 +87,11 @@ const Skills = () => {
                     <p className="w-max mx-auto text-2xl text-center font-bold my-5 shadowLight">
                         <span className="italic">Frontend</span> 💻
                     </p>
-                    {/* <ul className="grid grid-cols-4 grid-rows-3 gap-y-3 sm:gap-y-6 lg:gap-x-2 justify-items-center items-center max-w-sm sm:max-w-full mx-auto"> */}
-                    <ul className="flex flex-col gap-y-3 sm:gap-y-6 lg:gap-x-2 justify-items-center items-center max-w-sm sm:max-w-full mx-auto">
-                        {frontendTools.map((items, i) => (
-                            <li
-                                className={clsx("flex justify-evenly w-full", {
-                                    "sm:w-3/4": i === frontendTools.length - 1,
-                                })}
-                                key={i}
-                            >
-                                {items.map((tool, j) => (
-                                    <React.Fragment key={j}>
-                                        <ToolBanner
-                                            className={tool.className}
-                                            icon={tool.icon}
-                                            name={tool.name}
-                                            styles={tool.styles}
-                                        />
-                                    </React.Fragment>
-                                ))}
-                            </li>
-                        ))}
-                    </ul>
+                    {ToolsList(frontendTools)}
                     <p className="w-max mx-auto text-2xl text-center font-bold my-5 shadowLight">
                         <span className="italic">Backend</span> 🤖
                     </p>
-                    <ul className="flex flex-col gap-y-3 sm:gap-y-6 lg:gap-x-2 justify-items-center items-center max-w-sm sm:max-w-full mx-auto">
-                        {backendTools.map((items, i) => (
-                            <li
-                                className={clsx("flex justify-evenly w-full", {
-                                    "sm:w-3/4": i === backendTools.length - 1,
-                                })}
-                                key={i}
-                            >
-                                {items.map((tool, j) => (
-                                    <React.Fragment key={j}>
-                                        <ToolBanner
-                                            className={tool.className}
-                                            icon={tool.icon}
-                                            name={tool.name}
-                                            styles={tool.styles}
-                                        />
-                                    </React.Fragment>
-                                ))}
-                            </li>
-                        ))}
-                    </ul>
+                    {ToolsList(backendTools)}
                 </div>
                 <div className="h-full">
                     <p className="w-max mx-auto text-2xl text-center font-bold my-5 shadowLight">

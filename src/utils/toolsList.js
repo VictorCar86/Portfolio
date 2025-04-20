@@ -14,6 +14,7 @@ import {
     SiPrisma,
     SiAngular,
     SiSqlite,
+    SiMongodb,
 } from "react-icons/si";
 import HTML5Icon from "../components/Icons/HTML5Icon";
 import CSS3Icon from "../components/Icons/CSS3Icon";
@@ -131,6 +132,12 @@ export const tools = {
             icon: SiSqlite,
             className: `fill-blue-600`,
             styles: { fill: "#2563eb" },
+        },
+        {
+            name: "MongoDB",
+            icon: SiMongodb,
+            className: `fill-green-500`,
+            styles: { fill: "#16a34a" },
         },
         {
             name: "Docker",
