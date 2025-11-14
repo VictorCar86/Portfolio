@@ -3,13 +3,20 @@ import climbingPlantImg from "../assets/images/climbing-plant.webp";
 import InfoSection from "../components/InfoSection";
 import ProjectsSlider from "../components/ProjectsSlider";
 import projectsList from "../utils/projectsList";
-import { CheckLanguage, GetByLanguage } from "../utils/languageTools";
-
-const titleLanguage = CheckLanguage(["Projects 📚", "en"], ["Projectos 📚", "es"]);
+import { GetByLanguage } from "../utils/languageTools";
 
 const Projects = () => {
     return (
-        <InfoSection title={titleLanguage} bgColor="bg-cream-400" customId="projects">
+        <InfoSection
+            title={
+                <>
+                    <GetByLanguage lang="en">Projects 📚</GetByLanguage>
+                    <GetByLanguage lang="es">Projectos 📚</GetByLanguage>
+                </>
+            }
+            bgColor="bg-cream-400"
+            customId="projects"
+        >
             <img
                 className="absolute top-0 right-0 -translate-y-[10%] translate-x-[7%] h-min w-min select-none"
                 src={climbingPlantImg}
@@ -18,7 +25,7 @@ const Projects = () => {
             />
 
             <p className="relative max-w-xl mb-5 shadowLight">
-                <GetByLanguage lang="en-">
+                <GetByLanguage lang="en">
                     I've built various projects, each designed to address specific
                     challenges. Here, I aim to reflect my skills as a developer and my
                     commitment to quality and innovation at every stage of development.

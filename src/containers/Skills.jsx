@@ -4,7 +4,7 @@ import ToolBanner from "../components/ToolBanner";
 import mushroomImg from "../assets/images/mushroom.webp";
 import UKFlagIcon from "../components/Icons/UKFlagIcon";
 import SpainIcon from "../assets/images/spain.webp";
-import { CheckLanguage, GetByLanguage } from "../utils/languageTools";
+import { GetByLanguage } from "../utils/languageTools";
 import { tools } from "../utils/toolsList";
 import { separateItems } from "../utils/separateItems";
 import confettiAtSides from "../utils/confettiAtSides";
@@ -13,7 +13,6 @@ import aestheticBottomImg from "../assets/images/aesthetic_bottom.webp";
 import clsx from "clsx";
 // import Card3D from "../components/Card3D";
 
-const titleLanguage = CheckLanguage(["Skills 💻", "en"], ["Habilidades 💻", "es"]);
 const frontendTools = separateItems(tools.frontend, 4);
 const backendTools = separateItems(tools.backend, 4);
 
@@ -43,7 +42,16 @@ const ToolsList = (tools) => (
 
 const Skills = () => {
     return (
-        <InfoSection title={titleLanguage} bgColor="bg-cream-500" customId="skills">
+        <InfoSection
+            title={
+                <>
+                    <GetByLanguage lang="en">Skills 💻</GetByLanguage>
+                    <GetByLanguage lang="es">Habilidades 💻</GetByLanguage>
+                </>
+            }
+            bgColor="bg-cream-500"
+            customId="skills"
+        >
             <img
                 className="absolute bottom-0 left-0 h-min w-64 rounded-bl-3xl select-none"
                 src={aestheticFlowers2Img}

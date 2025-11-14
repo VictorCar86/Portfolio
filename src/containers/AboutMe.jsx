@@ -3,15 +3,22 @@ import InfoSection from "../components/InfoSection";
 import CardHover3D from "../components/CardHover3D";
 import aestheticPlantImg from "../assets/images/aesthetic_plant.webp";
 import aestheticFlowersImg from "../assets/images/aesthetic_flowers.webp";
-import { CheckLanguage, GetByLanguage } from "../utils/languageTools";
+import { GetByLanguage } from "../utils/languageTools";
 import { aboutInfo } from "../utils/aboutInfo";
 import clsx from "clsx";
 
-const titleLanguage = CheckLanguage(["About me 👋", "en"], ["Sobre mi 👋", "es"]);
-
 const AboutMe = () => {
     return (
-        <InfoSection title={titleLanguage} bgColor="bg-cream-200" customId="about">
+        <InfoSection
+            title={
+                <>
+                    <GetByLanguage lang="en">About me 👋</GetByLanguage>
+                    <GetByLanguage lang="es">Sobre mi 👋</GetByLanguage>
+                </>
+            }
+            bgColor="bg-cream-200"
+            customId="about"
+        >
             <img
                 className="absolute top-0 right-0 h-min w-36 rounded-tr-3xl select-none"
                 src={aestheticPlantImg}

@@ -1,10 +1,9 @@
 import React from "react";
 import InfoSection from "../components/InfoSection";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import { CheckLanguage } from "../utils/languageTools";
+import { GetByLanguage } from "../utils/languageTools";
 import FooterGrassGif from "../assets/images/footer-ghibli-grass.gif";
 
-const titleLanguage = CheckLanguage(["Contact 📡", "en"], ["Contacto 📡", "es"]);
 const svgStyles = "w-9 h-9";
 const contactPages = [
     {
@@ -22,7 +21,12 @@ const contactPages = [
 const Contact = () => {
     return (
         <InfoSection
-            title={titleLanguage}
+            title={
+                <>
+                    <GetByLanguage lang="en">Contact 📡</GetByLanguage>
+                    <GetByLanguage lang="es">Contacto 📡</GetByLanguage>
+                </>
+            }
             maxWidth="max-w-[450px]"
             bgColor="bg-cream-600"
             noBackground
