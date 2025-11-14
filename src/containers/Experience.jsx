@@ -12,6 +12,8 @@ import clsx from "clsx";
 const titleLanguage = CheckLanguage(["Experience 💼", "en"], ["Experiencia 💼", "es"]);
 
 const getMonthName = (dateStr = "") => {
+    if (!dateStr) return "";
+    if (dateStr.toLowerCase() === "present") return "Present";
     const date = new Date(dateStr);
     const wordLength = window.innerWidth >= 768 ? "long" : "short";
     const monthDayName = CheckLanguage(
@@ -59,7 +61,16 @@ const Experience = () => {
                                 </p>
                                 <p className="flex items-center gap-1.5 mb-1.5 italic">
                                     <FaRegBuilding />
-                                    <span>{job.company}</span>
+                                    <span>
+                                        <a
+                                            className="text-lg font-bold border-b-2 border-amber-900"
+                                            href={job.url}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {job.company}
+                                        </a>
+                                    </span>
                                 </p>
                                 <p className="flex items-center gap-1.5 mb-1.5 capitalize">
                                     <IoMdTime className="scale-105" />
@@ -69,13 +80,24 @@ const Experience = () => {
                                     </span>
                                 </p>
                             </div>
-                            <div className="grid grid-cols-2 grid-rows-[repeat(2,_minmax(0,_116px))] justify-items-center gap-1.5 p-1.5 rounded-lg mainBackground">
+                            <ul
+                                className={`grid grid-cols-2 justify-items-center gap-1.5 p-1.5 rounded-lg mainBackground`}
+                                style={{ gridAutoRows: "minmax(0, 116px)" }}
+                            >
                                 {job.images.map((image, index) => (
-                                    <React.Fragment key={index}>
+                                    <li
+                                        className={clsx("w-full h-full", {
+                                            "col-span-2": image.expanded,
+                                        })}
+                                        key={index}
+                                    >
                                         <img
                                             className={clsx(
                                                 "h-full w-full transition-transform hover:scale-105 select-none object-cover",
-                                                { "cursor-pointer": image.choosable },
+                                                {
+                                                    "cursor-pointer": image.choosable,
+                                                    "object-top": image.expanded,
+                                                },
                                             )}
                                             src={image.src}
                                             alt={image.title}
@@ -96,9 +118,9 @@ const Experience = () => {
                                                 />
                                             </Modal>
                                         )}
-                                    </React.Fragment>
+                                    </li>
                                 ))}
-                            </div>
+                            </ul>
                         </article>
                     </li>
                 ))}
