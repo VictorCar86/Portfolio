@@ -8,12 +8,7 @@ import LeafFall from "../components/LeafFall";
 import landscapeImg from "../assets/images/main_landscape.webp";
 import landscapeMobileImg from "../assets/images/main_landscape-mobile.webp";
 import profileImg from "../assets/images/profile.webp";
-import { CheckLanguage } from "../utils/languageTools";
-
-const titleLanguage = CheckLanguage(
-    ["💻 Web Developer", "en"],
-    ["💻 Desarrollador Web", "es"],
-);
+import { GetByLanguage } from "../utils/languageTools";
 
 const Home = () => {
     return (
@@ -36,7 +31,8 @@ const Home = () => {
                         Victor Manuel Carreño Peña
                     </h1>
                     <p className="text-2xl sm:text-3xl mb-1.5 mt-2.5 md:mt-3.5 font-bold text-center md:text-left">
-                        {titleLanguage}
+                        <GetByLanguage lang="en">💻 Web Developer</GetByLanguage>
+                        <GetByLanguage lang="es">💻 Desarrollador Web</GetByLanguage>
                     </p>
                     <div className="flex gap-5 -sm:grid -sm:gap-0 w-max mx-auto md:mx-0 font-medium strong-shadow">
                         <a

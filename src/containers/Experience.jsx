@@ -6,20 +6,20 @@ import useModalStore from "../store/modalStore";
 import { IoMdTime } from "react-icons/io";
 import { FaRegBuilding } from "react-icons/fa";
 import { previousJobs } from "../utils/previousJobs";
-import { CheckLanguage, GetByLanguage } from "../utils/languageTools";
+import { GetByLanguage } from "../utils/languageTools";
 import clsx from "clsx";
 
-const titleLanguage = CheckLanguage(["Experience 💼", "en"], ["Experiencia 💼", "es"]);
-
-const getMonthName = (dateStr = "") => {
+const getMonthName = (dateStr = "", lang = "en") => {
     if (!dateStr) return "";
-    if (dateStr.toLowerCase() === "present") return "Present";
+    if (dateStr.toLowerCase() === "present") {
+        return lang === "en" ? "Present" : "Presente";
+    }
     const date = new Date(dateStr);
     const wordLength = window.innerWidth >= 768 ? "long" : "short";
-    const monthDayName = CheckLanguage(
-        [date.toLocaleString("en-US", { month: wordLength }), "en"],
-        [date.toLocaleString("es-ES", { month: wordLength }), "es"],
-    );
+    const monthDayName =
+        lang === "en"
+            ? date.toLocaleString("en-US", { month: wordLength })
+            : date.toLocaleString("es-ES", { month: wordLength });
     return `${monthDayName} ${date.getFullYear()}`;
 };
 
@@ -27,7 +27,16 @@ const Experience = () => {
     const openModal = useModalStore((state) => state.openModal);
 
     return (
-        <InfoSection title={titleLanguage} bgColor="bg-cream-300" customId="experience">
+        <InfoSection
+            title={
+                <>
+                    <GetByLanguage lang="en">Experience 💼</GetByLanguage>
+                    <GetByLanguage lang="es">Experiencia 💼</GetByLanguage>
+                </>
+            }
+            bgColor="bg-cream-300"
+            customId="experience"
+        >
             <ul className="pl-7 md:pl-[46px]">
                 {previousJobs.map((job, index) => (
                     <li className="relative" key={index}>
@@ -75,8 +84,14 @@ const Experience = () => {
                                 <p className="flex items-center gap-1.5 mb-1.5 capitalize">
                                     <IoMdTime className="scale-105" />
                                     <span>
-                                        {getMonthName(job.dates[0])} -{" "}
-                                        {getMonthName(job.dates[1])}
+                                        <GetByLanguage lang="en">
+                                            {getMonthName(job.dates[0], "en")} -{" "}
+                                            {getMonthName(job.dates[1], "en")}
+                                        </GetByLanguage>
+                                        <GetByLanguage lang="es">
+                                            {getMonthName(job.dates[0], "es")} -{" "}
+                                            {getMonthName(job.dates[1], "es")}
+                                        </GetByLanguage>
                                     </span>
                                 </p>
                             </div>
