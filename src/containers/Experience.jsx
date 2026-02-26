@@ -34,7 +34,6 @@ const Experience = () => {
                     <GetByLanguage lang="es">Experiencia 💼</GetByLanguage>
                 </>
             }
-            bgColor="bg-cream-300"
             customId="experience"
         >
             <ul className="pl-7 md:pl-[46px]">

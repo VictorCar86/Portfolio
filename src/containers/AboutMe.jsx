@@ -16,7 +16,6 @@ const AboutMe = () => {
                     <GetByLanguage lang="es">Sobre mi 👋</GetByLanguage>
                 </>
             }
-            bgColor="bg-cream-200"
             customId="about"
         >
             <img

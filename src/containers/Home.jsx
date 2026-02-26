@@ -12,16 +12,7 @@ import { GetByLanguage } from "../utils/languageTools";
 
 const Home = () => {
     return (
-        <section className="relative min-h-[640px] h-screen w-full bg-cream-100">
-            <picture>
-                <source media="(min-width: 640px)" srcSet={landscapeImg} />
-                <img
-                    className="absolute h-screen w-screen object-cover object-bottom sepia mask-deg"
-                    src={landscapeMobileImg}
-                    alt="Huge landscape with a mountain in the middel and colorful with sepia tones"
-                />
-            </picture>
-
+        <section className="relative min-h-[640px] h-screen w-full">
             <div
                 className="min-h-[640px] h-screen w-full flex flex-col-reverse justify-center items-center gap-6 sm:gap-10 md:gap-[8%] xl:gap-10 md:flex-row px-[7%] thin-text bg-transparent animate__zoomIn animate__animated animate__delay"
                 id="home"
@@ -67,7 +58,7 @@ const Home = () => {
                         </a> */}
                     </div>
                 </div>
-                <div className="relative w-64 -md:h-64 md:w-auto rounded-full z-0 mainBackground">
+                <div className="relative w-64 -md:h-64 md:w-auto rounded-full z-0">
                     <LeafFall className="absolute top-0 rotate-45 w-full -z-10 scale-[1.35] -translate-y-4 select-none" />
                     <img
                         className="h-[91.666667%] w-11/12 m-[4%] rounded-full shadow-xl select-none"

@@ -49,7 +49,6 @@ const Skills = () => {
                     <GetByLanguage lang="es">Habilidades 💻</GetByLanguage>
                 </>
             }
-            bgColor="bg-cream-500"
             customId="skills"
         >
             <img

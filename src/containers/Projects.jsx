@@ -14,7 +14,6 @@ const Projects = () => {
                     <GetByLanguage lang="es">Projectos 📚</GetByLanguage>
                 </>
             }
-            bgColor="bg-cream-400"
             customId="projects"
         >
             <img

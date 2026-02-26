@@ -1,10 +1,13 @@
-import React from 'react';
-import MainPage from './pages/MainPage';
+import React from "react";
+import MainPage from "./pages/MainPage";
+import Background from "./components/Background";
 
 const App = () => {
-  return (
-    <MainPage />
-  )
-}
+    return (
+        <Background>
+            <MainPage />
+        </Background>
+    );
+};
 
 export default App;

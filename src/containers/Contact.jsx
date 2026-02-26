@@ -28,15 +28,8 @@ const Contact = () => {
                 </>
             }
             maxWidth="max-w-[450px]"
-            bgColor="bg-cream-600"
             noBackground
             customId="contact"
-            style={{
-                backgroundImage: `url(${FooterGrassGif})`,
-                backgroundSize: "600px 250px",
-                backgroundPositionY: "bottom",
-                backgroundPositionX: "right",
-            }}
         >
             <div className="absolute top-[20%] sm:top-[23%] right-5 flex justify-between items-center gap-2 sm:gap-5 max-w-[200px] sm:max-w-none mx-auto font-bold">
                 {contactPages.map((page, index) => (
