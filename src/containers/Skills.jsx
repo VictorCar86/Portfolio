@@ -112,15 +112,15 @@ const Skills = () => {
                     <div className="h-4/5 mt-5 font-bold">
                         <ul className="flex justify-evenly">
                             <li className="group w-min h-min -sm:w-[45%] text-center sm:grid sm:grid-flow-col sm:gap-3 lg:gap-5">
-                                <div className="w-12 lg:w-20 mx-auto animate__animated group-hover:animate__pulse shadowLight">
+                                <div className="w-12 lg:w-20 mx-auto rounded-full animate__animated group-hover:animate__pulse shadowLight">
                                     <UKFlagIcon />
                                 </div>
                                 <div className="sm:grid">
-                                    <p className="w-min mx-auto sm:self-end -sm:my-2 text-[22px] shadowLight z-20">
+                                    <p className="w-min h-max mx-auto sm:self-end -sm:my-2 text-[22px] shadowLight z-20">
                                         <GetByLanguage lang="en">English</GetByLanguage>
                                         <GetByLanguage lang="es">Inglés</GetByLanguage>
                                     </p>
-                                    <p className="w-min mx-auto italic text-lg whitespace-nowrap text-amber-700 shadowLight">
+                                    <p className="w-min h-max mx-auto italic text-lg whitespace-nowrap text-amber-700 shadowLight">
                                         <GetByLanguage lang="en">
                                             B2 Intermediate
                                         </GetByLanguage>
@@ -131,7 +131,7 @@ const Skills = () => {
                                 </div>
                             </li>
                             <li className="group w-min h-min -sm:w-[45%] text-center sm:grid sm:grid-flow-col sm:gap-3 lg:gap-5">
-                                <div className="w-12 lg:w-20 mx-auto animate__animated group-hover:animate__pulse shadowLight">
+                                <div className="w-12 lg:w-20 mx-auto rounded-full animate__animated group-hover:animate__pulse shadowLight">
                                     <img
                                         className="h-min w-full rounded-full select-none"
                                         draggable="false"
@@ -140,11 +140,11 @@ const Skills = () => {
                                     />
                                 </div>
                                 <div className="sm:grid">
-                                    <p className="w-min mx-auto sm:self-end -sm:my-2 text-[22px] shadowLight z-20">
+                                    <p className="w-min h-max mx-auto sm:self-end -sm:my-2 text-[22px] shadowLight z-20">
                                         <GetByLanguage lang="en">Spanish</GetByLanguage>
                                         <GetByLanguage lang="es">Español</GetByLanguage>
                                     </p>
-                                    <p className="w-min mx-auto italic text-lg text-amber-700 shadowLight">
+                                    <p className="w-min h-max mx-auto italic text-lg text-amber-700 shadowLight">
                                         <GetByLanguage lang="en">Native</GetByLanguage>
                                         <GetByLanguage lang="es">Nativo</GetByLanguage>
                                     </p>

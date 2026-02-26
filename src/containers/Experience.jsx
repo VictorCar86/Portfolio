@@ -40,7 +40,7 @@ const Experience = () => {
                 {previousJobs.map((job, index) => (
                     <li className="relative" key={index}>
                         <aside className="absolute top-0.5 -left-9 md:-left-11 flex flex-col items-center h-full">
-                            <i className="inline-block rounded-full border-[3px] border-amber-900 shadow-[0px_0px_4px_0px] shadow-amber-900">
+                            <i className="inline-block rounded-full border-[3px] border-amber-900 shadow-[0px_0px_4px_0px] shadowLight shadow-amber-900">
                                 <WorkIcon className="w-6 h-max p-[3px] fill-amber-900" />
                             </i>
                             <div className="h-full w-[3px] mainBackground"></div>
@@ -51,7 +51,7 @@ const Experience = () => {
                             })}
                         >
                             <div className="h-max mb-4 md:m-0">
-                                <p className="text-2xl font-bold mb-2">
+                                <p className="w-max text-2xl font-bold mb-2 pr-1 shadowLight">
                                     <GetByLanguage lang="en">
                                         {job.en.title}
                                     </GetByLanguage>
@@ -59,7 +59,7 @@ const Experience = () => {
                                         {job.es.title}
                                     </GetByLanguage>
                                 </p>
-                                <p className="mb-1.5">
+                                <p className="mb-1.5 shadowLight">
                                     <GetByLanguage lang="en">
                                         {job.en.description}
                                     </GetByLanguage>
@@ -67,7 +67,7 @@ const Experience = () => {
                                         {job.es.description}
                                     </GetByLanguage>
                                 </p>
-                                <p className="flex items-center gap-1.5 mb-1.5 italic">
+                                <p className="flex items-center gap-1.5 w-max pr-2 mb-1.5 italic shadowLight">
                                     <FaRegBuilding />
                                     <span>
                                         <a
@@ -80,7 +80,7 @@ const Experience = () => {
                                         </a>
                                     </span>
                                 </p>
-                                <p className="flex items-center gap-1.5 mb-1.5 capitalize">
+                                <p className="flex items-center gap-1.5 w-max mb-1.5 pr-2 shadowLight capitalize">
                                     <IoMdTime className="scale-105" />
                                     <span>
                                         <GetByLanguage lang="en">
